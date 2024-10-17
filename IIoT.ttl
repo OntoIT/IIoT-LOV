@@ -1,0 +1,1794 @@
+@prefix : <https://w3id.org/IIoT/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/IIoT/> .
+
+<https://w3id.org/IIoT/> rdf:type owl:Ontology ;
+                          <http://creativecommons.org/ns#license> <http://creativecommons.org/licenses/by/2.0/> ;
+                          <http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0002-0814-2615> ,
+                                                                 <https://orcid.org/0000-0003-0702-6134> ,
+                                                                 <https://orcid.org/0000-0003-1562-6922> ,
+                                                                 <https://orcid.org/0000-0003-2392-7821> ;
+                          <http://purl.org/dc/terms/creator> <https://orcid.org/0000-0001-6788-630X> ,
+                                                             <https://orcid.org/0000-0003-3562-0528> ;
+                          <http://purl.org/dc/terms/description> "The Internet of Things taxonomy is extended with semantic ontologies for IoT layers: Device, Application. Network, Support, Capabilities"@en ;
+                          <http://purl.org/dc/terms/issued> "2023-08-27"@en ;
+                          <http://purl.org/dc/terms/modified> "2024-10-15"@en ;
+                          <http://purl.org/dc/terms/title> "Ontology for Industrial Internet of Things systems"@en ;
+                          owl:versionInfo "Version 1.1"@en ;
+                          :preferredNamespacePrefix "IIoT"@en ;
+                          :preferredNamespaceUri <https://w3id.org/IIoT> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/IIoT/preferredNamespacePrefix
+:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/IIoT/preferredNamespaceUri
+:preferredNamespaceUri rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/IIoT/#Dealing_with_sensitive_data
+<https://w3id.org/IIoT/#Dealing_with_sensitive_data> rdf:type owl:ObjectProperty ;
+                                                     rdfs:comment "Dealing_with_sensitive_data (Object property): SCADA solutions are proper practices for systems dealing with sensitive data" .
+
+
+###  https://w3id.org/IIoT/#DevelopEdgeSecurity
+<https://w3id.org/IIoT/#DevelopEdgeSecurity> rdf:type owl:ObjectProperty ;
+                                             rdfs:comment "DevelopEdgeSecurity (Object property): develops solutions for edge applications using Blockchain capabilities" .
+
+
+###  https://w3id.org/IIoT/#SCADA_hasCapability
+<https://w3id.org/IIoT/#SCADA_hasCapability> rdf:type owl:ObjectProperty ;
+                                             rdfs:comment "SCADA_hasCapability (Object property): SCADA systems provide  capabilities for industrial systems" .
+
+
+###  https://w3id.org/IIoT/#Support_communication
+<https://w3id.org/IIoT/#Support_communication> rdf:type owl:ObjectProperty ;
+                                               rdfs:comment "Support_communication (Object property): SCADA systems perform communication with industrial systems in distributed architectures" .
+
+
+###  https://w3id.org/IIoT/#authentication
+<https://w3id.org/IIoT/#authentication> rdf:type owl:ObjectProperty ;
+                                        rdfs:domain <https://w3id.org/IIoT/#MQTT> ;
+                                        rdfs:range <https://w3id.org/IIoT/#JSON_Web_Token> ;
+                                        rdfs:comment "authentication (Object property): the MQTT and HTTP bridges use authentication with asymmetric public keys and JSON Web tokens" .
+
+
+###  https://w3id.org/IIoT/#best_Practices
+<https://w3id.org/IIoT/#best_Practices> rdf:type owl:ObjectProperty ;
+                                        rdfs:comment "best_Practices (Object property): defines the best practices for the edge security problems using Blockchain solutions" .
+
+
+###  https://w3id.org/IIoT/#challenge
+<https://w3id.org/IIoT/#challenge> rdf:type owl:ObjectProperty ;
+                                   rdfs:domain <https://w3id.org/IIoT/#Blockchain> ;
+                                   rdfs:comment "challenge (Object property): Blockchain technology comes some challenges (problems) to implementation" .
+
+
+###  https://w3id.org/IIoT/#countermeasure
+<https://w3id.org/IIoT/#countermeasure> rdf:type owl:ObjectProperty ;
+                                        rdfs:comment "countermeasure (Object property): SCADA solutions represent countermeasure against threats generated by SCADA security problems" .
+
+
+###  https://w3id.org/IIoT/#data_transfer
+<https://w3id.org/IIoT/#data_transfer> rdf:type owl:ObjectProperty ;
+                                       rdfs:domain <https://w3id.org/IIoT/#MQTT> ;
+                                       rdfs:range <https://w3id.org/IIoT/#Device> ;
+                                       rdfs:comment "data_transfer (Object property): an MQTT protocol transfers data provided by sensors" .
+
+
+###  https://w3id.org/IIoT/#flow_services
+<https://w3id.org/IIoT/#flow_services> rdf:type owl:ObjectProperty ;
+                                       rdfs:domain <https://w3id.org/IIoT/#Particle_Photon> ;
+                                       rdfs:range <https://w3id.org/IIoT/#Subscriber> ;
+                                       rdfs:comment "flow_services: Object property that ensures the flows and services from Particle Photon to the subscriber (Thingspeak)" .
+
+
+###  https://w3id.org/IIoT/#hasAlgorithm
+<https://w3id.org/IIoT/#hasAlgorithm> rdf:type owl:ObjectProperty ;
+                                      rdfs:domain <https://w3id.org/IIoT/#Gateway> ;
+                                      rdfs:range <https://w3id.org/IIoT/#Analytics> ;
+                                      rdfs:comment "hasAlgorithm (Object property): Gateway devices provide real-time analytics or machine learning algorithms, in edge computing" .
+
+
+###  https://w3id.org/IIoT/#hasCapability
+<https://w3id.org/IIoT/#hasCapability> rdf:type owl:ObjectProperty ;
+                                       rdfs:subPropertyOf owl:topObjectProperty ;
+                                       rdfs:comment "hasCapability (Object property): tool that provides capabilities for big data processing in distributed systems" .
+
+
+###  https://w3id.org/IIoT/#hasElement
+<https://w3id.org/IIoT/#hasElement> rdf:type owl:ObjectProperty ;
+                                    rdfs:domain <https://w3id.org/IIoT/#Andrew> ;
+                                    rdfs:range <https://w3id.org/IIoT/#Transducer> ;
+                                    rdfs:comment "hasElement (Object property): Sensor Andrew - sharing of transducers. There are two types of transducers: sensors and actuators." .
+
+
+###  https://w3id.org/IIoT/#hasFunctionality
+<https://w3id.org/IIoT/#hasFunctionality> rdf:type owl:ObjectProperty ;
+                                          rdfs:domain <https://w3id.org/IIoT/#Data_center> ;
+                                          rdfs:range <https://w3id.org/IIoT/#Cloud_service> ;
+                                          rdfs:comment "hasFunctionality (Object property): a data center offers cloud services (as functionality)" .
+
+
+###  https://w3id.org/IIoT/#hasProblem
+<https://w3id.org/IIoT/#hasProblem> rdf:type owl:ObjectProperty ;
+                                    rdfs:domain <https://w3id.org/IIoT/#Blockchain> ;
+                                    rdfs:comment "hasProblem (Object property): Blockchain technology has some problems" .
+
+
+###  https://w3id.org/IIoT/#hasSecurity_problem
+<https://w3id.org/IIoT/#hasSecurity_problem> rdf:type owl:ObjectProperty ;
+                                             rdfs:domain <https://w3id.org/IIoT/#Blockchain> ;
+                                             rdfs:comment "hasSecurity_problem (Object property): solutions for security problems in Blockchain technology" .
+
+
+###  https://w3id.org/IIoT/#hasService
+<https://w3id.org/IIoT/#hasService> rdf:type owl:ObjectProperty ,
+                                             owl:FunctionalProperty ;
+                                    rdfs:domain <https://w3id.org/IIoT/#Data_center> ;
+                                    rdfs:range <https://w3id.org/IIoT/#Cloud_service> ;
+                                    rdfs:comment "hasService (Object property): specifies cloud services provided by data centers" .
+
+
+###  https://w3id.org/IIoT/#hasSolution
+<https://w3id.org/IIoT/#hasSolution> rdf:type owl:ObjectProperty ;
+                                     rdfs:comment "hasSolution (Object property): solutions for Blockchain problems" .
+
+
+###  https://w3id.org/IIoT/#hasTechnology
+<https://w3id.org/IIoT/#hasTechnology> rdf:type owl:ObjectProperty ;
+                                       rdfs:range <https://w3id.org/IIoT/#Edge_technology> ;
+                                       rdfs:comment "hasTechnology (Object property): the technology used in edge computing applications" .
+
+
+###  https://w3id.org/IIoT/#hasTool
+<https://w3id.org/IIoT/#hasTool> rdf:type owl:ObjectProperty ;
+                                 rdfs:comment "hasTool (Object property): a tool used for the implementation of a technology" .
+
+
+###  https://w3id.org/IIoT/#has_SecuritySolution
+<https://w3id.org/IIoT/#has_SecuritySolution> rdf:type owl:ObjectProperty ;
+                                              rdfs:comment "has_SecuritySolution (Object property): defines the best practices based on Blockchain solutions for edge security problems" .
+
+
+###  https://w3id.org/IIoT/#heat
+<https://w3id.org/IIoT/#heat> rdf:type owl:ObjectProperty ;
+                              rdfs:domain <https://w3id.org/IIoT/#RTD_sensor> ;
+                              rdfs:range <https://w3id.org/IIoT/#Industrial_oven> ;
+                              rdfs:comment "heat (Object property): RTD sensors provide heat for the oven" .
+
+
+###  https://w3id.org/IIoT/#isApplied
+<https://w3id.org/IIoT/#isApplied> rdf:type owl:ObjectProperty ;
+                                   rdfs:range <https://w3id.org/IIoT/#Computer_cluster> ;
+                                   rdfs:comment "isApplied (Object property): a tool used for computer clusters" .
+
+
+###  https://w3id.org/IIoT/#isConnectedBy
+<https://w3id.org/IIoT/#isConnectedBy> rdf:type owl:ObjectProperty ;
+                                       rdfs:domain <https://w3id.org/IIoT/#Processing_Board> ;
+                                       rdfs:range <https://w3id.org/IIoT/#Smart_Product> ;
+                                       rdfs:comment "isConnectedBy (Object property): modules with sensors or actuators connect processing boards with smart products" .
+
+
+###  https://w3id.org/IIoT/#isIdentified
+<https://w3id.org/IIoT/#isIdentified> rdf:type owl:ObjectProperty ;
+                                      rdfs:domain <https://w3id.org/IIoT/#Passive_things> ;
+                                      rdfs:range <https://w3id.org/IIoT/#BLE> ,
+                                                 <https://w3id.org/IIoT/#NFC_tag> ,
+                                                 <https://w3id.org/IIoT/#Optical_tag> ,
+                                                 <https://w3id.org/IIoT/#RFID_tag> ;
+                                      rdfs:comment "isIdentified (Object property): passive things are identified by protocols such as NFC tags, optical tags, BLE, RFID tag, etc." .
+
+
+###  https://w3id.org/IIoT/#isManagedBy
+<https://w3id.org/IIoT/#isManagedBy> rdf:type owl:ObjectProperty ;
+                                     rdfs:domain <https://w3id.org/IIoT/#Smart_Product> ;
+                                     rdfs:range <https://w3id.org/IIoT/#Programming_Language> ;
+                                     rdfs:comment "isManagedBy (Object property): Smart products are managed using Web technologies and software platforms." .
+
+
+###  https://w3id.org/IIoT/#isPartOf
+<https://w3id.org/IIoT/#isPartOf> rdf:type owl:ObjectProperty ;
+                                  rdfs:domain <https://w3id.org/IIoT/#PLC> ;
+                                  rdfs:range <https://w3id.org/IIoT/#ICS> ;
+                                  rdfs:comment "isPartOf (Object property):  PLC/SCADA is part of ICS (Industrial Control Systems)" .
+
+
+###  https://w3id.org/IIoT/#isProcessed
+<https://w3id.org/IIoT/#isProcessed> rdf:type owl:ObjectProperty ;
+                                     rdfs:comment "isProcessed (Object property): the big data relies on distributed processing and storing, data analytics, and machine learning" .
+
+
+###  https://w3id.org/IIoT/#isRepresentationOf
+<https://w3id.org/IIoT/#isRepresentationOf> rdf:type owl:ObjectProperty ;
+                                            rdfs:domain <https://w3id.org/IIoT/#Digital_twin> ;
+                                            rdfs:range <https://w3id.org/IIoT/#Smart_Product> ;
+                                            rdfs:comment "isRepresentationOf (Object property): A digital twin from the cloud is a software representation of a smart product" .
+
+
+###  https://w3id.org/IIoT/#isToolFor
+<https://w3id.org/IIoT/#isToolFor> rdf:type owl:ObjectProperty ;
+                                   rdfs:comment "isToolFor (Object property): tool for distributed computing technologies" .
+
+
+###  https://w3id.org/IIoT/#isUsedBy
+<https://w3id.org/IIoT/#isUsedBy> rdf:type owl:ObjectProperty ;
+                                  rdfs:comment "isUsedBy (Object property): a tool used by a particular technology" .
+
+
+###  https://w3id.org/IIoT/#login
+<https://w3id.org/IIoT/#login> rdf:type owl:ObjectProperty ;
+                               rdfs:range <https://w3id.org/IIoT/#Gateway> ;
+                               rdfs:comment "login (Object property): In a wireless sensor network, a mobile node logins with a password using a gateway and Publish-Subscribe service." .
+
+
+###  https://w3id.org/IIoT/#read
+<https://w3id.org/IIoT/#read> rdf:type owl:ObjectProperty ;
+                              rdfs:domain <https://w3id.org/IIoT/#Flow> ;
+                              rdfs:range <https://w3id.org/IIoT/#Firmware> ;
+                              rdfs:comment "read (Object property): A firmware program reads the D0 value of the 3V3 pin, in an application with a  Particle Photon that publishes messages using a Webhook." .
+
+
+###  https://w3id.org/IIoT/#regulationTemperature
+<https://w3id.org/IIoT/#regulationTemperature> rdf:type owl:ObjectProperty ;
+                                               rdfs:domain <https://w3id.org/IIoT/#RTD_sensor> ;
+                                               rdfs:range <https://w3id.org/IIoT/#Industrial_oven> ;
+                                               rdfs:comment "regulationTemperature (Object property): regulation of the RTD sensors’ temperature for an industrial oven" .
+
+
+###  https://w3id.org/IIoT/#request
+<https://w3id.org/IIoT/#request> rdf:type owl:ObjectProperty ;
+                                 rdfs:domain <https://w3id.org/IIoT/#Particle_cloud> ;
+                                 rdfs:range <https://w3id.org/IIoT/#Subscriber> ;
+                                 rdfs:comment "request (Object property): Particle cloud service will forward messages with values “1” and “0” to Thingspeak as a subscriber. A Webhook (a new HTTP request to Thingspeak) will result after passing values to the Particle cloud." .
+
+
+###  https://w3id.org/IIoT/#requires
+<https://w3id.org/IIoT/#requires> rdf:type owl:ObjectProperty ;
+                                  rdfs:comment "requires (Object property): Applications with Big Data require Big data capabilities - distributed processing and storing, etc." .
+
+
+###  https://w3id.org/IIoT/#send
+<https://w3id.org/IIoT/#send> rdf:type owl:ObjectProperty ;
+                              rdfs:domain <https://w3id.org/IIoT/#Firmware> ;
+                              rdfs:range <https://w3id.org/IIoT/#Particle_cloud> ;
+                              rdfs:comment "send (Object property): A firmware program that reads the D0 value every 30 seconds, calls the function Particle.publish() with one of the values “0” or “1” that is sent to the Particle cloud." .
+
+
+###  https://w3id.org/IIoT/#supporting_tool
+<https://w3id.org/IIoT/#supporting_tool> rdf:type owl:ObjectProperty ;
+                                         rdfs:comment "supporting_tool (Object property): tools for edge computing applications" .
+
+
+###  https://w3id.org/IIoT/#threats_to_data_security
+<https://w3id.org/IIoT/#threats_to_data_security> rdf:type owl:ObjectProperty ;
+                                                  rdfs:comment "threats_to_data_security (Object property): SCADA protocols require adequately defending against data security threats." .
+
+
+###  https://w3id.org/IIoT/#useAlgorithm
+<https://w3id.org/IIoT/#useAlgorithm> rdf:type owl:ObjectProperty ;
+                                      rdfs:subPropertyOf owl:topObjectProperty ;
+                                      rdfs:domain <https://w3id.org/IIoT/#Data_center> ;
+                                      rdfs:range <https://w3id.org/IIoT/#Data_center> ;
+                                      rdfs:comment "useAlgorithm (Object property): algorithms used in data centers" .
+
+
+###  https://w3id.org/IIoT/#useProgramming
+<https://w3id.org/IIoT/#useProgramming> rdf:type owl:ObjectProperty ;
+                                        rdfs:subPropertyOf owl:topObjectProperty ;
+                                        rdfs:comment "useProgramming (Object property): defines the programming model used by tools for computer clusters" .
+
+
+###  https://w3id.org/IIoT/#wire
+<https://w3id.org/IIoT/#wire> rdf:type owl:ObjectProperty ;
+                              rdfs:domain <https://w3id.org/IIoT/#Particle_Photon> ;
+                              rdfs:range <https://w3id.org/IIoT/#Flow> ;
+                              rdfs:comment "wire (Object property): When the wire of a Particle Photon is connected, the Photon will send the value “1”, but if the wire is disconnected, the Photon will send the value “0”." .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/IIoT/#FireFly_nodes
+<https://w3id.org/IIoT/#FireFly_nodes> rdf:type owl:DatatypeProperty ;
+                                       rdfs:domain <https://w3id.org/IIoT/#Wireless_sensor_network> ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://w3id.org/IIoT/#FireFly_nodes> ;
+                                                     owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                          owl:onDatatype xsd:integer ;
+                                                                          owl:withRestrictions ( [ xsd:minInclusive 20
+                                                                                                 ]
+                                                                                                 [ xsd:maxInclusive 32
+                                                                                                 ]
+                                                                                               )
+                                                                        ]
+                                                   ] ;
+                                       rdfs:range xsd:integer ;
+                                       rdfs:comment "FireFly_nodes (Data property): in a FireFly wireless sensor network, each gateway is set to manage between 20 and 32 network nodes" .
+
+
+###  https://w3id.org/IIoT/#MicroSD_card
+<https://w3id.org/IIoT/#MicroSD_card> rdf:type owl:DatatypeProperty ;
+                                      rdfs:subPropertyOf owl:topDataProperty ;
+                                      rdfs:domain <https://w3id.org/IIoT/#Raspberyy_Pi_4B> ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://w3id.org/IIoT/#MicroSD_card> ;
+                                                    owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                         owl:onDatatype xsd:double ;
+                                                                         owl:withRestrictions ( [ xsd:minInclusive "8.0"^^xsd:double
+                                                                                                ]
+                                                                                              )
+                                                                       ]
+                                                  ] ;
+                                      rdfs:range xsd:double ;
+                                      rdfs:comment "MicroSD_card (Data property): setting up Raspberry Pi 4 Model B requires a microSD card with a capacity of at least 8GB" .
+
+
+###  https://w3id.org/IIoT/#Password_mobile_node
+<https://w3id.org/IIoT/#Password_mobile_node> rdf:type owl:DatatypeProperty ;
+                                              rdfs:domain <https://w3id.org/IIoT/#Wireless_sensor_network> ,
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty <https://w3id.org/IIoT/#Password_mobile_node> ;
+                                                            owl:hasValue "password"
+                                                          ] ;
+                                              rdfs:range xsd:string ;
+                                              rdfs:comment "Password_mobile_node (Data property): in a FireFly wireless sensor network, a mobile node logins with a password of at most 100 bytes" .
+
+
+###  https://w3id.org/IIoT/#Power_supply
+<https://w3id.org/IIoT/#Power_supply> rdf:type owl:DatatypeProperty ;
+                                      rdfs:subPropertyOf owl:topDataProperty ;
+                                      rdfs:domain <https://w3id.org/IIoT/#Raspberyy_Pi_4B> ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://w3id.org/IIoT/#Power_supply> ;
+                                                    owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                         owl:onDatatype xsd:float ;
+                                                                         owl:withRestrictions ( [ xsd:minInclusive "3.0"^^xsd:float
+                                                                                                ]
+                                                                                              )
+                                                                       ]
+                                                  ] ;
+                                      rdfs:range xsd:float ;
+                                      rdfs:comment "Power_supply (Data property): Setting up Raspberry Pi 4 Model B requires a power supply that provides at least 3.0 amps" .
+
+
+###  https://w3id.org/IIoT/#disconnect_timeout
+<https://w3id.org/IIoT/#disconnect_timeout> rdf:type owl:DatatypeProperty ;
+                                            rdfs:domain <https://w3id.org/IIoT/#Wireless_sensor_network> ,
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty <https://w3id.org/IIoT/#disconnect_timeout> ;
+                                                          owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                               owl:onDatatype xsd:integer ;
+                                                                               owl:withRestrictions ( [ xsd:maxInclusive 1
+                                                                                                      ]
+                                                                                                    )
+                                                                             ]
+                                                        ] ;
+                                            rdfs:range xsd:integer ;
+                                            rdfs:comment "disconnect_timeout (Data property): in a FireFly wireless sensor network, the SAMPL messages require a disconnect timeout for replying to messages on the mobile device" .
+
+
+###  https://w3id.org/IIoT/#hasAccuracy
+<https://w3id.org/IIoT/#hasAccuracy> rdf:type owl:DatatypeProperty ;
+                                     rdfs:domain <https://w3id.org/IIoT/#RTD_sensor> ,
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty <https://w3id.org/IIoT/#hasAccuracy> ;
+                                                   owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                        owl:onDatatype xsd:float ;
+                                                                        owl:withRestrictions ( [ xsd:minInclusive "0.1"^^xsd:float
+                                                                                               ]
+                                                                                               [ xsd:maxInclusive "1.0"^^xsd:float
+                                                                                               ]
+                                                                                             )
+                                                                      ]
+                                                 ] ;
+                                     rdfs:range xsd:float ;
+                                     rdfs:comment "hasAccuracy (Data property): the accuracy provided by RTD sensors is between 0.1 and 1 °C" .
+
+
+###  https://w3id.org/IIoT/#hasTemperatureRange
+<https://w3id.org/IIoT/#hasTemperatureRange> rdf:type owl:DatatypeProperty ;
+                                             rdfs:domain <https://w3id.org/IIoT/#Industrial_oven> ,
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty <https://w3id.org/IIoT/#hasTemperatureRange> ;
+                                                           owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                owl:onDatatype xsd:double ;
+                                                                                owl:withRestrictions ( [ xsd:minInclusive "500.0"^^xsd:double
+                                                                                                       ]
+                                                                                                       [ xsd:maxInclusive "510.0"^^xsd:double
+                                                                                                       ]
+                                                                                                     )
+                                                                              ]
+                                                         ] ;
+                                             rdfs:range xsd:double ;
+                                             rdfs:comment "hasTemperatureRange (Data property): an industrial oven for a production line that is heated to a very precise temperature range, between 500F and 510F" .
+
+
+###  https://w3id.org/IIoT/#hasTimeLimit
+<https://w3id.org/IIoT/#hasTimeLimit> rdf:type owl:DatatypeProperty ;
+                                      rdfs:domain <https://w3id.org/IIoT/#Firmware> ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://w3id.org/IIoT/#hasTimeLimit> ;
+                                                    owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                         owl:onDatatype xsd:integer ;
+                                                                         owl:withRestrictions ( [ xsd:minInclusive 29
+                                                                                                ]
+                                                                                                [ xsd:maxInclusive 30
+                                                                                                ]
+                                                                                              )
+                                                                       ]
+                                                  ] ;
+                                      rdfs:range xsd:integer ;
+                                      rdfs:comment "hasTimeLimit (Data property): A firmware program reads the D0 value of the 3V3 pin every 30 seconds, for an application with a  Particle Photon with a single resistor that publishes messages using a Webhook." .
+
+
+###  https://w3id.org/IIoT/#hasValueConnection
+<https://w3id.org/IIoT/#hasValueConnection> rdf:type owl:DatatypeProperty ;
+                                            rdfs:domain <https://w3id.org/IIoT/#Flow> ,
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty <https://w3id.org/IIoT/#hasValueConnection> ;
+                                                          owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                               owl:onDatatype xsd:integer ;
+                                                                               owl:withRestrictions ( [ xsd:minInclusive 0
+                                                                                                      ]
+                                                                                                      [ xsd:maxInclusive 1
+                                                                                                      ]
+                                                                                                    )
+                                                                             ]
+                                                        ] ;
+                                            rdfs:range xsd:integer ;
+                                            rdfs:comment "hasValueConnection (Data property): if the wire of a Particle Photon is connected, the Photon sends the value “1”" .
+
+
+###  https://w3id.org/IIoT/#languages_tools
+<https://w3id.org/IIoT/#languages_tools> rdf:type owl:DatatypeProperty ;
+                                         rdfs:domain <https://w3id.org/IIoT/#PLC> ,
+                                                     <https://w3id.org/IIoT/#Raspberry_Pi> ,
+                                                     [ rdf:type owl:Class ;
+                                                       owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty <https://w3id.org/IIoT/#languages_tools> ;
+                                                                       owl:hasValue "C"
+                                                                     ]
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty <https://w3id.org/IIoT/#languages_tools> ;
+                                                                       owl:hasValue "C++"
+                                                                     ]
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty <https://w3id.org/IIoT/#languages_tools> ;
+                                                                       owl:hasValue "Cosm"
+                                                                     ]
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty <https://w3id.org/IIoT/#languages_tools> ;
+                                                                       owl:hasValue "Ladder Logic"
+                                                                     ]
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty <https://w3id.org/IIoT/#languages_tools> ;
+                                                                       owl:hasValue "Nimbits"
+                                                                     ]
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty <https://w3id.org/IIoT/#languages_tools> ;
+                                                                       owl:hasValue "Python"
+                                                                     ]
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty <https://w3id.org/IIoT/#languages_tools> ;
+                                                                       owl:hasValue "Wyliodrin Studio"
+                                                                     ]
+                                                                   )
+                                                     ] ;
+                                         rdfs:range xsd:string ;
+                                         rdfs:comment "languages_tools (Data property): tools and programming languages used by hardware platforms like PLC and Raspberry Pi" .
+
+
+###  https://w3id.org/IIoT/#operating_system
+<https://w3id.org/IIoT/#operating_system> rdf:type owl:DatatypeProperty ;
+                                          rdfs:domain <https://w3id.org/IIoT/#Raspberry_Pi> ,
+                                                      [ rdf:type owl:Class ;
+                                                        owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty <https://w3id.org/IIoT/#operating_system> ;
+                                                                        owl:hasValue "Android"
+                                                                      ]
+                                                                      [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty <https://w3id.org/IIoT/#operating_system> ;
+                                                                        owl:hasValue "Linux"
+                                                                      ]
+                                                                      [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty <https://w3id.org/IIoT/#operating_system> ;
+                                                                        owl:hasValue "Mac"
+                                                                      ]
+                                                                      [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty <https://w3id.org/IIoT/#operating_system> ;
+                                                                        owl:hasValue "RaspberryPi"
+                                                                      ]
+                                                                      [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty <https://w3id.org/IIoT/#operating_system> ;
+                                                                        owl:hasValue "Raspbian"
+                                                                      ]
+                                                                      [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty <https://w3id.org/IIoT/#operating_system> ;
+                                                                        owl:hasValue "Windows"
+                                                                      ]
+                                                                    )
+                                                      ] ;
+                                          rdfs:range xsd:string ;
+                                          rdfs:comment "operating_system (Data property): operating systems used by Raspberry Pi" .
+
+
+###  https://w3id.org/IIoT/#provideHeat
+<https://w3id.org/IIoT/#provideHeat> rdf:type owl:DatatypeProperty ;
+                                     rdfs:domain <https://w3id.org/IIoT/#RTD_sensor> ,
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty <https://w3id.org/IIoT/#provideHeat> ;
+                                                   owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                        owl:onDatatype xsd:double ;
+                                                                        owl:withRestrictions ( [ xsd:minInclusive "-200.0"^^xsd:double
+                                                                                               ]
+                                                                                               [ xsd:maxInclusive "600.0"^^xsd:double
+                                                                                               ]
+                                                                                             )
+                                                                      ]
+                                                 ] ;
+                                     rdfs:range xsd:double ;
+                                     rdfs:comment "provideHeat (Data property): the RTD sensors provide heat between  -200 and 600 °C" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.oclc.org/NET/ssnx/ssn#SensingDevice
+<http://purl.oclc.org/NET/ssnx/ssn#SensingDevice> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <http://purl.oclc.org/NET/ssnx/ssn#Sensor> ;
+                                                  rdfs:comment "Imported from IoT-Lite" .
+
+
+###  http://purl.oclc.org/NET/ssnx/ssn#Sensor
+<http://purl.oclc.org/NET/ssnx/ssn#Sensor> rdf:type owl:Class ;
+                                           rdfs:subClassOf <https://w3id.org/IIoT/#Sensor_actuator> ;
+                                           rdfs:comment "Class Sensor - is imported from the Iot-Lite ontology" .
+
+
+###  https://saref.etsi.org/core/Currency
+<https://saref.etsi.org/core/Currency> rdf:type owl:Class ;
+                                       rdfs:subClassOf :UnitOfMeasure ;
+                                       rdfs:comment "The class of units of measure for price"@en ;
+                                       rdfs:label "Currency"@en .
+
+
+###  https://saref.etsi.org/core/EnergyUnit
+<https://saref.etsi.org/core/EnergyUnit> rdf:type owl:Class ;
+                                         rdfs:subClassOf :UnitOfMeasure ;
+                                         rdfs:comment "The unit of measure for energy"@en ;
+                                         rdfs:label "Energy unit"@en .
+
+
+###  https://saref.etsi.org/core/IlluminanceUnit
+<https://saref.etsi.org/core/IlluminanceUnit> rdf:type owl:Class ;
+                                              rdfs:subClassOf :UnitOfMeasure ;
+                                              rdfs:comment "The unit of measure for light"@en ;
+                                              rdfs:label "Illuminance unit"@en .
+
+
+###  https://saref.etsi.org/core/PowerUnit
+<https://saref.etsi.org/core/PowerUnit> rdf:type owl:Class ;
+                                        rdfs:subClassOf :UnitOfMeasure ;
+                                        rdfs:comment "The unit of measure for power"@en ;
+                                        rdfs:label "Power unit"@en .
+
+
+###  https://saref.etsi.org/core/PressureUnit
+<https://saref.etsi.org/core/PressureUnit> rdf:type owl:Class ;
+                                           rdfs:subClassOf :UnitOfMeasure ;
+                                           rdfs:comment "The unit of measure for pressure"@en ;
+                                           rdfs:label "Pressure unit"@en .
+
+
+###  https://saref.etsi.org/core/TemperatureUnit
+<https://saref.etsi.org/core/TemperatureUnit> rdf:type owl:Class ;
+                                              rdfs:subClassOf :UnitOfMeasure ;
+                                              rdfs:comment "The unit of measure for temperature"@en ;
+                                              rdfs:label "Temperature unit"@en .
+
+
+###  https://tudorliv.github.io/IIoT/capabilities/Operating_system
+<https://tudorliv.github.io/IIoT/capabilities/Operating_system> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <https://w3id.org/IIoT/#Digital_logic> ;
+                                                                rdfs:comment "A distributed operating system manages communication shared in a network of independent computers that possess their own memory unit and CPU. Ex: YARN, LOCUS, Mesos, etc." ;
+                                                                rdfs:label "Operating_system" .
+
+
+###  https://w3id.org/IIoT/Big_data
+:Big_data rdf:type owl:Class ;
+          rdfs:subClassOf <https://w3id.org/IIoT/#Distributed_system> ;
+          rdfs:comment "Big data can be stored using NoSQL and relational databases, data warehouses, etc." .
+
+
+###  https://w3id.org/IIoT/UnitOfMeasure
+:UnitOfMeasure rdf:type owl:Class ;
+               rdfs:subClassOf <https://w3id.org/IIoT/#Support> ;
+               rdfs:comment "The unit of measure is a standard for measurement of a quantity, such as a Property. For example,  Power is a property and Watt is a unit of power that represents a definite predetermined power: when we say 10 Watt, we actually mean 10 times the definite predetermined power called \"watt\". Our definition is based on the definition of unit of measure in the Ontology of units of Measure (OM). We propose here a list of some units of measure that are relevant for the purpose of SAREF, but this list can be extended, also using some other ontologies rather than the Ontology of units of Measure (OM)."@en ;
+               rdfs:label "Unit of measure"@en .
+
+
+###  https://w3id.org/IIoT/Vocabulary
+:Vocabulary rdf:type owl:Class .
+
+
+###  https://w3id.org/IIoT/#Adapter
+<https://w3id.org/IIoT/#Adapter> rdf:type owl:Class ;
+                                 rdfs:subClassOf <https://w3id.org/IIoT/#Digital_logic> ;
+                                 rdfs:comment "Adapters are gateways to external hardware platforms like Arduino and Raspberry PI." .
+
+
+###  https://w3id.org/IIoT/#Analytics
+<https://w3id.org/IIoT/#Analytics> rdf:type owl:Class ;
+                                   rdfs:subClassOf <https://w3id.org/IIoT/#Distributed_system> ;
+                                   rdfs:comment "Tools for data analysis: Spark, Hortonworks, Cloudera, MapR, Watson IoT" .
+
+
+###  https://w3id.org/IIoT/#Andrew
+<https://w3id.org/IIoT/#Andrew> rdf:type owl:Class ;
+                                rdfs:subClassOf <http://purl.oclc.org/NET/ssnx/ssn#Sensor> ;
+                                rdfs:comment "Sensor Andrew - uniform access to heterogeneous devices; sharing of transducers; security and privacy, etc." .
+
+
+###  https://w3id.org/IIoT/#Application
+<https://w3id.org/IIoT/#Application> rdf:type owl:Class ;
+                                     rdfs:comment "\"Application\" represents a layer of the IoT architecture. Application layer ontology includes terms regarding Blockchain technology, SCADA systems, and security issues in cloud and edge computing." .
+
+
+###  https://w3id.org/IIoT/#Arduino
+<https://w3id.org/IIoT/#Arduino> rdf:type owl:Class ;
+                                 rdfs:subClassOf <https://w3id.org/IIoT/#Digital_logic> ;
+                                 rdfs:comment "Arduino is a microcontroller based on the C++ language. Cosm and Nimbits are open platforms for storing sensor data on the Cloud." .
+
+
+###  https://w3id.org/IIoT/#BLE
+<https://w3id.org/IIoT/#BLE> rdf:type owl:Class ;
+                             rdfs:subClassOf <https://w3id.org/IIoT/#Data_transmission> ;
+                             rdfs:comment "BLE tags (Bluetooth Low Energy beacons) - protocols for small data exchanges are small Bluetooth hardware components that are used to locate people or objects." .
+
+
+###  https://w3id.org/IIoT/#Blockchain
+<https://w3id.org/IIoT/#Blockchain> rdf:type owl:Class ;
+                                    rdfs:subClassOf <https://w3id.org/IIoT/#Distributed_system> ;
+                                    rdfs:comment "Blockchain is a promising technology for securing IoT data over a network. Blockchain has distributed capabilities for processing transactions and tracking assets in a business network." .
+
+
+###  https://w3id.org/IIoT/#C
+<https://w3id.org/IIoT/#C> rdf:type owl:Class ;
+                           rdfs:subClassOf <https://w3id.org/IIoT/#Digital_logic> ;
+                           rdfs:comment "Embedded programming in C or C++ for IoT platforms like Arduino, Raspberry Pi, or Particle" .
+
+
+###  https://w3id.org/IIoT/#Cloud
+<https://w3id.org/IIoT/#Cloud> rdf:type owl:Class ;
+                               rdfs:subClassOf <https://w3id.org/IIoT/#Distributed_system> ;
+                               rdfs:comment "Cloud systems perform cloud computing. Instead of selling, cloud providers rent servers, storage space, databases, networks, software, analytics and business intelligence." .
+
+
+###  https://w3id.org/IIoT/#Cloud_service
+<https://w3id.org/IIoT/#Cloud_service> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://w3id.org/IIoT/#Distributed_system> ;
+                                       rdfs:comment "Cloud services perform communications between devices, data gathering and processing." .
+
+
+###  https://w3id.org/IIoT/#Cloudera
+<https://w3id.org/IIoT/#Cloudera> rdf:type owl:Class ;
+                                  rdfs:subClassOf <https://w3id.org/IIoT/#Distributed_system> ;
+                                  rdfs:comment "Cloudera Data Platform (CDP) is a hybrid data platform for cloud computing, data analytics, and data management, offering performance, scalability, and security." .
+
+
+###  https://w3id.org/IIoT/#Cloudlet
+<https://w3id.org/IIoT/#Cloudlet> rdf:type owl:Class ;
+                                  rdfs:subClassOf <https://w3id.org/IIoT/#Distributed_system> ;
+                                  rdfs:comment "Cloudlets are usually based on mini-center of servers with cloud services for mobile applications and edge computing. A cloudlet represents the middle level of a 3-level architecture: mobile device - cloudlet - cloud." .
+
+
+###  https://w3id.org/IIoT/#Computer_architecture
+<https://w3id.org/IIoT/#Computer_architecture> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://w3id.org/IIoT/#Network> ;
+                                               rdfs:comment "The Network class is defined as an aggregation of the three components: data transmission, control engineering, and computer architecture." .
+
+
+###  https://w3id.org/IIoT/#Computer_cluster
+<https://w3id.org/IIoT/#Computer_cluster> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://w3id.org/IIoT/#Computer_architecture> ;
+                                          rdfs:comment "A computer cluster is a set of computers that work together as a single system. Computer clusters have each node set to perform the same task, controlled and scheduled by software." .
+
+
+###  https://w3id.org/IIoT/#Control_System
+<https://w3id.org/IIoT/#Control_System> rdf:type owl:Class ;
+                                        rdfs:subClassOf <https://w3id.org/IIoT/#Digital_logic> ;
+                                        rdfs:comment "A wide variety of IoT applications was developed in recent years: (a) monitoring systems (e.g., temperature control, remote healthcare), (b) industrial control systems (e.g., manufacturing processes, power grids), etc." .
+
+
+###  https://w3id.org/IIoT/#Cryptographic_system
+<https://w3id.org/IIoT/#Cryptographic_system> rdf:type owl:Class ;
+                                              rdfs:subClassOf <https://w3id.org/IIoT/#Digital_logic> ;
+                                              rdfs:comment "A set of algorithms that convert plaintext to the ciphertext to encode or decode messages securely." .
+
+
+###  https://w3id.org/IIoT/#Data_analysis
+<https://w3id.org/IIoT/#Data_analysis> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://w3id.org/IIoT/#Distributed_system> ;
+                                       rdfs:comment "Data analysis is a process of inspecting, pre-processing, and modeling data for knowledge discovery, complex data aggregation, visualization, and reporting. Data mining is a particular data analysis technique focused on statistical algorithms for prediction, classification, clustering, etc." .
+
+
+###  https://w3id.org/IIoT/#Data_center
+<https://w3id.org/IIoT/#Data_center> rdf:type owl:Class ;
+                                     rdfs:subClassOf <https://w3id.org/IIoT/#Distributed_system> ;
+                                     rdfs:comment "A data center is a multicloud environment based on a network of computing, routers, switches, firewalls, storage systems, servers, and application-delivery controllers." .
+
+
+###  https://w3id.org/IIoT/#Data_transmission
+<https://w3id.org/IIoT/#Data_transmission> rdf:type owl:Class ;
+                                           rdfs:subClassOf <https://w3id.org/IIoT/#Network> ;
+                                           rdfs:comment "Data transmisiion is managed by network protocols (communication protocols) in a computer or telecommunications network. Network protocols form the protocol layer according to OSI levels." .
+
+
+###  https://w3id.org/IIoT/#Deep_learning
+<https://w3id.org/IIoT/#Deep_learning> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://w3id.org/IIoT/#Distributed_system> ;
+                                       rdfs:comment "Deep learning is a branch of machine learning that relies on multilayer neural networks. Deep learning offers a refined and optimized method of computation, using hidden layers of a neural network that often learns from large amounts of data. Deep learning technologies - Theano, Tensor Flow, CNTK, MXnet, Caffe on Spark" .
+
+
+###  https://w3id.org/IIoT/#Device
+<https://w3id.org/IIoT/#Device> rdf:type owl:Class ;
+                                rdfs:comment "\"Device\" represents a layer of the IoT architecture. The device layer includes hardware platforms, connected products, technologies, tools, and functionalities." .
+
+
+###  https://w3id.org/IIoT/#Digital_logic
+<https://w3id.org/IIoT/#Digital_logic> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://w3id.org/IIoT/#Device> ;
+                                       rdfs:comment "Digital includes terms and tools about hardware platforms, logic, purpose-built devices, and smart products." .
+
+
+###  https://w3id.org/IIoT/#Digital_twin
+<https://w3id.org/IIoT/#Digital_twin> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://w3id.org/IIoT/#Distributed_system> ;
+                                      rdfs:comment "A digital twin from the cloud can be associated with a device. The twin interacts with traditional browsers and with the backend device. The twin may be used to control or monitor the device." .
+
+
+###  https://w3id.org/IIoT/#Distributed_system
+<https://w3id.org/IIoT/#Distributed_system> rdf:type owl:Class ;
+                                            rdfs:subClassOf <https://w3id.org/IIoT/#Support> ;
+                                            rdfs:comment "The support layer is represented by distributed systems known as “cloud systems” that perform communications between devices, data gathering and processing. A distributed system has components located on different  computers from the network that communicate by passing messages." .
+
+
+###  https://w3id.org/IIoT/#Django
+<https://w3id.org/IIoT/#Django> rdf:type owl:Class ;
+                                rdfs:subClassOf <https://w3id.org/IIoT/#Distributed_system> ;
+                                rdfs:comment "Software platforms (e.g., Python, Django, Node) and Web technologies are integrated with hardware components of the IoT systems. Django is a Python web framework used for the development of secure websites." .
+
+
+###  https://w3id.org/IIoT/#Drone
+<https://w3id.org/IIoT/#Drone> rdf:type owl:Class ;
+                               rdfs:subClassOf <https://w3id.org/IIoT/#Digital_logic> ;
+                               rdfs:comment "Drones - flying IoT devices with full network connectivity capabilities." .
+
+
+###  https://w3id.org/IIoT/#Eddystone
+<https://w3id.org/IIoT/#Eddystone> rdf:type owl:Class ;
+                                   rdfs:subClassOf <https://w3id.org/IIoT/#Digital_logic> ;
+                                   rdfs:comment "iBeacon from Apple and Eddystone from Google are portable electronic devices that use network protocols such as NFC, RFID, optical tags, or BLE as hardware transmitters." .
+
+
+###  https://w3id.org/IIoT/#Edge_technology
+<https://w3id.org/IIoT/#Edge_technology> rdf:type owl:Class ;
+                                         rdfs:subClassOf <https://w3id.org/IIoT/#Distributed_system> ;
+                                         rdfs:comment "The term edge refers to any computational or network resource available between the initial data source and the cloud services. Data processing near the edge has been approached in OLE for process control servers and micro data centers." .
+
+
+###  https://w3id.org/IIoT/#Electrical_Grids
+<https://w3id.org/IIoT/#Electrical_Grids> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://w3id.org/IIoT/#Digital_logic> ;
+                                          rdfs:comment "The administration of electrical grids once controlled by manual input and electrical relays have been replaced by industrial control systems (ICS)." .
+
+
+###  https://w3id.org/IIoT/#Factory_Equipment
+<https://w3id.org/IIoT/#Factory_Equipment> rdf:type owl:Class ;
+                                           rdfs:subClassOf <https://w3id.org/IIoT/#Digital_logic> ;
+                                           rdfs:comment "The administration of factory equipment is performed by the industrial control systems (ICS)." .
+
+
+###  https://w3id.org/IIoT/#Firmware
+<https://w3id.org/IIoT/#Firmware> rdf:type owl:Class ;
+                                  rdfs:subClassOf <https://w3id.org/IIoT/#Digital_logic> ,
+                                                  <https://w3id.org/IIoT/#Use_Case1> ;
+                                  rdfs:comment "In a Particle Photon application, a firmware program reads the value D0 of a pin, call the function Particle.publish() with one of the value “0” or “1” that is sent to the Particle cloud." .
+
+
+###  https://w3id.org/IIoT/#Flow
+<https://w3id.org/IIoT/#Flow> rdf:type owl:Class ;
+                              rdfs:subClassOf <https://w3id.org/IIoT/#Digital_logic> ,
+                                              <https://w3id.org/IIoT/#Use_Case1> ;
+                              rdfs:comment "Flow describes the Flow-Service-Quality semantics for a Particle Photon application that includes a Thingspeak subscriber, a WebHook, and a firmware program." .
+
+
+###  https://w3id.org/IIoT/#Gateway
+<https://w3id.org/IIoT/#Gateway> rdf:type owl:Class ;
+                                 rdfs:subClassOf <https://w3id.org/IIoT/#Digital_logic> ;
+                                 rdfs:comment "Gateways process the data from multiple devices and send them to the cloud" .
+
+
+###  https://w3id.org/IIoT/#HAT
+<https://w3id.org/IIoT/#HAT> rdf:type owl:Class ;
+                             rdfs:subClassOf <https://w3id.org/IIoT/#Digital_logic> ;
+                             rdfs:comment "Modules that connect processing boards to computers and other objects" .
+
+
+###  https://w3id.org/IIoT/#HBase
+<https://w3id.org/IIoT/#HBase> rdf:type owl:Class ;
+                               rdfs:subClassOf <https://w3id.org/IIoT/#Distributed_system> ;
+                               rdfs:comment "HBase is a non-relational distributed database developed as part of Apache Hadoop. HBase runs on top of the Hadoop Distributed File System, providing capabilities like Bigtable." .
+
+
+###  https://w3id.org/IIoT/#HTTP
+<https://w3id.org/IIoT/#HTTP> rdf:type owl:Class ;
+                              rdfs:subClassOf <https://w3id.org/IIoT/#Data_transmission> ;
+                              rdfs:comment "HTTP (Hypertext Transfer Protocol) is part of the Internet protocol suite, allows access to pages from Web servers. HTTP is an application layer protocol according to the OSI reference model." .
+
+
+###  https://w3id.org/IIoT/#Hardware_Platform
+<https://w3id.org/IIoT/#Hardware_Platform> rdf:type owl:Class ;
+                                           rdfs:subClassOf <https://w3id.org/IIoT/#Digital_logic> ;
+                                           rdfs:comment "Examples of hardware platforms: a) microcontroller and computer platforms; b) HATs and Shields, modules that connect processing boards to computers and other objects." .
+
+
+###  https://w3id.org/IIoT/#Home_automation
+<https://w3id.org/IIoT/#Home_automation> rdf:type owl:Class ;
+                                         rdfs:subClassOf <https://w3id.org/IIoT/#Digital_logic> ;
+                                         rdfs:comment "MQTT is a network protocol used for home automation systems (network layer ontology)." .
+
+
+###  https://w3id.org/IIoT/#Hortonworks
+<https://w3id.org/IIoT/#Hortonworks> rdf:type owl:Class ;
+                                     rdfs:subClassOf <https://w3id.org/IIoT/#Distributed_system> ;
+                                     rdfs:comment "Hortonworks Data Platform (HDP) is a secure framework for distributed storage, processing of large, multi-source data sets, and data analysis." .
+
+
+###  https://w3id.org/IIoT/#Hub
+<https://w3id.org/IIoT/#Hub> rdf:type owl:Class ;
+                             rdfs:subClassOf <https://w3id.org/IIoT/#Computer_architecture> ;
+                             rdfs:comment "The hub is a multi-port device that resends any received data packet to all of its ports except the one from which it received it. If there are many computers, the speed drops quickly and collisions start to occur. By using the switch, this shortcoming is solved." .
+
+
+###  https://w3id.org/IIoT/#ICS
+<https://w3id.org/IIoT/#ICS> rdf:type owl:Class ;
+                             rdfs:subClassOf <https://w3id.org/IIoT/#Digital_logic> ;
+                             rdfs:comment "ICS (industrial control systems)" .
+
+
+###  https://w3id.org/IIoT/#IP
+<https://w3id.org/IIoT/#IP> rdf:type owl:Class ;
+                            rdfs:subClassOf <https://w3id.org/IIoT/#Data_transmission> ;
+                            rdfs:comment "IP (Internet Protocol) is a protocol for transmitting data over the Internet. The data is retrieved and divided into datagrams (IP packets) by the transport layer, transmitted over the Internet, and then reassembled by the network layer." .
+
+
+###  https://w3id.org/IIoT/#ISO_stack
+<https://w3id.org/IIoT/#ISO_stack> rdf:type owl:Class ;
+                                   rdfs:subClassOf <https://w3id.org/IIoT/#Data_transmission> ;
+                                   rdfs:comment "ISO stack - protocols stack developed by the International Organization of Standardization (ISO). Each layer of the ISO model has certain protocols and functions. The ISO protocols stack works from the hardware physical layer to the software application layer." .
+
+
+###  https://w3id.org/IIoT/#IaaS
+<https://w3id.org/IIoT/#IaaS> rdf:type owl:Class ;
+                              rdfs:subClassOf <https://w3id.org/IIoT/#Distributed_system> ;
+                              rdfs:comment "IaaS (Infrastructure-as-a-Service) is a cloud service for the sharing of distributed virtualized resources. The IaaS model implements cloud computing in which computing resources are hosted in a cloud. The cloud provider owns and operates the hardware and software components and the data center." .
+
+
+###  https://w3id.org/IIoT/#Industrial_oven
+<https://w3id.org/IIoT/#Industrial_oven> rdf:type owl:Class ;
+                                         rdfs:subClassOf <https://w3id.org/IIoT/#Digital_logic> ,
+                                                         <https://w3id.org/IIoT/#Use_Case2> ;
+                                         rdfs:comment "Industrial ovens for a production line incorporate temperature sensors." .
+
+
+###  https://w3id.org/IIoT/#JSON_Web_Token
+<https://w3id.org/IIoT/#JSON_Web_Token> rdf:type owl:Class ;
+                                        rdfs:subClassOf <https://w3id.org/IIoT/#Digital_logic> ;
+                                        rdfs:comment "JSON Web Token (JWT) is an Internet standard for creating data with optional signature and encryption. It has 3 parts: a header, a payload, and a signature that are encoded and concatenated to produce the JWT." .
+
+
+###  https://w3id.org/IIoT/#Java
+<https://w3id.org/IIoT/#Java> rdf:type owl:Class ;
+                              rdfs:subClassOf <https://w3id.org/IIoT/#Digital_logic> ;
+                              rdfs:comment "Java Programming for IoT Applications (e. g. IoT Java Application with Eclipse Kura)" .
+
+
+###  https://w3id.org/IIoT/#Kafka
+<https://w3id.org/IIoT/#Kafka> rdf:type owl:Class ;
+                               rdfs:subClassOf <https://w3id.org/IIoT/#Distributed_system> ;
+                               rdfs:comment "Kafka is a distributed log messaging system. Apache Kafka is a distributed event streaming platform used for data pipelines, data integration, and streaming analytics." ;
+                               rdfs:label "Kafka" .
+
+
+###  https://w3id.org/IIoT/#LoRa
+<https://w3id.org/IIoT/#LoRa> rdf:type owl:Class ;
+                              rdfs:subClassOf <https://w3id.org/IIoT/#Digital_logic> ;
+                              rdfs:comment "LoRa (Long Range) performs the transmission with low power consumption, using the radio communication technique. LoRa devices have geolocation capabilities." .
+
+
+###  https://w3id.org/IIoT/#LoRaWan
+<https://w3id.org/IIoT/#LoRaWan> rdf:type owl:Class ;
+                                 rdfs:subClassOf <https://w3id.org/IIoT/#Sensor_actuator> ;
+                                 rdfs:comment "LoRaWAN (protocol above LoRa) - LoRaWAN is a cloud-based Medium Access Control (MAC) layer protocol for managing communication between gateways and end-node devices." .
+
+
+###  https://w3id.org/IIoT/#LoWPAN
+<https://w3id.org/IIoT/#LoWPAN> rdf:type owl:Class ;
+                                rdfs:subClassOf <https://w3id.org/IIoT/#Data_transmission> ;
+                                rdfs:comment "The LoWPAN protocol belongs to the Internet layer and is extended from IP. It works on Low Power and Wireless Personal Area Network i.e., LoWPAN, and comprises an edge router and sensor nodes." .
+
+
+###  https://w3id.org/IIoT/#MQTT
+<https://w3id.org/IIoT/#MQTT> rdf:type owl:Class ;
+                              rdfs:subClassOf <https://w3id.org/IIoT/#Data_transmission> ;
+                              rdfs:comment "MQTT (Message Queue Telemetry Transport) is a standard IoT protocol that transfers data provided by sensors and performs communications via satellite." .
+
+
+###  https://w3id.org/IIoT/#MQTT_streams
+<https://w3id.org/IIoT/#MQTT_streams> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://w3id.org/IIoT/#Distributed_system> ;
+                                      rdfs:comment "MQTT (Message Queue Telemetry Transport) is a data streaming standard based on publish-subscribe networks that can transport messages from devices to a server. Clients connect to a central server and publish certain data. Cloud services can automatically show MQTT streams." .
+
+
+###  https://w3id.org/IIoT/#Machine_learning
+<https://w3id.org/IIoT/#Machine_learning> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://w3id.org/IIoT/#Distributed_system> ;
+                                          rdfs:comment "The cloud ensures an efficient and scalable architecture for computation, data storage, and machine learning. Machine learning applications include artificial neural networks, data mining, genetic algorithms, etc. Tools for machine learning: Mahout, Spark ML, Mllib, Tensor Flow, Theano, Python, Weka, R, Octave, etc." .
+
+
+###  https://w3id.org/IIoT/#Mahout
+<https://w3id.org/IIoT/#Mahout> rdf:type owl:Class ;
+                                rdfs:subClassOf <https://w3id.org/IIoT/#Distributed_system> ;
+                                rdfs:comment "Apache Mahout provides distributed machine learning algorithms. The Apache platforms use Hadoop or Spark. Mahout includes Java and Scala libraries and collections." .
+
+
+###  https://w3id.org/IIoT/#Mesos
+<https://w3id.org/IIoT/#Mesos> rdf:type owl:Class ;
+                               rdfs:subClassOf <https://w3id.org/IIoT/#Digital_logic> ;
+                               rdfs:comment "Mesos is a distributed operating system that runs on every machine. The Mesos kernel provides applications like Hadoop, Spark, Kafka and ensures resource management and scheduling in cloud environment." .
+
+
+###  https://w3id.org/IIoT/#Microcontroller
+<https://w3id.org/IIoT/#Microcontroller> rdf:type owl:Class ;
+                                         rdfs:subClassOf <https://w3id.org/IIoT/#Digital_logic> ;
+                                         rdfs:comment "CPU on a single chip; RAM, ROM, EEPROM, Timer, I/O, Serial Interface" .
+
+
+###  https://w3id.org/IIoT/#Microprocessor
+<https://w3id.org/IIoT/#Microprocessor> rdf:type owl:Class ;
+                                        rdfs:subClassOf <https://w3id.org/IIoT/#Digital_logic> ;
+                                        rdfs:comment "CPU and several supporting chips; RAM, ROM, Input, Output, Serial Interface, Timers" .
+
+
+###  https://w3id.org/IIoT/#Microprocessor_Platform
+<https://w3id.org/IIoT/#Microprocessor_Platform> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <https://w3id.org/IIoT/#Digital_logic> ;
+                                                 rdfs:comment "Gateway devices (e.g. microprocessor platforms) enable a secure connection to the cloud and can do real-time analytics or machine learning" .
+
+
+###  https://w3id.org/IIoT/#NFC_tag
+<https://w3id.org/IIoT/#NFC_tag> rdf:type owl:Class ;
+                                 rdfs:subClassOf <https://w3id.org/IIoT/#Data_transmission> ;
+                                 rdfs:comment "NFC tags (Near Field Communication limited to high-frequency) are protocols that identify passive things. NFC tags are passive, meaning they don't have any power source. They take power from the device that reads them, through magnetic induction." .
+
+
+###  https://w3id.org/IIoT/#Network
+<https://w3id.org/IIoT/#Network> rdf:type owl:Class ;
+                                 rdfs:comment "The networking layer concerns data transmission among devices, the types of communications, and some network protocols used in IoT." .
+
+
+###  https://w3id.org/IIoT/#Network_card
+<https://w3id.org/IIoT/#Network_card> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://w3id.org/IIoT/#Computer_architecture> ;
+                                      rdfs:comment "The network card, also called \"network adapter\" or \"network interface card\", is a circuit that allows communication between the computer and the network (Internet, LAN)." .
+
+
+###  https://w3id.org/IIoT/#NoSQL_Data
+<https://w3id.org/IIoT/#NoSQL_Data> rdf:type owl:Class ;
+                                    rdfs:subClassOf <https://w3id.org/IIoT/#Distributed_system> ;
+                                    rdfs:comment "NoSQL database is a non-relational database. Types of NoSQL databases: document databases, key-value databases, wide-column stores, and graph databases. Ex. Azure Cosmos DB, Oracle NoSQL, MongoDB, Azure Cosmos DB, HBase databases, applications that use Hadoop, etc." .
+
+
+###  https://w3id.org/IIoT/#Node
+<https://w3id.org/IIoT/#Node> rdf:type owl:Class ;
+                              rdfs:subClassOf <https://w3id.org/IIoT/#Distributed_system> ;
+                              rdfs:comment "Software platforms (e.g., Python, Django, Node) and Web technologies are integrated with hardware components of the IoT systems. Node or NodeJS is a back-end Javascript runtime environment. Features: fast and real-time execution and good integration with IoT protocols." .
+
+
+###  https://w3id.org/IIoT/#Oil_Pipeline_Control
+<https://w3id.org/IIoT/#Oil_Pipeline_Control> rdf:type owl:Class ;
+                                              rdfs:subClassOf <https://w3id.org/IIoT/#Digital_logic> ;
+                                              rdfs:comment "Sensors are embedded into purpose-built devices such as oil pipeline control systems." .
+
+
+###  https://w3id.org/IIoT/#Optical_tag
+<https://w3id.org/IIoT/#Optical_tag> rdf:type owl:Class ;
+                                     rdfs:subClassOf <https://w3id.org/IIoT/#Data_transmission> ;
+                                     rdfs:comment "Identifying passive things can be performed using protocols such as optical tags, as hardware transmitters to nearby portable electronic devices." .
+
+
+###  https://w3id.org/IIoT/#PAN
+<https://w3id.org/IIoT/#PAN> rdf:type owl:Class ;
+                             rdfs:subClassOf <https://w3id.org/IIoT/#Data_transmission> ;
+                             rdfs:comment "PAN (Personal Area Network) is a network protocol that ensures the connection between devices within a radius of 10 meters. A PAN usually involves a PC, phone, personal digital assistant, tablet, printer, speakers, video game consoles, etc." .
+
+
+###  https://w3id.org/IIoT/#PLC
+<https://w3id.org/IIoT/#PLC> rdf:type owl:Class ;
+                             rdfs:subClassOf <https://w3id.org/IIoT/#Digital_logic> ;
+                             rdfs:comment "PLC (Programmable Logic Controller) is a ruggedized computer. Features: valves, sensors, motors. PLC programming languages: Ladder Logic, Function Block Diagram, Sequential Function Chart; Connection with SCADA" .
+
+
+###  https://w3id.org/IIoT/#PaaS
+<https://w3id.org/IIoT/#PaaS> rdf:type owl:Class ;
+                              rdfs:subClassOf <https://w3id.org/IIoT/#Distributed_system> ;
+                              rdfs:comment "PaaS (Platform-as-a-Service) is a cloud service that provides a virtual environment. PaaS provides the infrastructure and middleware components for developing and managing mobile and web applications in the cloud." .
+
+
+###  https://w3id.org/IIoT/#Particle_Photon
+<https://w3id.org/IIoT/#Particle_Photon> rdf:type owl:Class ;
+                                         rdfs:subClassOf <https://w3id.org/IIoT/#Digital_logic> ,
+                                                         <https://w3id.org/IIoT/#Use_Case1> ;
+                                         rdfs:comment "Edge-to-cloud platform; Connecting Photon to CMU Wi-Fi; Mini breadboard, USB cable, header" .
+
+
+###  https://w3id.org/IIoT/#Particle_cloud
+<https://w3id.org/IIoT/#Particle_cloud> rdf:type owl:Class ;
+                                        rdfs:subClassOf <https://w3id.org/IIoT/#Digital_logic> ,
+                                                        <https://w3id.org/IIoT/#Use_Case1> ;
+                                        rdfs:comment "Particle cloud describes the Flow-Service-Quality semantics for a Particle Photon application using the properties \"wire\", \"read\", \"send\", \"request\" and constraints based on \"hasTimeLimit\" and \"hasValueConnection\"." .
+
+
+###  https://w3id.org/IIoT/#Passive_things
+<https://w3id.org/IIoT/#Passive_things> rdf:type owl:Class ;
+                                        rdfs:subClassOf <https://w3id.org/IIoT/#Digital_logic> ;
+                                        rdfs:comment "“Passive things” have sensors that do not require external power, they just react to inputs from their environment." .
+
+
+###  https://w3id.org/IIoT/#Processing_Board
+<https://w3id.org/IIoT/#Processing_Board> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://w3id.org/IIoT/#Sensor_actuator> ;
+                                          rdfs:comment "The processing board is an IoT board with a processor, memory (MicroSD, RAM), low-level IO, multimedia, inputs, connectivity, and power (usually USB connectors, headers, etc)." .
+
+
+###  https://w3id.org/IIoT/#Programming_Language
+<https://w3id.org/IIoT/#Programming_Language> rdf:type owl:Class ;
+                                              rdfs:subClassOf <https://w3id.org/IIoT/#Digital_logic> ;
+                                              rdfs:comment "IoT devices use certain programming languages to process and control data transfer (e.g. Raspberry Pi, Programmable Logic Controller, C, Java, Python)." .
+
+
+###  https://w3id.org/IIoT/#Purpose-built_Device
+<https://w3id.org/IIoT/#Purpose-built_Device> rdf:type owl:Class ;
+                                              rdfs:subClassOf <https://w3id.org/IIoT/#Digital_logic> ;
+                                              rdfs:comment "Sensors are usually incorporated into connected objects or purpose-built devices such as components of a city’s infrastructure, controllers for factory equipment, oil pipeline control, and many other applications." .
+
+
+###  https://w3id.org/IIoT/#Python
+<https://w3id.org/IIoT/#Python> rdf:type owl:Class ;
+                                rdfs:subClassOf <https://w3id.org/IIoT/#Digital_logic> ;
+                                rdfs:comment "Python programming for IoT systems uses libraries/packages such as numpy,  request, paho.mqtt.client, Countly, matplotlib, etc." .
+
+
+###  https://w3id.org/IIoT/#RFID_tag
+<https://w3id.org/IIoT/#RFID_tag> rdf:type owl:Class ;
+                                  rdfs:subClassOf <https://w3id.org/IIoT/#Data_transmission> ;
+                                  rdfs:comment "RFID tags (Radio Frequency Identification) are used as hardware transmitters to nearby portable electronic devices, for identifying passive things." .
+
+
+###  https://w3id.org/IIoT/#RTD_sensor
+<https://w3id.org/IIoT/#RTD_sensor> rdf:type owl:Class ;
+                                    rdfs:subClassOf <http://purl.oclc.org/NET/ssnx/ssn#Sensor> ,
+                                                    <https://w3id.org/IIoT/#Use_Case2> ;
+                                    rdfs:comment "RTD sensors of an industrial oven." .
+
+
+###  https://w3id.org/IIoT/#Raspberry_Pi
+<https://w3id.org/IIoT/#Raspberry_Pi> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://w3id.org/IIoT/#Digital_logic> ;
+                                      rdfs:comment "Raspberry Pi uses operating systems such as Raspberry Pi OS, Raspbian, some versions of Linux, or Windows 10 IoT Core. Tools and programming languages: GPIO (general-purpose input/output) pins; PWM - Pulse-Width Modulation, Python, C/C++, Wyliodrin Studio" .
+
+
+###  https://w3id.org/IIoT/#Raspberyy_Pi_4B
+<https://w3id.org/IIoT/#Raspberyy_Pi_4B> rdf:type owl:Class ;
+                                         rdfs:subClassOf <https://w3id.org/IIoT/#Sensor_actuator> ;
+                                         rdfs:comment "Raspberry Pi uses operating systems like Linux, Raspbian (a Debian GNU/Linux), Raspberry Pi OS Lite, etc. Features: GPIO (general-purpose input/output) pins, PWM - Pulse-Width Modulation, programming languages and tools: GPIO with Scratch, Python, C/C++, Processing, Wyliodrin Studio, etc." .
+
+
+###  https://w3id.org/IIoT/#Router
+<https://w3id.org/IIoT/#Router> rdf:type owl:Class ;
+                                rdfs:subClassOf <https://w3id.org/IIoT/#Computer_architecture> ;
+                                rdfs:comment "A router connects two or more computer networks using packet switching. These networks can be wired or wireless. A wireless router exchanges information between the network and the Internet using radio signals." .
+
+
+###  https://w3id.org/IIoT/#SAMPL
+<https://w3id.org/IIoT/#SAMPL> rdf:type owl:Class ;
+                               rdfs:subClassOf <https://w3id.org/IIoT/#Data_transmission> ;
+                               rdfs:comment "SAMPL is a compact network layer that operates on top of a low-power CSMA/CA-based MAC protocol. SAMPL operates as part of the sensor Andrew project at Carnegie Mellon University and FireFly wireless sensor networks." .
+
+
+###  https://w3id.org/IIoT/#SaaS
+<https://w3id.org/IIoT/#SaaS> rdf:type owl:Class ;
+                              rdfs:subClassOf <https://w3id.org/IIoT/#Distributed_system> ;
+                              rdfs:comment "SaaS (Software-as-a-Service) is a cloud service that supports running end-user applications. The cloud service provider develops and maintains software for cloud applications and makes the software available to its customers over the Internet." .
+
+
+###  https://w3id.org/IIoT/#Sensor_actuator
+<https://w3id.org/IIoT/#Sensor_actuator> rdf:type owl:Class ;
+                                         rdfs:subClassOf <https://w3id.org/IIoT/#Device> ;
+                                         rdfs:comment "The modules with sensors or actuators connect processing boards to computers and other devices. Unlike simple sensors, actuators can make changes in the environment." .
+
+
+###  https://w3id.org/IIoT/#Shield
+<https://w3id.org/IIoT/#Shield> rdf:type owl:Class ;
+                                rdfs:subClassOf <https://w3id.org/IIoT/#Sensor_actuator> ;
+                                rdfs:comment "Modules that connect processing boards to computers and other objects" .
+
+
+###  https://w3id.org/IIoT/#Smart_Product
+<https://w3id.org/IIoT/#Smart_Product> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://w3id.org/IIoT/#Digital_logic> ;
+                                       rdfs:comment "Smart products are controlled and managed using Web technologies and software platforms." .
+
+
+###  https://w3id.org/IIoT/#Smartphone
+<https://w3id.org/IIoT/#Smartphone> rdf:type owl:Class ;
+                                    rdfs:subClassOf <https://w3id.org/IIoT/#Digital_logic> ;
+                                    rdfs:comment "Smartphones are gateway devices that enable data connectivity through their set of sensors: GPS, biometrics, Bluetooth, heart rate monitor, ECG, barcode readers, etc." .
+
+
+###  https://w3id.org/IIoT/#Spark
+<https://w3id.org/IIoT/#Spark> rdf:type owl:Class ;
+                               rdfs:subClassOf <https://w3id.org/IIoT/#Distributed_system> ;
+                               rdfs:comment "Apache Spark is part of the Hadoop system. Spark allows big data processing and building machine learning models such as regression, classification, clustering, and recommendation systems in a distributed processing environment." .
+
+
+###  https://w3id.org/IIoT/#Subscriber
+<https://w3id.org/IIoT/#Subscriber> rdf:type owl:Class ;
+                                    rdfs:subClassOf <https://w3id.org/IIoT/#Distributed_system> ,
+                                                    <https://w3id.org/IIoT/#Use_Case1> ;
+                                    rdfs:comment "A subscriber requests information about a specific topic in a publish/subscribe network. A subscriber receives messages from more publishers. A subscription is a request sent by the subscriber to receive messages on a relevant topic." .
+
+
+###  https://w3id.org/IIoT/#Support
+<https://w3id.org/IIoT/#Support> rdf:type owl:Class ;
+                                 rdfs:comment "\"Support\" represents a layer of the IoT architecture. The support layer is represented by distributed systems (cloud systems)." .
+
+
+###  https://w3id.org/IIoT/#Switch
+<https://w3id.org/IIoT/#Switch> rdf:type owl:Class ;
+                                rdfs:subClassOf <https://w3id.org/IIoT/#Computer_architecture> ;
+                                rdfs:comment "In a computer network, a switch interconnects different network segments based on Media Access Control (MAC) addresses. A MAC address is a 6-byte integer on Token-ring or Ethernet networks used to identify a computer on a local network." .
+
+
+###  https://w3id.org/IIoT/#TCP
+<https://w3id.org/IIoT/#TCP> rdf:type owl:Class ;
+                             rdfs:subClassOf <https://w3id.org/IIoT/#Data_transmission> ;
+                             rdfs:comment "TCP (Transmission Control Protocol) corresponds to the Transport layer of the Internet protocol suite TCP/IP. Common applications using TCP are the World Wide Web (WWW), e-mail, and file transfer (FTP)." .
+
+
+###  https://w3id.org/IIoT/#Transducer
+<https://w3id.org/IIoT/#Transducer> rdf:type owl:Class ;
+                                    rdfs:subClassOf <https://w3id.org/IIoT/#Sensor_actuator> ;
+                                    rdfs:comment "A transducer converts a signal from one physical structure to another and converts one type of energy into another type. There are two types of transducers: sensors and actuators. Sensors are used for sensing things and devices etc." .
+
+
+###  https://w3id.org/IIoT/#UDP
+<https://w3id.org/IIoT/#UDP> rdf:type owl:Class ;
+                             rdfs:subClassOf <https://w3id.org/IIoT/#Data_transmission> ;
+                             rdfs:comment "UDP (User Datagram Protocol) corresponds to the Transport layer of the Internet protocol suite TCP/IP. UDP ensures the delivery of messages over a network, but unlike the TCP protocol, information packets are generally sent without receipt confirmation." .
+
+
+###  https://w3id.org/IIoT/#Use_Case1
+<https://w3id.org/IIoT/#Use_Case1> rdf:type owl:Class ;
+                                   rdfs:subClassOf <https://w3id.org/IIoT/#Application> ;
+                                   rdfs:comment """Use case 1 contains terms about publishing messages in a Particle Photon device.
+Particle photon is a complete hardware kit with a powerful microcontroller, a Wi-Fi chip, and a free cloud service for building smart connected products.""" .
+
+
+###  https://w3id.org/IIoT/#Use_Case2
+<https://w3id.org/IIoT/#Use_Case2> rdf:type owl:Class ;
+                                   rdfs:subClassOf <https://w3id.org/IIoT/#Application> ;
+                                   rdfs:comment "Use_case2 contains terms about the regulation of the sensors’ temperature within an industrial oven for a production line. The industrial oven is heated to a very precise temperature range and the Resistance Temperature Detector (RTD) sensors should be accurate within the required temperature range." .
+
+
+###  https://w3id.org/IIoT/#WPAN
+<https://w3id.org/IIoT/#WPAN> rdf:type owl:Class ;
+                              rdfs:subClassOf <https://w3id.org/IIoT/#Data_transmission> ;
+                              rdfs:comment "WPAN (Wireless Personal Area Network) is a PAN that ensures the connection between devices through wireless, within a radius of 10 meters. WPAN includes wearable devices, USB flash drives, wireless mouse, Bluetooth, Wi-Fi, thermostats, security systems, lighting controls, motion sensors, etc." .
+
+
+###  https://w3id.org/IIoT/#Watson_IoT
+<https://w3id.org/IIoT/#Watson_IoT> rdf:type owl:Class ;
+                                    rdfs:subClassOf <https://w3id.org/IIoT/#Distributed_system> ;
+                                    rdfs:comment "IBM Watson IoT Platform manages connected devices and offers access to live and historical data for IoT applications." .
+
+
+###  https://w3id.org/IIoT/#Wireless_sensor_network
+<https://w3id.org/IIoT/#Wireless_sensor_network> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <https://w3id.org/IIoT/#Sensor_actuator> ;
+                                                 rdfs:comment """Wireless Sensor Networks - Sensor nodes are used with an onboard processor that manages and monitors the environment in a certain area. They are connected to the base station through the Internet to share data.
+A mobile node identifies nearby network nodes and logins using the SAMPL protocol, gateway, and Publish-Subscribe service.""" .
+
+
+###  https://w3id.org/IIoT/#XML
+<https://w3id.org/IIoT/#XML> rdf:type owl:Class ;
+                             rdfs:subClassOf <https://w3id.org/IIoT/#Digital_logic> ;
+                             rdfs:comment "XML (Extensible Markup Language) is a markup language recommended by the W3C (World Wide Web Consortium) and used for storing unstructured and semi-structured data and transferring data between Internet applications." .
+
+
+###  https://w3id.org/IIoT/#XMPP
+<https://w3id.org/IIoT/#XMPP> rdf:type owl:Class ;
+                              rdfs:subClassOf <https://w3id.org/IIoT/#Data_transmission> ;
+                              rdfs:comment "XMPP (Extensible Messaging and Presence Protocol) is an open standard that offers support for middleware applications, invisible messaging with the TCP network layer (hides the details of messaging), voice and video calls, collaboration, and generalized routing of XML data." .
+
+
+###  https://w3id.org/IIoT/#YARN
+<https://w3id.org/IIoT/#YARN> rdf:type owl:Class ;
+                              rdfs:subClassOf <https://w3id.org/IIoT/#Digital_logic> ;
+                              rdfs:comment "Yarn (Yet Another Resource Negotiator) is a distributed operating system. YARN allows the resource management and scheduling jobs in Hadoop." .
+
+
+###  https://w3id.org/IIoT/#health-monitoring_system
+<https://w3id.org/IIoT/#health-monitoring_system> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <https://w3id.org/IIoT/#Digital_logic> ;
+                                                  rdfs:comment "Remote patient monitoring devices: glucometer, pulse oximeter, thermometer, ECG, digital stethoscope, wearables, scales, etc." .
+
+
+###  https://w3id.org/IIoT/#iBeacon
+<https://w3id.org/IIoT/#iBeacon> rdf:type owl:Class ;
+                                 rdfs:subClassOf <https://w3id.org/IIoT/#Digital_logic> ;
+                                 rdfs:comment "iBeacon from Apple and Eddystone from Google are portable electronic devices that use network protocols such as NFC, RFID, optical tags, or BLE as hardware transmitters." .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/IIoT/Distributed_authentication
+:Distributed_authentication rdf:type owl:NamedIndividual ;
+                            rdfs:comment "Distributed_authentication (Individual): a Blockchain solution" .
+
+
+###  https://w3id.org/IIoT/#Access_control
+<https://w3id.org/IIoT/#Access_control> rdf:type owl:NamedIndividual ;
+                                        rdfs:comment "Access_control (Individual): a Blockchain solution" .
+
+
+###  https://w3id.org/IIoT/#Apache_Hadoop
+<https://w3id.org/IIoT/#Apache_Hadoop> rdf:type owl:NamedIndividual ;
+                                       <https://w3id.org/IIoT/#isToolFor> <https://w3id.org/IIoT/#Large_data_stream> ;
+                                       rdfs:comment "Apache_Hadoop (Individual): a Tool with Object property assertions: isToolFor" .
+
+
+###  https://w3id.org/IIoT/#Apache_IoT_edge
+<https://w3id.org/IIoT/#Apache_IoT_edge> rdf:type owl:NamedIndividual ;
+                                         rdfs:comment "Apache_IoT_edge (Individual): a Tool" .
+
+
+###  https://w3id.org/IIoT/#Autonomous_vehicle
+<https://w3id.org/IIoT/#Autonomous_vehicle> rdf:type owl:NamedIndividual ;
+                                            <https://w3id.org/IIoT/#hasTechnology> <https://w3id.org/IIoT/#Micro_data_center> ;
+                                            rdfs:comment "Autonomous_vehicle (Individual): an Edge application with Object property assertions (hasTechnology)" .
+
+
+###  https://w3id.org/IIoT/#Avoid_synchronization
+<https://w3id.org/IIoT/#Avoid_synchronization> rdf:type owl:NamedIndividual ,
+                                                        <https://w3id.org/IIoT/#Cloud_service> ;
+                                               rdfs:comment "Avoid_synchronization (Individual): a Cloud service" .
+
+
+###  https://w3id.org/IIoT/#Azure_IoT_edge
+<https://w3id.org/IIoT/#Azure_IoT_edge> rdf:type owl:NamedIndividual ;
+                                        rdfs:comment "Azure_IoT_edge (Individual): a Tool" .
+
+
+###  https://w3id.org/IIoT/#BACnet
+<https://w3id.org/IIoT/#BACnet> rdf:type owl:NamedIndividual ;
+                                rdfs:comment "BACnet (Individual): a SCADA common protocol with Object property assertions (Protocols_were_layered, Lack_security_measure)" .
+
+
+###  https://w3id.org/IIoT/#Blockchain_algorithm
+<https://w3id.org/IIoT/#Blockchain_algorithm> rdf:type owl:NamedIndividual ,
+                                                       <https://w3id.org/IIoT/#Blockchain> ;
+                                              <https://w3id.org/IIoT/#hasProblem> <https://w3id.org/IIoT/#Energy_managed> ;
+                                              rdfs:comment "Blockchain_algorithm (Individual): of type Blockchain with Object property assertions: hasProblem" .
+
+
+###  https://w3id.org/IIoT/#Centralized_service
+<https://w3id.org/IIoT/#Centralized_service> rdf:type owl:NamedIndividual ,
+                                                      <https://w3id.org/IIoT/#Cloud_service> ;
+                                             rdfs:comment "Centralized_service (Individual): a Cloud service" .
+
+
+###  https://w3id.org/IIoT/#Cloud_Photon1
+<https://w3id.org/IIoT/#Cloud_Photon1> rdf:type owl:NamedIndividual ,
+                                                <https://w3id.org/IIoT/#Particle_cloud> ;
+                                       <https://w3id.org/IIoT/#request> <https://w3id.org/IIoT/#Thingspeak1> ;
+                                       rdfs:comment "Cloud_Photon1 (Individual): a Particle_cloud with Object property assertions (request)" .
+
+
+###  https://w3id.org/IIoT/#Cloud_Photon2
+<https://w3id.org/IIoT/#Cloud_Photon2> rdf:type owl:NamedIndividual ,
+                                                <https://w3id.org/IIoT/#Particle_cloud> ;
+                                       <https://w3id.org/IIoT/#request> <https://w3id.org/IIoT/#Thingspeak2> ;
+                                       rdfs:comment "Cloud_Photon2 (Individual): a Particle_cloud with Object property assertions (request)" .
+
+
+###  https://w3id.org/IIoT/#Cloud_gaming
+<https://w3id.org/IIoT/#Cloud_gaming> rdf:type owl:NamedIndividual ;
+                                      <https://w3id.org/IIoT/#hasTechnology> <https://w3id.org/IIoT/#Micro_data_center> ;
+                                      rdfs:comment "Cloud_gaming (Individual): an Edge application with Object property assertions (hasTechnology)" .
+
+
+###  https://w3id.org/IIoT/#Cluster1
+<https://w3id.org/IIoT/#Cluster1> rdf:type owl:NamedIndividual ,
+                                           <https://w3id.org/IIoT/#Computer_cluster> ;
+                                  rdfs:comment "Cluster1 (Individual): a Computer cluster" .
+
+
+###  https://w3id.org/IIoT/#Cluster2
+<https://w3id.org/IIoT/#Cluster2> rdf:type owl:NamedIndividual ,
+                                           <https://w3id.org/IIoT/#Computer_cluster> ;
+                                  rdfs:comment "Cluster2 (Individual): a Computer cluster" .
+
+
+###  https://w3id.org/IIoT/#Computational_cost
+<https://w3id.org/IIoT/#Computational_cost> rdf:type owl:NamedIndividual ;
+                                            <https://w3id.org/IIoT/#best_Practices> <https://w3id.org/IIoT/#Smart_grid> ;
+                                            <https://w3id.org/IIoT/#has_SecuritySolution> <https://w3id.org/IIoT/#Correct_Edge_implementation> ;
+                                            rdfs:comment "Computational_cost (Individual): of type Edge security with Object property assertions: has_SecuritySolution, best_Practices" .
+
+
+###  https://w3id.org/IIoT/#Connection1
+<https://w3id.org/IIoT/#Connection1> rdf:type owl:NamedIndividual ,
+                                              <https://w3id.org/IIoT/#Flow> ;
+                                     <https://w3id.org/IIoT/#read> <https://w3id.org/IIoT/#Particle_publish1> ;
+                                     <https://w3id.org/IIoT/#hasValueConnection> 1 ;
+                                     rdfs:comment "Connection1 (Individual): a Flow with Object property assertions (read), Data property assertions (hasValueConnection)" .
+
+
+###  https://w3id.org/IIoT/#Connection2
+<https://w3id.org/IIoT/#Connection2> rdf:type owl:NamedIndividual ,
+                                              <https://w3id.org/IIoT/#Flow> ;
+                                     <https://w3id.org/IIoT/#read> <https://w3id.org/IIoT/#Particle_publish2> ;
+                                     <https://w3id.org/IIoT/#hasValueConnection> 0 ;
+                                     rdfs:comment "Connection2 (Individual): a Flow with Object property assertions (read), Data property assertions (hasValueConnection)" .
+
+
+###  https://w3id.org/IIoT/#Correct_Edge_implementation
+<https://w3id.org/IIoT/#Correct_Edge_implementation> rdf:type owl:NamedIndividual ;
+                                                     rdfs:comment "Correct_Edge_implementation (Individual): a Blockchain solution" .
+
+
+###  https://w3id.org/IIoT/#DC1
+<https://w3id.org/IIoT/#DC1> rdf:type owl:NamedIndividual ,
+                                      <https://w3id.org/IIoT/#Data_center> ;
+                             <https://w3id.org/IIoT/#hasService> <https://w3id.org/IIoT/#Centralized_service> ;
+                             <https://w3id.org/IIoT/#useAlgorithm> <https://w3id.org/IIoT/#Paxos> ;
+                             rdfs:comment "DC1 (Individual): a Data center with Object property assertions (hasService, useAlgorithm)" .
+
+
+###  https://w3id.org/IIoT/#DC2
+<https://w3id.org/IIoT/#DC2> rdf:type owl:NamedIndividual ,
+                                      <https://w3id.org/IIoT/#Data_center> ;
+                             <https://w3id.org/IIoT/#hasService> <https://w3id.org/IIoT/#Avoid_synchronization> ;
+                             <https://w3id.org/IIoT/#useAlgorithm> <https://w3id.org/IIoT/#Zookeeper> ;
+                             rdfs:comment "DC2 (Individual): a Data center with Object property assertions (hasService, useAlgorithm)" .
+
+
+###  https://w3id.org/IIoT/#DC3
+<https://w3id.org/IIoT/#DC3> rdf:type owl:NamedIndividual ,
+                                      <https://w3id.org/IIoT/#Data_center> ;
+                             <https://w3id.org/IIoT/#hasService> <https://w3id.org/IIoT/#Avoid_synchronization> ;
+                             <https://w3id.org/IIoT/#useAlgorithm> <https://w3id.org/IIoT/#Paxos> ;
+                             rdfs:comment "DC3 (Individual): a Data center with Object property assertions (hasService, useAlgorithm)" .
+
+
+###  https://w3id.org/IIoT/#DC4
+<https://w3id.org/IIoT/#DC4> rdf:type owl:NamedIndividual ,
+                                      <https://w3id.org/IIoT/#Data_center> ;
+                             <https://w3id.org/IIoT/#useAlgorithm> <https://w3id.org/IIoT/#Paxos> ;
+                             rdfs:comment "DC4 (Individual): a Data center with Object property assertions (useAlgorithm)" .
+
+
+###  https://w3id.org/IIoT/#Data_protection
+<https://w3id.org/IIoT/#Data_protection> rdf:type owl:NamedIndividual ;
+                                         rdfs:comment "Data_protection (Individual): a Blockchain solution with Object property assertions: hasSolution" .
+
+
+###  https://w3id.org/IIoT/#Data_security_risk
+<https://w3id.org/IIoT/#Data_security_risk> rdf:type owl:NamedIndividual ;
+                                            <https://w3id.org/IIoT/#countermeasure> <https://w3id.org/IIoT/#End-to-end_encryption> ,
+                                                                                    <https://w3id.org/IIoT/#Strong_authentication> ;
+                                            rdfs:comment "Data_security_risk (Individual): a SCADA problem with Object property assertions (countermeasure)" .
+
+
+###  https://w3id.org/IIoT/#Data_stream_continue
+<https://w3id.org/IIoT/#Data_stream_continue> rdf:type owl:NamedIndividual ,
+                                                       <https://w3id.org/IIoT/#Blockchain> ;
+                                              <https://w3id.org/IIoT/#hasProblem> <https://w3id.org/IIoT/#Throughput_limited> ;
+                                              rdfs:comment "Data_stream_continue (Individual): of type Blockchain with Object property assertions: hasProblem" .
+
+
+###  https://w3id.org/IIoT/#Deep_learning_algorithm
+<https://w3id.org/IIoT/#Deep_learning_algorithm> rdf:type owl:NamedIndividual ,
+                                                          <https://w3id.org/IIoT/#Deep_learning> ;
+                                                 rdfs:comment "Deep_learning_algorithm (Individual): of type Deep learning with Object property assertions (hasTool)" .
+
+
+###  https://w3id.org/IIoT/#Distributed_capability
+<https://w3id.org/IIoT/#Distributed_capability> rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/IIoT/#End-to-end_encryption
+<https://w3id.org/IIoT/#End-to-end_encryption> rdf:type owl:NamedIndividual ;
+                                               rdfs:comment "End-to-end_encryption (Object property): a SCADA_solution" .
+
+
+###  https://w3id.org/IIoT/#Energy_managed
+<https://w3id.org/IIoT/#Energy_managed> rdf:type owl:NamedIndividual ;
+                                        <https://w3id.org/IIoT/#hasSolution> <https://w3id.org/IIoT/#Improve_central_algorithm> ;
+                                        rdfs:comment "Energy_managed (Individual): a Blockchain problem with Object property assertions (hasSolution)" .
+
+
+###  https://w3id.org/IIoT/#Ethernet
+<https://w3id.org/IIoT/#Ethernet> rdf:type owl:NamedIndividual ;
+                                  <https://w3id.org/IIoT/#Support_communication> <https://w3id.org/IIoT/#Long-distance_communication> ;
+                                  rdfs:comment "Ethernet (Individual): a SCADA todat protocol with Object property assertions (Support_communication)" .
+
+
+###  https://w3id.org/IIoT/#Hadoop
+<https://w3id.org/IIoT/#Hadoop> rdf:type owl:NamedIndividual ;
+                                <https://w3id.org/IIoT/#isUsedBy> <https://w3id.org/IIoT/#Cluster1> ,
+                                                                  <https://w3id.org/IIoT/#Cluster2> ;
+                                rdfs:comment "Hadoop (Individual): a Tool with Object property assertions: isUsedBy" .
+
+
+###  https://w3id.org/IIoT/#Improve_central_algorithm
+<https://w3id.org/IIoT/#Improve_central_algorithm> rdf:type owl:NamedIndividual ;
+                                                   rdfs:comment "Improve_central_algorithm (Individual): a Blockchain solution" .
+
+
+###  https://w3id.org/IIoT/#Integrity_assurance
+<https://w3id.org/IIoT/#Integrity_assurance> rdf:type owl:NamedIndividual ;
+                                             rdfs:comment "Integrity_assurance (Individual): a Blockchain solution" .
+
+
+###  https://w3id.org/IIoT/#Large_data_stream
+<https://w3id.org/IIoT/#Large_data_stream> rdf:type owl:NamedIndividual ;
+                                           <https://w3id.org/IIoT/#isProcessed> <https://w3id.org/IIoT/#Distributed_capability> ;
+                                           rdfs:comment "Large_data_stream (Individual): of type Big Data with Object property assertions (isProcessed)" .
+
+
+###  https://w3id.org/IIoT/#Long-distance_communication
+<https://w3id.org/IIoT/#Long-distance_communication> rdf:type owl:NamedIndividual ;
+                                                     rdfs:comment "Long-distance_communication (Individual): a SCADA_capability" .
+
+
+###  https://w3id.org/IIoT/#Maintain_configuration
+<https://w3id.org/IIoT/#Maintain_configuration> rdf:type owl:NamedIndividual ,
+                                                         <https://w3id.org/IIoT/#Cloud_service> ;
+                                                rdfs:comment "Maintain_configuration (Individual): a Cloud service" .
+
+
+###  https://w3id.org/IIoT/#MapReduce
+<https://w3id.org/IIoT/#MapReduce> rdf:type owl:NamedIndividual ;
+                                   <https://w3id.org/IIoT/#isApplied> <https://w3id.org/IIoT/#Cluster1> ;
+                                   rdfs:comment "MapReduce (Individual): a Tool with Object property assertions: isApplied" .
+
+
+###  https://w3id.org/IIoT/#Micro_data_center
+<https://w3id.org/IIoT/#Micro_data_center> rdf:type owl:NamedIndividual ,
+                                                    <https://w3id.org/IIoT/#Edge_technology> ;
+                                           <https://w3id.org/IIoT/#hasTool> <https://w3id.org/IIoT/#Azure_IoT_edge> ;
+                                           rdfs:comment "Micro_data_center (Individual): an edge technology with Object property assertions: hasTool" .
+
+
+###  https://w3id.org/IIoT/#Modbus
+<https://w3id.org/IIoT/#Modbus> rdf:type owl:NamedIndividual ;
+                                rdfs:comment "Modbus (Individual): a SCADA common protocol with Object property assertions (Lack_security_measure, Protocols_were_layered)" .
+
+
+###  https://w3id.org/IIoT/#OPC_servers
+<https://w3id.org/IIoT/#OPC_servers> rdf:type owl:NamedIndividual ,
+                                              <https://w3id.org/IIoT/#Edge_technology> ;
+                                     <https://w3id.org/IIoT/#hasTool> <https://w3id.org/IIoT/#Apache_IoT_edge> ;
+                                     rdfs:comment "OPC_servers (Individual): an edge technology with Object property assertions: hasTool" .
+
+
+###  https://w3id.org/IIoT/#Oven1
+<https://w3id.org/IIoT/#Oven1> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/IIoT/#Industrial_oven> ;
+                               <https://w3id.org/IIoT/#hasTemperatureRange> "508.0"^^xsd:double ;
+                               rdfs:comment "Oven1 (Individual): an Industrial_oven with Data property assertions (hasTemperatureRange)" .
+
+
+###  https://w3id.org/IIoT/#Oven2
+<https://w3id.org/IIoT/#Oven2> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/IIoT/#Industrial_oven> ;
+                               <https://w3id.org/IIoT/#hasTemperatureRange> "502.0"^^xsd:double ;
+                               rdfs:comment "Oven2 (Individual): an Industrial_oven with Data property assertions (hasTemperatureRange)" .
+
+
+###  https://w3id.org/IIoT/#Oven3
+<https://w3id.org/IIoT/#Oven3> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/IIoT/#Industrial_oven> ;
+                               <https://w3id.org/IIoT/#hasTemperatureRange> "501.0"^^xsd:double ;
+                               rdfs:comment "Oven3 (Individual): an Industrial_oven with Data property assertions (hasTemperatureRange)" .
+
+
+###  https://w3id.org/IIoT/#Oven4
+<https://w3id.org/IIoT/#Oven4> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/IIoT/#Industrial_oven> ;
+                               <https://w3id.org/IIoT/#hasTemperatureRange> "506.0"^^xsd:double ;
+                               rdfs:comment "Oven4 (Individual): an Industrial_oven with Data property assertions (hasTemperatureRange)" .
+
+
+###  https://w3id.org/IIoT/#Oven5
+<https://w3id.org/IIoT/#Oven5> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/IIoT/#Industrial_oven> ;
+                               rdfs:comment "Oven5 (Individual): an Industrial_oven" .
+
+
+###  https://w3id.org/IIoT/#Particle_publish1
+<https://w3id.org/IIoT/#Particle_publish1> rdf:type owl:NamedIndividual ,
+                                                    <https://w3id.org/IIoT/#Firmware> ;
+                                           owl:differentFrom <https://w3id.org/IIoT/#Particle_publish2> ;
+                                           <https://w3id.org/IIoT/#send> <https://w3id.org/IIoT/#Cloud_Photon1> ;
+                                           <https://w3id.org/IIoT/#hasTimeLimit> 30 ;
+                                           rdfs:comment "Particle_publish1 (Individual): a Firmware with Object property assertions (send), Data property assertions (hasTimeLimit)" .
+
+
+###  https://w3id.org/IIoT/#Particle_publish2
+<https://w3id.org/IIoT/#Particle_publish2> rdf:type owl:NamedIndividual ,
+                                                    <https://w3id.org/IIoT/#Firmware> ;
+                                           <https://w3id.org/IIoT/#send> <https://w3id.org/IIoT/#Cloud_Photon2> ;
+                                           <https://w3id.org/IIoT/#hasTimeLimit> 25 ;
+                                           rdfs:comment "Particle_publish2 (Individual): a Firmware with Object property assertions (send), Data property assertions (hasTimeLimit)" .
+
+
+###  https://w3id.org/IIoT/#Paxos
+<https://w3id.org/IIoT/#Paxos> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/IIoT/#Data_center> ;
+                               <https://w3id.org/IIoT/#isApplied> <https://w3id.org/IIoT/#DC1> ,
+                                                                  <https://w3id.org/IIoT/#DC3> ,
+                                                                  <https://w3id.org/IIoT/#DC4> ;
+                               rdfs:comment "Paxos (Individual): a Data center with Object property assertions: isApplied" .
+
+
+###  https://w3id.org/IIoT/#Photon1
+<https://w3id.org/IIoT/#Photon1> rdf:type owl:NamedIndividual ,
+                                          <https://w3id.org/IIoT/#Particle_Photon> ;
+                                 <https://w3id.org/IIoT/#wire> <https://w3id.org/IIoT/#Connection1> ;
+                                 rdfs:comment "Photon1 (Individual): a Particle_Photon with Object property assertions (wire)" .
+
+
+###  https://w3id.org/IIoT/#Photon2
+<https://w3id.org/IIoT/#Photon2> rdf:type owl:NamedIndividual ,
+                                          <https://w3id.org/IIoT/#Particle_Photon> ;
+                                 <https://w3id.org/IIoT/#wire> <https://w3id.org/IIoT/#Connection2> ;
+                                 rdfs:comment "Photon2 (Individual): a Particle_Photon with Object property assertions (wire)" .
+
+
+###  https://w3id.org/IIoT/#Predictive_maintenance
+<https://w3id.org/IIoT/#Predictive_maintenance> rdf:type owl:NamedIndividual ;
+                                                <https://w3id.org/IIoT/#hasTechnology> <https://w3id.org/IIoT/#OPC_servers> ;
+                                                rdfs:comment "Predictive_maintenance (Individual): an Edge application with Object property assertions (hasTechnology)" .
+
+
+###  https://w3id.org/IIoT/#RTD3
+<https://w3id.org/IIoT/#RTD3> rdf:type owl:NamedIndividual ,
+                                       <https://w3id.org/IIoT/#RTD_sensor> ;
+                              <https://w3id.org/IIoT/#heat> <https://w3id.org/IIoT/#Oven3> ;
+                              <https://w3id.org/IIoT/#hasAccuracy> "0.6"^^xsd:float ;
+                              <https://w3id.org/IIoT/#provideHeat> "510.0"^^xsd:double ;
+                              rdfs:comment "RTD3 (Individual): a RTD_sensor with Object property assertions (heat), Data property assertions (provideHeat, hasAccuracy)" .
+
+
+###  https://w3id.org/IIoT/#RTD4
+<https://w3id.org/IIoT/#RTD4> rdf:type owl:NamedIndividual ,
+                                       <https://w3id.org/IIoT/#RTD_sensor> ;
+                              <https://w3id.org/IIoT/#heat> <https://w3id.org/IIoT/#Oven4> ;
+                              <https://w3id.org/IIoT/#hasAccuracy> "0.8"^^xsd:float ;
+                              <https://w3id.org/IIoT/#provideHeat> "520.0"^^xsd:double ;
+                              rdfs:comment "RTD4 (Individual): a RTD_sensor with Object property assertions (heat), Data property assertions (provideHeat, hasAccuracy)" .
+
+
+###  https://w3id.org/IIoT/#RTD5
+<https://w3id.org/IIoT/#RTD5> rdf:type owl:NamedIndividual ,
+                                       <https://w3id.org/IIoT/#RTD_sensor> ;
+                              <https://w3id.org/IIoT/#heat> <https://w3id.org/IIoT/#Oven5> ;
+                              rdfs:comment "RTD5 (Individual): a RTD_sensor with Object property assertions (heat)" .
+
+
+###  https://w3id.org/IIoT/#RTDsensor1
+<https://w3id.org/IIoT/#RTDsensor1> rdf:type owl:NamedIndividual ,
+                                             <https://w3id.org/IIoT/#RTD_sensor> ;
+                                    <https://w3id.org/IIoT/#heat> <https://w3id.org/IIoT/#Oven1> ;
+                                    <https://w3id.org/IIoT/#hasAccuracy> "0.5"^^xsd:float ;
+                                    <https://w3id.org/IIoT/#provideHeat> "480.0"^^xsd:double ;
+                                    rdfs:comment "RTDsensor1 (Individual): a RTD_sensor with Object property assertions (heat), Data property assertions (provideHeat, hasAccuracy)" .
+
+
+###  https://w3id.org/IIoT/#RTDsensor2
+<https://w3id.org/IIoT/#RTDsensor2> rdf:type owl:NamedIndividual ,
+                                             <https://w3id.org/IIoT/#RTD_sensor> ;
+                                    <https://w3id.org/IIoT/#heat> <https://w3id.org/IIoT/#Oven2> ;
+                                    <https://w3id.org/IIoT/#hasAccuracy> "0.3"^^xsd:float ;
+                                    <https://w3id.org/IIoT/#provideHeat> "500.0"^^xsd:double ;
+                                    rdfs:comment "RTDsensor2 (Individual): a RTD_sensor with Object property assertions (heat), Data property assertions (provideHeat, hasAccuracy)" .
+
+
+###  https://w3id.org/IIoT/#Reducing_latency_in_sending_data
+<https://w3id.org/IIoT/#Reducing_latency_in_sending_data> rdf:type owl:NamedIndividual ;
+                                                          rdfs:comment "Reducing_latency_in_sending_data (Individual): a Blockchain solution" .
+
+
+###  https://w3id.org/IIoT/#SCADA_application
+<https://w3id.org/IIoT/#SCADA_application> rdf:type owl:NamedIndividual ;
+                                           <https://w3id.org/IIoT/#threats_to_data_security> <https://w3id.org/IIoT/#Data_security_risk> ;
+                                           rdfs:comment "SCADA_application (Individual): of type SCADA with Object property assertions (threats_to_data_security)" .
+
+
+###  https://w3id.org/IIoT/#SCADA_system
+<https://w3id.org/IIoT/#SCADA_system> rdf:type owl:NamedIndividual ;
+                                      rdfs:comment "SCADA_system (Individual): of type SCADA" .
+
+
+###  https://w3id.org/IIoT/#Secure_key_management
+<https://w3id.org/IIoT/#Secure_key_management> rdf:type owl:NamedIndividual ;
+                                               rdfs:comment "Secure_key_management (Individual): a Blockchain solution" .
+
+
+###  https://w3id.org/IIoT/#Security_problem
+<https://w3id.org/IIoT/#Security_problem> rdf:type owl:NamedIndividual ;
+                                          <https://w3id.org/IIoT/#hasSolution> <https://w3id.org/IIoT/#Access_control> ,
+                                                                               <https://w3id.org/IIoT/#Data_protection> ,
+                                                                               <https://w3id.org/IIoT/#Integrity_assurance> ,
+                                                                               <https://w3id.org/IIoT/#Secure_key_management> ;
+                                          rdfs:comment "Security_problem (Individual): of type Blockchain security with Object property assertions (hasSolution)" .
+
+
+###  https://w3id.org/IIoT/#Smart_contracts
+<https://w3id.org/IIoT/#Smart_contracts> rdf:type owl:NamedIndividual ,
+                                                  <https://w3id.org/IIoT/#Blockchain> ;
+                                         <https://w3id.org/IIoT/#hasSecurity_problem> <https://w3id.org/IIoT/#Security_problem> ;
+                                         rdfs:comment "Smart_contracts (Individual): of type Blockchain with Object property assertions (hasSecurity)" .
+
+
+###  https://w3id.org/IIoT/#Smart_grid
+<https://w3id.org/IIoT/#Smart_grid> rdf:type owl:NamedIndividual ;
+                                    <https://w3id.org/IIoT/#hasTechnology> <https://w3id.org/IIoT/#OPC_servers> ;
+                                    rdfs:comment "Smart_grid (Individual): an Edge application with Object property assertions (hasTechnology)" .
+
+
+###  https://w3id.org/IIoT/#Smart_home
+<https://w3id.org/IIoT/#Smart_home> rdf:type owl:NamedIndividual ;
+                                    <https://w3id.org/IIoT/#hasTechnology> <https://w3id.org/IIoT/#OPC_servers> ;
+                                    rdfs:comment "Smart_home (Individual): an Edge application with Object property assertions (hasTechnology)" .
+
+
+###  https://w3id.org/IIoT/#Strong_authentication
+<https://w3id.org/IIoT/#Strong_authentication> rdf:type owl:NamedIndividual ;
+                                               rdfs:comment "Strong_authentication (Object property): a SCADA_solution" .
+
+
+###  https://w3id.org/IIoT/#Synchronization_in_throughput
+<https://w3id.org/IIoT/#Synchronization_in_throughput> rdf:type owl:NamedIndividual ;
+                                                       rdfs:comment "Synchronization_in_throughput (Individual): a Blockchain solution" .
+
+
+###  https://w3id.org/IIoT/#TCP_IP
+<https://w3id.org/IIoT/#TCP_IP> rdf:type owl:NamedIndividual ;
+                                <https://w3id.org/IIoT/#Support_communication> <https://w3id.org/IIoT/#Long-distance_communication> ;
+                                rdfs:comment "TCP_IP (Individual): a SCADA today protocol with Object property assertions (Support_communication)" .
+
+
+###  https://w3id.org/IIoT/#Tensor_Flow
+<https://w3id.org/IIoT/#Tensor_Flow> rdf:type owl:NamedIndividual ;
+                                     <https://w3id.org/IIoT/#isToolFor> <https://w3id.org/IIoT/#Deep_learning_algorithm> ;
+                                     rdfs:comment "Tensor_Flow (Individual): a Tool with Object property assertions (isToolFor)" .
+
+
+###  https://w3id.org/IIoT/#Theano
+<https://w3id.org/IIoT/#Theano> rdf:type owl:NamedIndividual ;
+                                <https://w3id.org/IIoT/#isToolFor> <https://w3id.org/IIoT/#Deep_learning_algorithm> ;
+                                rdfs:comment "Theano (Individual): a Tool with Object property assertions (isToolFor)" .
+
+
+###  https://w3id.org/IIoT/#Thingspeak1
+<https://w3id.org/IIoT/#Thingspeak1> rdf:type owl:NamedIndividual ,
+                                              <https://w3id.org/IIoT/#Subscriber> ;
+                                     owl:differentFrom <https://w3id.org/IIoT/#Thingspeak2> ;
+                                     rdfs:comment "Thingspeak1 (Individual): a Subscriber" .
+
+
+###  https://w3id.org/IIoT/#Thingspeak2
+<https://w3id.org/IIoT/#Thingspeak2> rdf:type owl:NamedIndividual ,
+                                              <https://w3id.org/IIoT/#Subscriber> ;
+                                     rdfs:comment "Thingspeak2 (Individual): a Subscriber" .
+
+
+###  https://w3id.org/IIoT/#Threats_at_critical_infrastructure
+<https://w3id.org/IIoT/#Threats_at_critical_infrastructure> rdf:type owl:NamedIndividual ;
+                                                            rdfs:comment "Threats_at_critical_infrastructure (Individual): a SCADA problem" .
+
+
+###  https://w3id.org/IIoT/#Throughput_limited
+<https://w3id.org/IIoT/#Throughput_limited> rdf:type owl:NamedIndividual ;
+                                            <https://w3id.org/IIoT/#hasSolution> <https://w3id.org/IIoT/#Synchronization_in_throughput> ;
+                                            rdfs:comment "Throughput_limited (Individual): a Blockchain problem with Object property assertions (hasSolution)" .
+
+
+###  https://w3id.org/IIoT/#Transmission_speed
+<https://w3id.org/IIoT/#Transmission_speed> rdf:type owl:NamedIndividual ;
+                                            <https://w3id.org/IIoT/#best_Practices> <https://w3id.org/IIoT/#Smart_home> ;
+                                            <https://w3id.org/IIoT/#has_SecuritySolution> <https://w3id.org/IIoT/#Reducing_latency_in_sending_data> ;
+                                            rdfs:comment "Transmission_speed (Individual): of type Edge security with Object property assertions (has_SecuritySolution, best_Practices)" .
+
+
+###  https://w3id.org/IIoT/#Zookeeper
+<https://w3id.org/IIoT/#Zookeeper> rdf:type owl:NamedIndividual ,
+                                            <https://w3id.org/IIoT/#Data_center> ;
+                                   <https://w3id.org/IIoT/#hasService> <https://w3id.org/IIoT/#Maintain_configuration> ;
+                                   <https://w3id.org/IIoT/#isApplied> <https://w3id.org/IIoT/#DC2> ;
+                                   rdfs:comment "Zookeeper (Individual): a Data_center with Object property assertions: isApplied, hasService" .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+owl:Thing rdfs:comment "IIoT is a semantic ontology for the Internet of Things systems that consists of a hierarchy of classes corresponding to the layers of a general IoT architecture: Device, Network, Support, Application, and Capabilities." ;
+          rdfs:seeAlso "Authors: Liviana N. Tudor, Lecia Barker, Mohammad Q. Azhar, Jorge Guerra, Clark Mousaw" .
+
+
+<https://saref.etsi.org/core/UnitOfMeasure> rdfs:comment "Class UnitOfMeasure - is imported from the Saref ontology" .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
