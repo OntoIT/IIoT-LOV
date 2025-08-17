@@ -42,15 +42,15 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
-        <Literal xml:lang="en">The Internet of Things taxonomy is extended with semantic ontologies for IoT layers: Device, Application. Network, Support, Capabilities</Literal>
+        <Literal xml:lang="en">The Internet of Things taxonomy is extended with semantic ontologies for IoT layers: Application, Device, Network, Support, and Vocabulary.</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
-        <Literal xml:lang="en">2023-08-27</Literal>
+        <Literal xml:lang="en">2024-09-27</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
-        <Literal xml:lang="en">2024-10-15</Literal>
+        <Literal xml:lang="en">2025-08-12</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
@@ -75,6 +75,162 @@
         <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Sensor"/>
     </Declaration>
     <Declaration>
+        <Class IRI="https://ontoit.github.io/IIoT/Device/Asset"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontoit.github.io/IIoT/Device/Circuit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontoit.github.io/IIoT/Device/Computing_Device"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontoit.github.io/IIoT/Device/Cryptographic_Protocol"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontoit.github.io/IIoT/Device/Development_Tool"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontoit.github.io/IIoT/Device/Embedded_Device"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontoit.github.io/IIoT/Device/Logic_Gate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontoit.github.io/IIoT/Device/SSL"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontoit.github.io/IIoT/Device/Smart_Product"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontoit.github.io/IIoT/Device/Smartphone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontoit.github.io/IIoT/Device/TLS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontoit.github.io/IIoT/Device/Transducer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontoit.github.io/IIoT/Device/Unit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontoit.github.io/IIoT/Device/Wearable"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontoit.github.io/IIoT/Network/AI_Analytics"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontoit.github.io/IIoT/Network/Access_Point"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontoit.github.io/IIoT/Network/Application_Protocol"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontoit.github.io/IIoT/Network/Cable"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontoit.github.io/IIoT/Network/Data_Link_Protocol"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontoit.github.io/IIoT/Network/Electrical_Grids"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontoit.github.io/IIoT/Network/LAN"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontoit.github.io/IIoT/Network/NFC"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontoit.github.io/IIoT/Network/Network_Protocol"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontoit.github.io/IIoT/Network/Network_Type"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontoit.github.io/IIoT/Network/PAN"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontoit.github.io/IIoT/Network/Tag_Device"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontoit.github.io/IIoT/Network/Transport_Protocol"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontoit.github.io/IIoT/Network/WAN"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontoit.github.io/IIoT/Network/Wireless_Sensor_Network"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontoit.github.io/IIoT/Network/Wireless_Technology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Broker"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Cloud_Computing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Cloud_Model"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Cloud_Platform"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Cloud_Service"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Cloudera"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Data_Management"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Data_Metadata"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Data_Platform"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Distributed_Data_System"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Edge_Computing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Fog_Computing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Framework"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Infrastructure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/PubSub_Component"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Publisher"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Security"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Distributed_system/AWS_IoT"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Distributed_system/Azure_Iot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Distributed_system/Data_Format"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Software/JWT"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Software/Programming_Language"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="https://saref.etsi.org/core/Currency"/>
     </Declaration>
     <Declaration>
@@ -93,9 +249,6 @@
         <Class IRI="https://saref.etsi.org/core/TemperatureUnit"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://tudorliv.github.io/IIoT/capabilities/Operating_system"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="Big_data"/>
     </Declaration>
     <Declaration>
@@ -105,13 +258,16 @@
         <Class IRI="Vocabulary"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Actuator"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Adapter"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Analytics"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Andrew"/>
+        <Class IRI="#Andrew_sensor"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Application"/>
@@ -120,7 +276,7 @@
         <Class IRI="#Arduino"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#BLE"/>
+        <Class IRI="#Authentication_Token"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Blockchain"/>
@@ -129,19 +285,10 @@
         <Class IRI="#C"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Cloud"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Cloud_service"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Cloudera"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Cloudlet"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Computer_architecture"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Computer_cluster"/>
@@ -151,6 +298,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Cryptographic_system"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Data_Flow"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Data_analysis"/>
@@ -186,19 +336,10 @@
         <Class IRI="#Eddystone"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Edge_technology"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Electrical_Grids"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Factory_Equipment"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Firmware"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Flow"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Gateway"/>
@@ -216,16 +357,10 @@
         <Class IRI="#Hardware_Platform"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Home_automation"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Hortonworks"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Hub"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#ICS"/>
     </Declaration>
     <Declaration>
         <Class IRI="#IP"/>
@@ -238,9 +373,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Industrial_oven"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#JSON_Web_Token"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Java"/>
@@ -291,13 +423,10 @@
         <Class IRI="#Network_card"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#NoSQL_Data"/>
+        <Class IRI="#NoSQL_Database"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Node"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Oil_Pipeline_Control"/>
+        <Class IRI="#NodeJS"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Optical_tag"/>
@@ -318,13 +447,10 @@
         <Class IRI="#Particle_cloud"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Passive_things"/>
+        <Class IRI="#Physical_Infrastructure"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Processing_Board"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Programming_Language"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Purpose-built_Device"/>
@@ -342,7 +468,7 @@
         <Class IRI="#Raspberry_Pi"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Raspberyy_Pi_4B"/>
+        <Class IRI="#Raspberry_Pi_4B"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Router"/>
@@ -363,9 +489,6 @@
         <Class IRI="#Smart_Product"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Smartphone"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Spark"/>
     </Declaration>
     <Declaration>
@@ -381,25 +504,19 @@
         <Class IRI="#TCP"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Transducer"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#UDP"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Use_Case1"/>
+        <Class IRI="#UseCase_IndustrialOven"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Use_Case2"/>
+        <Class IRI="#UseCase_ParticlePhoton"/>
     </Declaration>
     <Declaration>
         <Class IRI="#WPAN"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Watson_IoT"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Wireless_sensor_network"/>
     </Declaration>
     <Declaration>
         <Class IRI="#XML"/>
@@ -411,133 +528,64 @@
         <Class IRI="#YARN"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#health-monitoring_system"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#iBeacon"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#Dealing_with_sensitive_data"/>
+        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/communicatesWith"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#DevelopEdgeSecurity"/>
+        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/hasDigitalTwin"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#SCADA_hasCapability"/>
+        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/hasSubscriber"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#Support_communication"/>
+        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/identifies"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#authentication"/>
+        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/isElementOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#best_Practices"/>
+        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/isMeasuredBy"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#challenge"/>
+        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/isReadBy"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#countermeasure"/>
+        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/isRequestedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/isSentBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/isWiredTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/subscribesTo"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#data_transfer"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#flow_services"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasAlgorithm"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasCapability"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#hasElement"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasFunctionality"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasProblem"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasSecurity_problem"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasService"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasSolution"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasTechnology"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasTool"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#has_SecuritySolution"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#heat"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#isApplied"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isConnectedBy"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#isIdentified"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isManagedBy"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isPartOf"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isProcessed"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isRepresentationOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#isToolFor"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isUsedBy"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#login"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#read"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#regulationTemperature"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#request"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#requires"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#send"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#supporting_tool"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#threats_to_data_security"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#useAlgorithm"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#useProgramming"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#wire"/>
@@ -577,6 +625,132 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#provideHeat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Application/DataFlow"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Application/Firmware1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Application/FirmwareProgram"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Application/Home_automation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Application/ICS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Application/IndOven"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Application/IndustrialOven"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Application/ParticleCloud"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Application/ParticlePhoton"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Application/Particle_cloud1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Application/RTDsensor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Application/TheSubscriber"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Application/health-monitoring_system"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/Actuator1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/Arduino_Due"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/Arduino_Mega"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/Arduino_Nano"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/Arduino_Uno"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/CAN-UART_conversion_module"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/ElectricVehicle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/IndustrialRobotArm"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/NFC1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/NFC2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/Sensor2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/Thing1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/Thing2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/car_twin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/edgeMQTTNode1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/edgeMQTTNode2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/gasSensor_A2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/motionDetector1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/robot_twin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/smartLightBulb1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/tempSensor_A1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Network/Electrical_Grids"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Network/Wireless_sensor_network"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Support/Firmware1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Support/MQTT_Broker"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Support/Distributed_system/Passive_things"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Support/Distributed_system/Smartphone"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Support/Software/DCS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Support/Software/SCADA"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="Distributed_authentication"/>
@@ -842,6 +1016,221 @@
         <Class IRI="#Sensor_actuator"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="https://ontoit.github.io/IIoT/Device/Asset"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Device/Embedded_Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontoit.github.io/IIoT/Device/Asset"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isIdentified"/>
+            <Class IRI="https://ontoit.github.io/IIoT/Network/Tag_Device"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontoit.github.io/IIoT/Device/Circuit"/>
+        <Class IRI="#Digital_logic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontoit.github.io/IIoT/Device/Computing_Device"/>
+        <Class IRI="#Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontoit.github.io/IIoT/Device/Cryptographic_Protocol"/>
+        <Class IRI="#Cryptographic_system"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontoit.github.io/IIoT/Device/Development_Tool"/>
+        <Class IRI="#Support"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontoit.github.io/IIoT/Device/Embedded_Device"/>
+        <Class IRI="#Hardware_Platform"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontoit.github.io/IIoT/Device/Logic_Gate"/>
+        <Class IRI="#Digital_logic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontoit.github.io/IIoT/Device/SSL"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Device/Cryptographic_Protocol"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontoit.github.io/IIoT/Device/Smart_Product"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Device/Computing_Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontoit.github.io/IIoT/Device/Smartphone"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Device/Smart_Product"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontoit.github.io/IIoT/Device/TLS"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Device/Cryptographic_Protocol"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontoit.github.io/IIoT/Device/Transducer"/>
+        <Class IRI="#Sensor_actuator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontoit.github.io/IIoT/Device/Unit"/>
+        <Class IRI="#Digital_logic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontoit.github.io/IIoT/Device/Wearable"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Device/Smart_Product"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontoit.github.io/IIoT/Network/AI_Analytics"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Device/Development_Tool"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontoit.github.io/IIoT/Network/Access_Point"/>
+        <Class IRI="#Physical_Infrastructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontoit.github.io/IIoT/Network/Application_Protocol"/>
+        <Class IRI="#Data_transmission"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontoit.github.io/IIoT/Network/Cable"/>
+        <Class IRI="#Physical_Infrastructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontoit.github.io/IIoT/Network/Data_Link_Protocol"/>
+        <Class IRI="#Data_transmission"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontoit.github.io/IIoT/Network/Electrical_Grids"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Network/Network_Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontoit.github.io/IIoT/Network/LAN"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Network/Network_Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontoit.github.io/IIoT/Network/NFC"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Network/Wireless_Technology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontoit.github.io/IIoT/Network/Network_Protocol"/>
+        <Class IRI="#Data_transmission"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontoit.github.io/IIoT/Network/Network_Type"/>
+        <Class IRI="#Physical_Infrastructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontoit.github.io/IIoT/Network/PAN"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Network/Network_Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontoit.github.io/IIoT/Network/Tag_Device"/>
+        <Class IRI="#Physical_Infrastructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontoit.github.io/IIoT/Network/Transport_Protocol"/>
+        <Class IRI="#Data_transmission"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontoit.github.io/IIoT/Network/WAN"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Network/Network_Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontoit.github.io/IIoT/Network/Wireless_Sensor_Network"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Network/Network_Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontoit.github.io/IIoT/Network/Wireless_Technology"/>
+        <Class IRI="#Data_transmission"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Broker"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/PubSub_Component"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Cloud_Computing"/>
+        <Class IRI="#Distributed_system"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Cloud_Model"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Cloud_Computing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Cloud_Platform"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Cloud_Computing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Cloud_Service"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Cloud_Platform"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Cloudera"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Data_Platform"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Data_Management"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Device/Development_Tool"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Data_Metadata"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Data_Management"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Data_Platform"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Data_Management"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Distributed_Data_System"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Data_Management"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Edge_Computing"/>
+        <Class IRI="#Distributed_system"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Fog_Computing"/>
+        <Class IRI="#Distributed_system"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Framework"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Device/Development_Tool"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Infrastructure"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Cloud_Computing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/PubSub_Component"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Framework"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Publisher"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/PubSub_Component"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Security"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Device/Development_Tool"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Distributed_system/AWS_IoT"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Cloud_Service"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Distributed_system/Azure_Iot"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Cloud_Service"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Distributed_system/Data_Format"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Data_Metadata"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Software/JWT"/>
+        <Class IRI="#Authentication_Token"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Software/Programming_Language"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Device/Development_Tool"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="https://saref.etsi.org/core/Currency"/>
         <Class IRI="UnitOfMeasure"/>
     </SubClassOf>
@@ -866,36 +1255,50 @@
         <Class IRI="UnitOfMeasure"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://tudorliv.github.io/IIoT/capabilities/Operating_system"/>
-        <Class IRI="#Digital_logic"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="Big_data"/>
-        <Class IRI="#Distributed_system"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Data_Management"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="UnitOfMeasure"/>
-        <Class IRI="#Support"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Data_Metadata"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Actuator"/>
+        <Class IRI="#Sensor_actuator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Actuator"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/isElementOf"/>
+            <Class IRI="#Andrew_sensor"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Adapter"/>
-        <Class IRI="#Digital_logic"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Device/Embedded_Device"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Analytics"/>
-        <Class IRI="#Distributed_system"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Network/AI_Analytics"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Andrew"/>
+        <Class IRI="#Andrew_sensor"/>
         <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Sensor"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Arduino"/>
-        <Class IRI="#Digital_logic"/>
+        <Class IRI="#Andrew_sensor"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasElement"/>
+            <Class IRI="#Actuator"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#BLE"/>
-        <Class IRI="#Data_transmission"/>
+        <Class IRI="#Arduino"/>
+        <Class IRI="#Processing_Board"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Authentication_Token"/>
+        <Class IRI="#Cryptographic_system"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Blockchain"/>
@@ -903,47 +1306,53 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#C"/>
-        <Class IRI="#Digital_logic"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Cloud"/>
-        <Class IRI="#Distributed_system"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Cloud_service"/>
-        <Class IRI="#Distributed_system"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Software/Programming_Language"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Cloudera"/>
-        <Class IRI="#Distributed_system"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Cloud_Platform"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Cloudlet"/>
-        <Class IRI="#Distributed_system"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Computer_architecture"/>
-        <Class IRI="#Network"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Edge_Computing"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Computer_cluster"/>
-        <Class IRI="#Computer_architecture"/>
+        <Class IRI="#Physical_Infrastructure"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Control_System"/>
-        <Class IRI="#Digital_logic"/>
+        <Class IRI="#Application"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Cryptographic_system"/>
-        <Class IRI="#Digital_logic"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Security"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Data_Flow"/>
+        <Class IRI="#Data_transmission"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Data_Flow"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/isWiredTo"/>
+            <Class IRI="#Particle_Photon"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Data_Flow"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#read"/>
+            <Class IRI="#Firmware"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Data_analysis"/>
-        <Class IRI="#Distributed_system"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Network/AI_Analytics"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Data_center"/>
-        <Class IRI="#Distributed_system"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Infrastructure"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Data_transmission"/>
@@ -951,7 +1360,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Deep_learning"/>
-        <Class IRI="#Distributed_system"/>
+        <Class IRI="#Machine_learning"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Digital_logic"/>
@@ -959,7 +1368,14 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Digital_twin"/>
-        <Class IRI="#Distributed_system"/>
+        <Class IRI="#Application"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Digital_twin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isRepresentationOf"/>
+            <Class IRI="#Smart_Product"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Distributed_system"/>
@@ -967,83 +1383,69 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Django"/>
-        <Class IRI="#Distributed_system"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Framework"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Drone"/>
-        <Class IRI="#Digital_logic"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Device/Embedded_Device"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Eddystone"/>
-        <Class IRI="#Digital_logic"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Edge_technology"/>
-        <Class IRI="#Distributed_system"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Electrical_Grids"/>
-        <Class IRI="#Digital_logic"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Publisher"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Factory_Equipment"/>
-        <Class IRI="#Digital_logic"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Device/Embedded_Device"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Firmware"/>
-        <Class IRI="#Digital_logic"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Device/Development_Tool"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Firmware"/>
-        <Class IRI="#Use_Case1"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/isReadBy"/>
+            <Class IRI="#Data_Flow"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Flow"/>
-        <Class IRI="#Digital_logic"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Flow"/>
-        <Class IRI="#Use_Case1"/>
+        <Class IRI="#Firmware"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#send"/>
+            <Class IRI="#Particle_cloud"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Gateway"/>
-        <Class IRI="#Digital_logic"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Device/Embedded_Device"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#HAT"/>
-        <Class IRI="#Digital_logic"/>
+        <Class IRI="#Hardware_Platform"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#HBase"/>
-        <Class IRI="#Distributed_system"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Distributed_Data_System"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#HTTP"/>
-        <Class IRI="#Data_transmission"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Network/Application_Protocol"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Hardware_Platform"/>
-        <Class IRI="#Digital_logic"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Home_automation"/>
-        <Class IRI="#Digital_logic"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Device/Computing_Device"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Hortonworks"/>
-        <Class IRI="#Distributed_system"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Data_Platform"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Hub"/>
-        <Class IRI="#Computer_architecture"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#ICS"/>
-        <Class IRI="#Digital_logic"/>
+        <Class IRI="#Physical_Infrastructure"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#IP"/>
-        <Class IRI="#Data_transmission"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Network/Network_Protocol"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ISO_stack"/>
@@ -1051,147 +1453,172 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#IaaS"/>
-        <Class IRI="#Distributed_system"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Cloud_Model"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Industrial_oven"/>
-        <Class IRI="#Digital_logic"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Device/Embedded_Device"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Industrial_oven"/>
-        <Class IRI="#Use_Case2"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#JSON_Web_Token"/>
-        <Class IRI="#Digital_logic"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/isMeasuredBy"/>
+            <Class IRI="#RTD_sensor"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Java"/>
-        <Class IRI="#Digital_logic"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Software/Programming_Language"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Kafka"/>
-        <Class IRI="#Distributed_system"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Distributed_Data_System"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#LoRa"/>
-        <Class IRI="#Digital_logic"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Network/Wireless_Technology"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#LoRaWan"/>
-        <Class IRI="#Sensor_actuator"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Network/Wireless_Technology"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#LoWPAN"/>
-        <Class IRI="#Data_transmission"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Network/Data_Link_Protocol"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#MQTT"/>
-        <Class IRI="#Data_transmission"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Network/Application_Protocol"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MQTT"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#data_transfer"/>
+            <Class IRI="#Device"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#MQTT_streams"/>
-        <Class IRI="#Distributed_system"/>
+        <Class IRI="#MQTT"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Machine_learning"/>
-        <Class IRI="#Distributed_system"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Network/AI_Analytics"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Mahout"/>
-        <Class IRI="#Distributed_system"/>
+        <Class IRI="#Machine_learning"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Mesos"/>
-        <Class IRI="#Digital_logic"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Framework"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Microcontroller"/>
-        <Class IRI="#Digital_logic"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Device/Embedded_Device"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Microprocessor"/>
-        <Class IRI="#Digital_logic"/>
+        <Class IRI="#Hardware_Platform"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Microprocessor_Platform"/>
-        <Class IRI="#Digital_logic"/>
+        <Class IRI="#Hardware_Platform"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#NFC_tag"/>
-        <Class IRI="#Data_transmission"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Network/Tag_Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NFC_tag"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/identifies"/>
+            <Class IRI="https://ontoit.github.io/IIoT/Device/Asset"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Network_card"/>
-        <Class IRI="#Computer_architecture"/>
+        <Class IRI="#Physical_Infrastructure"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#NoSQL_Data"/>
-        <Class IRI="#Distributed_system"/>
+        <Class IRI="#NoSQL_Database"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Data_Management"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Node"/>
-        <Class IRI="#Distributed_system"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Oil_Pipeline_Control"/>
-        <Class IRI="#Digital_logic"/>
+        <Class IRI="#NodeJS"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Software/Programming_Language"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Optical_tag"/>
-        <Class IRI="#Data_transmission"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Network/Tag_Device"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PAN"/>
-        <Class IRI="#Data_transmission"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Network/Network_Protocol"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PLC"/>
-        <Class IRI="#Digital_logic"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Device/Embedded_Device"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PaaS"/>
-        <Class IRI="#Distributed_system"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Cloud_Model"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Particle_Photon"/>
-        <Class IRI="#Digital_logic"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Device/Embedded_Device"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Particle_Photon"/>
-        <Class IRI="#Use_Case1"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/hasSubscriber"/>
+            <Class IRI="#Subscriber"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Particle_Photon"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#wire"/>
+            <Class IRI="#Data_Flow"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Particle_cloud"/>
-        <Class IRI="#Digital_logic"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Cloud_Platform"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Particle_cloud"/>
-        <Class IRI="#Use_Case1"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/isSentBy"/>
+            <Class IRI="#Firmware"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Passive_things"/>
-        <Class IRI="#Digital_logic"/>
+        <Class IRI="#Particle_cloud"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#request"/>
+            <Class IRI="#Subscriber"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Physical_Infrastructure"/>
+        <Class IRI="#Network"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Processing_Board"/>
-        <Class IRI="#Sensor_actuator"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Programming_Language"/>
-        <Class IRI="#Digital_logic"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Device/Embedded_Device"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Purpose-built_Device"/>
-        <Class IRI="#Digital_logic"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Device/Embedded_Device"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Python"/>
-        <Class IRI="#Digital_logic"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Software/Programming_Language"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#RFID_tag"/>
-        <Class IRI="#Data_transmission"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Network/Tag_Device"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#RTD_sensor"/>
@@ -1199,27 +1626,30 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#RTD_sensor"/>
-        <Class IRI="#Use_Case2"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#heat"/>
+            <Class IRI="#Industrial_oven"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Raspberry_Pi"/>
-        <Class IRI="#Digital_logic"/>
+        <Class IRI="#Hardware_Platform"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Raspberyy_Pi_4B"/>
-        <Class IRI="#Sensor_actuator"/>
+        <Class IRI="#Raspberry_Pi_4B"/>
+        <Class IRI="#Processing_Board"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Router"/>
-        <Class IRI="#Computer_architecture"/>
+        <Class IRI="#Physical_Infrastructure"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#SAMPL"/>
-        <Class IRI="#Data_transmission"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Network/Application_Protocol"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#SaaS"/>
-        <Class IRI="#Distributed_system"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Cloud_Model"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Sensor_actuator"/>
@@ -1227,95 +1657,260 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Shield"/>
-        <Class IRI="#Sensor_actuator"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Device/Embedded_Device"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Smart_Product"/>
-        <Class IRI="#Digital_logic"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Device/Embedded_Device"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Smartphone"/>
-        <Class IRI="#Digital_logic"/>
+        <Class IRI="#Smart_Product"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/hasDigitalTwin"/>
+            <Class IRI="#Digital_twin"/>
+        </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Spark"/>
-        <Class IRI="#Distributed_system"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Distributed_Data_System"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Subscriber"/>
-        <Class IRI="#Distributed_system"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/PubSub_Component"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Subscriber"/>
-        <Class IRI="#Use_Case1"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/isRequestedBy"/>
+            <Class IRI="#Particle_cloud"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Subscriber"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/subscribesTo"/>
+            <Class IRI="#Particle_Photon"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Switch"/>
-        <Class IRI="#Computer_architecture"/>
+        <Class IRI="#Physical_Infrastructure"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#TCP"/>
-        <Class IRI="#Data_transmission"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Transducer"/>
-        <Class IRI="#Sensor_actuator"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Network/Transport_Protocol"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#UDP"/>
-        <Class IRI="#Data_transmission"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Network/Transport_Protocol"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Use_Case1"/>
+        <Class IRI="#UseCase_IndustrialOven"/>
         <Class IRI="#Application"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Use_Case2"/>
+        <Class IRI="#UseCase_ParticlePhoton"/>
         <Class IRI="#Application"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#WPAN"/>
-        <Class IRI="#Data_transmission"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Network/Wireless_Technology"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Watson_IoT"/>
-        <Class IRI="#Distributed_system"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Wireless_sensor_network"/>
-        <Class IRI="#Sensor_actuator"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Cloud_Platform"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#XML"/>
-        <Class IRI="#Digital_logic"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Distributed_system/Data_Format"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#XMPP"/>
-        <Class IRI="#Data_transmission"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Network/Application_Protocol"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#YARN"/>
-        <Class IRI="#Digital_logic"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#health-monitoring_system"/>
-        <Class IRI="#Digital_logic"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Framework"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#iBeacon"/>
-        <Class IRI="#Digital_logic"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Device/Embedded_Device"/>
     </SubClassOf>
     <ClassAssertion>
-        <Class IRI="#Cloud_service"/>
-        <NamedIndividual IRI="#Avoid_synchronization"/>
+        <Class IRI="#Data_Flow"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Application/DataFlow"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UseCase_ParticlePhoton"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Application/DataFlow"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Firmware"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Application/Firmware1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Firmware"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Application/FirmwareProgram"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UseCase_ParticlePhoton"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Application/FirmwareProgram"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Application"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Application/Home_automation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Industrial_oven"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Application/IndOven"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UseCase_IndustrialOven"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Application/IndOven"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Industrial_oven"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Application/IndustrialOven"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Particle_cloud"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Application/ParticleCloud"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UseCase_ParticlePhoton"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Application/ParticleCloud"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Particle_Photon"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Application/ParticlePhoton"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UseCase_ParticlePhoton"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Application/ParticlePhoton"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Particle_cloud"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Application/Particle_cloud1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RTD_sensor"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Application/RTDsensor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UseCase_IndustrialOven"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Application/RTDsensor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Subscriber"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Application/TheSubscriber"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UseCase_ParticlePhoton"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Application/TheSubscriber"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Application"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Application/health-monitoring_system"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Actuator"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/Actuator1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Arduino"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/Arduino_Due"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Arduino"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/Arduino_Mega"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Arduino"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/Arduino_Nano"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Arduino"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/Arduino_Uno"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Adapter"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/CAN-UART_conversion_module"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Smart_Product"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/ElectricVehicle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Smart_Product"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/IndustrialRobotArm"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NFC_tag"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/NFC1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NFC_tag"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/NFC2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Actuator"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/Sensor2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Digital_twin"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/car_twin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MQTT"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/edgeMQTTNode1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MQTT"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/edgeMQTTNode2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Andrew_sensor"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/gasSensor_A2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Device"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/motionDetector1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Digital_twin"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/robot_twin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Device"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/smartLightBulb1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Andrew_sensor"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/tempSensor_A1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontoit.github.io/IIoT/Support/Broker"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Support/MQTT_Broker"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Application"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Support/Distributed_system/Passive_things"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontoit.github.io/IIoT/Device/Computing_Device"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Support/Distributed_system/Smartphone"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Control_System"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Support/Software/DCS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Control_System"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Support/Software/SCADA"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Blockchain"/>
         <NamedIndividual IRI="#Blockchain_algorithm"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Cloud_service"/>
-        <NamedIndividual IRI="#Centralized_service"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Particle_cloud"/>
@@ -1334,11 +1929,11 @@
         <NamedIndividual IRI="#Cluster2"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Flow"/>
+        <Class IRI="#Data_Flow"/>
         <NamedIndividual IRI="#Connection1"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Flow"/>
+        <Class IRI="#Data_Flow"/>
         <NamedIndividual IRI="#Connection2"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1366,18 +1961,6 @@
         <NamedIndividual IRI="#Deep_learning_algorithm"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Cloud_service"/>
-        <NamedIndividual IRI="#Maintain_configuration"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Edge_technology"/>
-        <NamedIndividual IRI="#Micro_data_center"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Edge_technology"/>
-        <NamedIndividual IRI="#OPC_servers"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#Industrial_oven"/>
         <NamedIndividual IRI="#Oven1"/>
     </ClassAssertion>
@@ -1462,19 +2045,89 @@
         <NamedIndividual IRI="#Thingspeak2"/>
     </DifferentIndividuals>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isToolFor"/>
-        <NamedIndividual IRI="#Apache_Hadoop"/>
-        <NamedIndividual IRI="#Large_data_stream"/>
+        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/isElementOf"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/Actuator1"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/tempSensor_A1"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTechnology"/>
-        <NamedIndividual IRI="#Autonomous_vehicle"/>
-        <NamedIndividual IRI="#Micro_data_center"/>
+        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/hasDigitalTwin"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/ElectricVehicle"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/car_twin"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasProblem"/>
-        <NamedIndividual IRI="#Blockchain_algorithm"/>
-        <NamedIndividual IRI="#Energy_managed"/>
+        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/hasDigitalTwin"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/IndustrialRobotArm"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/robot_twin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/identifies"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/NFC1"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/Thing1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/identifies"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/NFC2"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/Thing2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/isElementOf"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/Sensor2"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/gasSensor_A2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isIdentified"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/Thing1"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/NFC1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isIdentified"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/Thing2"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/NFC2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isRepresentationOf"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/car_twin"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/ElectricVehicle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/communicatesWith"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/edgeMQTTNode1"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/edgeMQTTNode1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#data_transfer"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/edgeMQTTNode1"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/smartLightBulb1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/communicatesWith"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/edgeMQTTNode2"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/edgeMQTTNode2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#data_transfer"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/edgeMQTTNode2"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/motionDetector1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasElement"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/gasSensor_A2"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/Sensor2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isRepresentationOf"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/robot_twin"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/IndustrialRobotArm"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasElement"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/tempSensor_A1"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/Actuator1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/isSentBy"/>
+        <NamedIndividual IRI="#Cloud_Photon1"/>
+        <NamedIndividual IRI="#Particle_publish1"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#request"/>
@@ -1482,24 +2135,19 @@
         <NamedIndividual IRI="#Thingspeak1"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/isSentBy"/>
+        <NamedIndividual IRI="#Cloud_Photon2"/>
+        <NamedIndividual IRI="#Particle_publish2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#request"/>
         <NamedIndividual IRI="#Cloud_Photon2"/>
         <NamedIndividual IRI="#Thingspeak2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTechnology"/>
-        <NamedIndividual IRI="#Cloud_gaming"/>
-        <NamedIndividual IRI="#Micro_data_center"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#best_Practices"/>
-        <NamedIndividual IRI="#Computational_cost"/>
-        <NamedIndividual IRI="#Smart_grid"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#has_SecuritySolution"/>
-        <NamedIndividual IRI="#Computational_cost"/>
-        <NamedIndividual IRI="#Correct_Edge_implementation"/>
+        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/isWiredTo"/>
+        <NamedIndividual IRI="#Connection1"/>
+        <NamedIndividual IRI="#Photon1"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#read"/>
@@ -1507,99 +2155,49 @@
         <NamedIndividual IRI="#Particle_publish1"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/hasSubscriber"/>
+        <NamedIndividual IRI="#Connection2"/>
+        <NamedIndividual IRI="#Thingspeak2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/isWiredTo"/>
+        <NamedIndividual IRI="#Connection2"/>
+        <NamedIndividual IRI="#Photon2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#read"/>
         <NamedIndividual IRI="#Connection2"/>
         <NamedIndividual IRI="#Particle_publish2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasService"/>
-        <NamedIndividual IRI="#DC1"/>
-        <NamedIndividual IRI="#Centralized_service"/>
+        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/isMeasuredBy"/>
+        <NamedIndividual IRI="#Oven1"/>
+        <NamedIndividual IRI="#RTDsensor1"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#useAlgorithm"/>
-        <NamedIndividual IRI="#DC1"/>
-        <NamedIndividual IRI="#Paxos"/>
+        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/isMeasuredBy"/>
+        <NamedIndividual IRI="#Oven2"/>
+        <NamedIndividual IRI="#RTDsensor2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasService"/>
-        <NamedIndividual IRI="#DC2"/>
-        <NamedIndividual IRI="#Avoid_synchronization"/>
+        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/isMeasuredBy"/>
+        <NamedIndividual IRI="#Oven3"/>
+        <NamedIndividual IRI="#RTD3"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#useAlgorithm"/>
-        <NamedIndividual IRI="#DC2"/>
-        <NamedIndividual IRI="#Zookeeper"/>
+        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/isMeasuredBy"/>
+        <NamedIndividual IRI="#Oven4"/>
+        <NamedIndividual IRI="#RTD4"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasService"/>
-        <NamedIndividual IRI="#DC3"/>
-        <NamedIndividual IRI="#Avoid_synchronization"/>
+        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/isMeasuredBy"/>
+        <NamedIndividual IRI="#Oven5"/>
+        <NamedIndividual IRI="#RTD5"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#useAlgorithm"/>
-        <NamedIndividual IRI="#DC3"/>
-        <NamedIndividual IRI="#Paxos"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#useAlgorithm"/>
-        <NamedIndividual IRI="#DC4"/>
-        <NamedIndividual IRI="#Paxos"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#countermeasure"/>
-        <NamedIndividual IRI="#Data_security_risk"/>
-        <NamedIndividual IRI="#End-to-end_encryption"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#countermeasure"/>
-        <NamedIndividual IRI="#Data_security_risk"/>
-        <NamedIndividual IRI="#Strong_authentication"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasProblem"/>
-        <NamedIndividual IRI="#Data_stream_continue"/>
-        <NamedIndividual IRI="#Throughput_limited"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasSolution"/>
-        <NamedIndividual IRI="#Energy_managed"/>
-        <NamedIndividual IRI="#Improve_central_algorithm"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#Support_communication"/>
-        <NamedIndividual IRI="#Ethernet"/>
-        <NamedIndividual IRI="#Long-distance_communication"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isUsedBy"/>
-        <NamedIndividual IRI="#Hadoop"/>
-        <NamedIndividual IRI="#Cluster1"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isUsedBy"/>
-        <NamedIndividual IRI="#Hadoop"/>
-        <NamedIndividual IRI="#Cluster2"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isProcessed"/>
-        <NamedIndividual IRI="#Large_data_stream"/>
-        <NamedIndividual IRI="#Distributed_capability"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isApplied"/>
-        <NamedIndividual IRI="#MapReduce"/>
-        <NamedIndividual IRI="#Cluster1"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTool"/>
-        <NamedIndividual IRI="#Micro_data_center"/>
-        <NamedIndividual IRI="#Azure_IoT_edge"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTool"/>
-        <NamedIndividual IRI="#OPC_servers"/>
-        <NamedIndividual IRI="#Apache_IoT_edge"/>
+        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/isReadBy"/>
+        <NamedIndividual IRI="#Particle_publish1"/>
+        <NamedIndividual IRI="#Connection1"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#send"/>
@@ -1607,24 +2205,19 @@
         <NamedIndividual IRI="#Cloud_Photon1"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/isReadBy"/>
+        <NamedIndividual IRI="#Particle_publish2"/>
+        <NamedIndividual IRI="#Connection2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#send"/>
         <NamedIndividual IRI="#Particle_publish2"/>
         <NamedIndividual IRI="#Cloud_Photon2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isApplied"/>
-        <NamedIndividual IRI="#Paxos"/>
-        <NamedIndividual IRI="#DC1"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isApplied"/>
-        <NamedIndividual IRI="#Paxos"/>
-        <NamedIndividual IRI="#DC3"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isApplied"/>
-        <NamedIndividual IRI="#Paxos"/>
-        <NamedIndividual IRI="#DC4"/>
+        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/hasSubscriber"/>
+        <NamedIndividual IRI="#Photon1"/>
+        <NamedIndividual IRI="#Thingspeak1"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#wire"/>
@@ -1635,11 +2228,6 @@
         <ObjectProperty IRI="#wire"/>
         <NamedIndividual IRI="#Photon2"/>
         <NamedIndividual IRI="#Connection2"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTechnology"/>
-        <NamedIndividual IRI="#Predictive_maintenance"/>
-        <NamedIndividual IRI="#OPC_servers"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#heat"/>
@@ -1667,84 +2255,24 @@
         <NamedIndividual IRI="#Oven2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#threats_to_data_security"/>
-        <NamedIndividual IRI="#SCADA_application"/>
-        <NamedIndividual IRI="#Data_security_risk"/>
+        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/isRequestedBy"/>
+        <NamedIndividual IRI="#Thingspeak1"/>
+        <NamedIndividual IRI="#Cloud_Photon1"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasSolution"/>
-        <NamedIndividual IRI="#Security_problem"/>
-        <NamedIndividual IRI="#Access_control"/>
+        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/subscribesTo"/>
+        <NamedIndividual IRI="#Thingspeak1"/>
+        <NamedIndividual IRI="#Photon1"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasSolution"/>
-        <NamedIndividual IRI="#Security_problem"/>
-        <NamedIndividual IRI="#Data_protection"/>
+        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/isRequestedBy"/>
+        <NamedIndividual IRI="#Thingspeak2"/>
+        <NamedIndividual IRI="#Cloud_Photon2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasSolution"/>
-        <NamedIndividual IRI="#Security_problem"/>
-        <NamedIndividual IRI="#Integrity_assurance"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasSolution"/>
-        <NamedIndividual IRI="#Security_problem"/>
-        <NamedIndividual IRI="#Secure_key_management"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasSecurity_problem"/>
-        <NamedIndividual IRI="#Smart_contracts"/>
-        <NamedIndividual IRI="#Security_problem"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTechnology"/>
-        <NamedIndividual IRI="#Smart_grid"/>
-        <NamedIndividual IRI="#OPC_servers"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTechnology"/>
-        <NamedIndividual IRI="#Smart_home"/>
-        <NamedIndividual IRI="#OPC_servers"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#Support_communication"/>
-        <NamedIndividual IRI="#TCP_IP"/>
-        <NamedIndividual IRI="#Long-distance_communication"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isToolFor"/>
-        <NamedIndividual IRI="#Tensor_Flow"/>
-        <NamedIndividual IRI="#Deep_learning_algorithm"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isToolFor"/>
-        <NamedIndividual IRI="#Theano"/>
-        <NamedIndividual IRI="#Deep_learning_algorithm"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasSolution"/>
-        <NamedIndividual IRI="#Throughput_limited"/>
-        <NamedIndividual IRI="#Synchronization_in_throughput"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#best_Practices"/>
-        <NamedIndividual IRI="#Transmission_speed"/>
-        <NamedIndividual IRI="#Smart_home"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#has_SecuritySolution"/>
-        <NamedIndividual IRI="#Transmission_speed"/>
-        <NamedIndividual IRI="#Reducing_latency_in_sending_data"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasService"/>
-        <NamedIndividual IRI="#Zookeeper"/>
-        <NamedIndividual IRI="#Maintain_configuration"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isApplied"/>
-        <NamedIndividual IRI="#Zookeeper"/>
-        <NamedIndividual IRI="#DC2"/>
+        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/subscribesTo"/>
+        <NamedIndividual IRI="#Thingspeak2"/>
+        <NamedIndividual IRI="#Photon2"/>
     </ObjectPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasValueConnection"/>
@@ -1826,80 +2354,105 @@
         <NamedIndividual IRI="#RTDsensor2"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">500.0</Literal>
     </DataPropertyAssertion>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#hasCapability"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#useAlgorithm"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#useProgramming"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-    </SubObjectPropertyOf>
-    <FunctionalObjectProperty>
-        <ObjectProperty IRI="#hasService"/>
-    </FunctionalObjectProperty>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/communicatesWith"/>
+        <ObjectProperty IRI="#data_transfer"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/hasDigitalTwin"/>
+        <ObjectProperty IRI="#isRepresentationOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/hasSubscriber"/>
+        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/subscribesTo"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/identifies"/>
+        <ObjectProperty IRI="#isIdentified"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/isElementOf"/>
+        <ObjectProperty IRI="#hasElement"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/isMeasuredBy"/>
+        <ObjectProperty IRI="#heat"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/isReadBy"/>
+        <ObjectProperty IRI="#read"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/isRequestedBy"/>
+        <ObjectProperty IRI="#request"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/isSentBy"/>
+        <ObjectProperty IRI="#send"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/isWiredTo"/>
+        <ObjectProperty IRI="#wire"/>
+    </InverseObjectProperties>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#authentication"/>
-        <Class IRI="#MQTT"/>
+        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/communicatesWith"/>
+        <Class IRI="#Device"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#challenge"/>
-        <Class IRI="#Blockchain"/>
+        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/hasDigitalTwin"/>
+        <Class IRI="#Smart_Product"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/hasSubscriber"/>
+        <Class IRI="#Particle_Photon"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/identifies"/>
+        <Class IRI="#NFC_tag"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/isElementOf"/>
+        <Class IRI="#Actuator"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/isMeasuredBy"/>
+        <Class IRI="#Industrial_oven"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/isReadBy"/>
+        <Class IRI="#Firmware"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/isRequestedBy"/>
+        <Class IRI="#Subscriber"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/isSentBy"/>
+        <Class IRI="#Particle_cloud"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/isWiredTo"/>
+        <Class IRI="#Data_Flow"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/subscribesTo"/>
+        <Class IRI="#Subscriber"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#data_transfer"/>
         <Class IRI="#MQTT"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#flow_services"/>
-        <Class IRI="#Particle_Photon"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasAlgorithm"/>
-        <Class IRI="#Gateway"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasElement"/>
-        <Class IRI="#Andrew"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasFunctionality"/>
-        <Class IRI="#Data_center"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasProblem"/>
-        <Class IRI="#Blockchain"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasSecurity_problem"/>
-        <Class IRI="#Blockchain"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasService"/>
-        <Class IRI="#Data_center"/>
+        <Class IRI="#Andrew_sensor"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#heat"/>
         <Class IRI="#RTD_sensor"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#isConnectedBy"/>
-        <Class IRI="#Processing_Board"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="#isIdentified"/>
-        <Class IRI="#Passive_things"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#isManagedBy"/>
-        <Class IRI="#Smart_Product"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#isPartOf"/>
-        <Class IRI="#PLC"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Device/Asset"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isRepresentationOf"/>
@@ -1907,11 +2460,7 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#read"/>
-        <Class IRI="#Flow"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#regulationTemperature"/>
-        <Class IRI="#RTD_sensor"/>
+        <Class IRI="#Data_Flow"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#request"/>
@@ -1920,98 +2469,78 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#send"/>
         <Class IRI="#Firmware"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#useAlgorithm"/>
-        <Class IRI="#Data_center"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#wire"/>
         <Class IRI="#Particle_Photon"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#authentication"/>
-        <Class IRI="#JSON_Web_Token"/>
+        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/communicatesWith"/>
+        <Class IRI="#MQTT"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/hasDigitalTwin"/>
+        <Class IRI="#Digital_twin"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/hasSubscriber"/>
+        <Class IRI="#Subscriber"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/identifies"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Device/Asset"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/isElementOf"/>
+        <Class IRI="#Andrew_sensor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/isMeasuredBy"/>
+        <Class IRI="#RTD_sensor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/isReadBy"/>
+        <Class IRI="#Data_Flow"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/isRequestedBy"/>
+        <Class IRI="#Particle_cloud"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/isSentBy"/>
+        <Class IRI="#Firmware"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/isWiredTo"/>
+        <Class IRI="#Particle_Photon"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/subscribesTo"/>
+        <Class IRI="#Particle_Photon"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#data_transfer"/>
         <Class IRI="#Device"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#flow_services"/>
-        <Class IRI="#Subscriber"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasAlgorithm"/>
-        <Class IRI="#Analytics"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="#hasElement"/>
-        <Class IRI="#Transducer"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasFunctionality"/>
-        <Class IRI="#Cloud_service"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasService"/>
-        <Class IRI="#Cloud_service"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasTechnology"/>
-        <Class IRI="#Edge_technology"/>
+        <Class IRI="#Actuator"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#heat"/>
         <Class IRI="#Industrial_oven"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#isApplied"/>
-        <Class IRI="#Computer_cluster"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#isConnectedBy"/>
-        <Class IRI="#Smart_Product"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="#isIdentified"/>
-        <Class IRI="#BLE"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#isIdentified"/>
-        <Class IRI="#NFC_tag"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#isIdentified"/>
-        <Class IRI="#Optical_tag"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#isIdentified"/>
-        <Class IRI="#RFID_tag"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#isManagedBy"/>
-        <Class IRI="#Programming_Language"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#isPartOf"/>
-        <Class IRI="#ICS"/>
+        <Class IRI="https://ontoit.github.io/IIoT/Network/Tag_Device"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isRepresentationOf"/>
         <Class IRI="#Smart_Product"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#login"/>
-        <Class IRI="#Gateway"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="#read"/>
         <Class IRI="#Firmware"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#regulationTemperature"/>
-        <Class IRI="#Industrial_oven"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#request"/>
@@ -2022,12 +2551,8 @@
         <Class IRI="#Particle_cloud"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#useAlgorithm"/>
-        <Class IRI="#Data_center"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="#wire"/>
-        <Class IRI="#Flow"/>
+        <Class IRI="#Data_Flow"/>
     </ObjectPropertyRange>
     <SubDataPropertyOf>
         <DataProperty IRI="#MicroSD_card"/>
@@ -2037,10 +2562,6 @@
         <DataProperty IRI="#Power_supply"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
-    <DataPropertyDomain>
-        <DataProperty IRI="#FireFly_nodes"/>
-        <Class IRI="#Wireless_sensor_network"/>
-    </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#FireFly_nodes"/>
         <DataSomeValuesFrom>
@@ -2058,7 +2579,7 @@
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#MicroSD_card"/>
-        <Class IRI="#Raspberyy_Pi_4B"/>
+        <Class IRI="#Raspberry_Pi_4B"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#MicroSD_card"/>
@@ -2074,10 +2595,6 @@
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#Password_mobile_node"/>
-        <Class IRI="#Wireless_sensor_network"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#Password_mobile_node"/>
         <DataHasValue>
             <DataProperty IRI="#Password_mobile_node"/>
             <Literal>password</Literal>
@@ -2085,7 +2602,7 @@
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#Power_supply"/>
-        <Class IRI="#Raspberyy_Pi_4B"/>
+        <Class IRI="#Raspberry_Pi_4B"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#Power_supply"/>
@@ -2098,10 +2615,6 @@
                 </FacetRestriction>
             </DatatypeRestriction>
         </DataSomeValuesFrom>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#disconnect_timeout"/>
-        <Class IRI="#Wireless_sensor_network"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#disconnect_timeout"/>
@@ -2174,7 +2687,7 @@
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hasValueConnection"/>
-        <Class IRI="#Flow"/>
+        <Class IRI="#Data_Flow"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hasValueConnection"/>
@@ -2354,6 +2867,282 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://ontoit.github.io/IIoT/Application/Home_automation</IRI>
+        <Literal>Home_automation is an IoT application focused on automating and controlling home devices (lighting, temperature, security, etc.).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://ontoit.github.io/IIoT/Application/health-monitoring_system</IRI>
+        <Literal>Remote patient monitoring devices: glucometer, pulse oximeter, thermometer, ECG, digital stethoscope, wearables, scales, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://ontoit.github.io/IIoT/Device/Asset</IRI>
+        <Literal>An asset is any entity that can be identified — for example, through an NFC tag, a QR code, a unique identifier, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://ontoit.github.io/IIoT/Device/Circuit</IRI>
+        <Literal>A digital circuit is an electronic system that processes information in binary form, for two voltage levels: 0 (LOW) and 1 (HIGH). These circuits are implemented in any digital equipment – from microcontrollers to smartphones or IoT systems.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://ontoit.github.io/IIoT/Device/Computing_Device</IRI>
+        <Literal>Computing_Device is a hardware device that has the ability to receive, process, store and transmit information by executing software programs, having computing resources (processor, memory, storage) and communication interfaces.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://ontoit.github.io/IIoT/Device/Cryptographic_Protocol</IRI>
+        <Literal>Cryptographic_Protocol uses cryptographic techniques to ensure secure communication, data integrity, confidentiality, and authentication between entities in an IoT system.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://ontoit.github.io/IIoT/Device/Development_Tool</IRI>
+        <Literal>Development_Tool will contain programming languages, databases, specialized software, tools for measurement, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://ontoit.github.io/IIoT/Device/Embedded_Device</IRI>
+        <Literal>Embedded_Device is a class that defines smart devices with specific functions, integrated into IoT ecosystems, responsible for data collection, local processing, actuator control, communication with other devices, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://ontoit.github.io/IIoT/Device/Logic_Gate</IRI>
+        <Literal>A logic gate is a component in digital electronics that performs logical operations on binary input signals (0 or 1) and returns a binary logical result.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://ontoit.github.io/IIoT/Device/SSL</IRI>
+        <Literal>Secure Sockets Layer (SSL) is an outdated cryptographic protocol formerly used to secure network communications. It has been replaced by TLS in modern IoT systems.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://ontoit.github.io/IIoT/Device/Smart_Product</IRI>
+        <Literal>Smart_Product represents any device that combines hardware and software to provide intelligent functionality and connectivity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://ontoit.github.io/IIoT/Device/Smartphone</IRI>
+        <Literal>A smartphone is a smart device with processing capacity, an operating system, includes sensors, has Internet connectivity, can interact with other IoT devices and can run applications for monitoring, control, analysis, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://ontoit.github.io/IIoT/Device/TLS</IRI>
+        <Literal>TLS is a cryptographic protocol that secures data transmission over networks, commonly used in IoT to protect device communication.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://ontoit.github.io/IIoT/Device/Transducer</IRI>
+        <Literal>A transducer is a device that converts one type of physical signal into another — typically between a physical signal (e.g. temperature, light, pressure) and an electrical signal.
+A transducer can be viewed as a hybrid device that can include sensors and actuators.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://ontoit.github.io/IIoT/Device/Unit</IRI>
+        <Literal>A digital unit is a subsection of a digital system that performs a specific function (logical, control, computational, or communication), working with binary signals (0 and 1). Examples of digital units: Timer Unit, I/O Unit, Arithmetic Logic Unit, and Control Unit.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://ontoit.github.io/IIoT/Device/Wearable</IRI>
+        <Literal>Wearables are smart devices designed to be worn on or integrated into the body, capable of sensing, processing, or communicating data related to the wearer or their environment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://ontoit.github.io/IIoT/Network/AI_Analytics</IRI>
+        <Literal>AI_Analytics represents models or methods of Artificial Intelligence, Machine Learning, Analytic Methods, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://ontoit.github.io/IIoT/Network/Access_Point</IRI>
+        <Literal>Access Point = network equipment that connects wireless devices to a local area network (LAN), serving as an intermediary between wireless and wired connections.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://ontoit.github.io/IIoT/Network/Application_Protocol</IRI>
+        <Literal>Application layer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://ontoit.github.io/IIoT/Network/Cable</IRI>
+        <Literal>Cable = physical component that connects network devices to each other and allows the transmission of data, electrical or optical signals.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://ontoit.github.io/IIoT/Network/Data_Link_Protocol</IRI>
+        <Literal>Data Link Layer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://ontoit.github.io/IIoT/Network/Electrical_Grids</IRI>
+        <Literal>Electrical_Grids can be included in an IoT system. They become &quot;Smart Grids&quot; when integrated with: smart devices (IoT hardware), wireless communications, and analysis and control software. The administration of electrical grids once controlled by manual input and electrical relays have been replaced by industrial control systems (ICS).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://ontoit.github.io/IIoT/Network/LAN</IRI>
+        <Literal>Local Area Network</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://ontoit.github.io/IIoT/Network/NFC</IRI>
+        <Literal>Wireless proximity protocol</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://ontoit.github.io/IIoT/Network/Network_Protocol</IRI>
+        <Literal>protocol for transmitting data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://ontoit.github.io/IIoT/Network/PAN</IRI>
+        <Literal>PAN is a very small network category, typically created around a person (e.g. devices around the human body: phone, smartwatch, Bluetooth headset, etc.).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://ontoit.github.io/IIoT/Network/Tag_Device</IRI>
+        <Literal>Tag-device represents physical objects such as NFC_tag, RFID_tag, Optical_tag, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://ontoit.github.io/IIoT/Network/Transport_Protocol</IRI>
+        <Literal>Transport layer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://ontoit.github.io/IIoT/Network/WAN</IRI>
+        <Literal>Wide Area Network</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://ontoit.github.io/IIoT/Network/Wireless_Sensor_Network</IRI>
+        <Literal>Wireless Sensor Networks - Sensor nodes are used with an onboard processor that manages and monitors the environment in a certain area. They are connected to the base station through the Internet to share data. A mobile node identifies nearby network nodes and logins using the SAMPL protocol, gateway, and Publish-Subscribe service.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://ontoit.github.io/IIoT/Network/Wireless_Technology</IRI>
+        <Literal>Wireless transmission</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://ontoit.github.io/IIoT/Network/Wireless_sensor_network</IRI>
+        <Literal>Wireless Sensor Networks - Sensor nodes are used with an onboard processor that manages and monitors the environment in a certain area. They are connected to the base station through the Internet to share data. A mobile node identifies nearby network nodes and logins using the SAMPL protocol, gateway, and Publish-Subscribe service.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://ontoit.github.io/IIoT/Support/Broker</IRI>
+        <Literal>Broker intermediates messages between Publisher and Subscriber (eg MQTT Broker). It is optional in a Pubsub System.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://ontoit.github.io/IIoT/Support/Cloud_Computing</IRI>
+        <Literal>Cloud computing provides access to shared computing resources (such as storage, processing, and applications) over the internet, typically from centralized data centers.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://ontoit.github.io/IIoT/Support/Cloud_Model</IRI>
+        <Literal>Cloud_Model implements cloud computing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://ontoit.github.io/IIoT/Support/Cloud_Service</IRI>
+        <Literal>A Cloud Service offers access to IT resources through the Internet, without the users having their own hardware or software for those resources.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://ontoit.github.io/IIoT/Support/Cloudera</IRI>
+        <Literal>Cloudera is a cloud platform designed for large-scale data management and analytics. It supports IoT data ingestion, storage, processing, and analysis using technologies such as Hadoop, Spark, and Kafka.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://ontoit.github.io/IIoT/Support/Data_Management</IRI>
+        <Literal>Data Storage/Processing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://ontoit.github.io/IIoT/Support/Data_Metadata</IRI>
+        <Literal>We will consider the metadata associated with the collected data.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://ontoit.github.io/IIoT/Support/Data_Platform</IRI>
+        <Literal>Data_Platform is a software system that provides capabilities for collecting, storing, processing, analyzing, and visualizing data from IoT sources. A data platform can operate in cloud or edge/fog environments.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://ontoit.github.io/IIoT/Support/Distributed_Data_System</IRI>
+        <Literal>Represents a software system designed to manage, process, and store data across multiple distributed locations. It is frequently used in IoT architectures to efficient handle large volumes of data produced by smart devices.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://ontoit.github.io/IIoT/Support/Edge_Computing</IRI>
+        <Literal>In Edge computing data processing and analytics are performed directly on or near the data-generating devices (the &quot;edge&quot; of the network). This minimizes data transfer to centralized cloud systems.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://ontoit.github.io/IIoT/Support/Fog_Computing</IRI>
+        <Literal>Fog_Computing extends cloud computing capabilities to the edge of the network.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://ontoit.github.io/IIoT/Support/Framework</IRI>
+        <Literal>Frameworks, Libraries</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://ontoit.github.io/IIoT/Support/Infrastructure</IRI>
+        <Literal>Physical Infrastructure for Cloud Computing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://ontoit.github.io/IIoT/Support/PubSub_Component</IRI>
+        <Literal>A Pubsub_Component is a part of the IoT communication system, responsible for sending, receiving or routing data in asynchronous way, using the Publish/Subscribe model.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://ontoit.github.io/IIoT/Support/Publisher</IRI>
+        <Literal>A publisher is a device, sensor, or software process that transmits data or messages to a system, using a Publish -Subscribe communication model.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://ontoit.github.io/IIoT/Support/Security</IRI>
+        <Literal>Security represents the set of mechanisms, policies, and requirements used to ensure the confidentiality, integrity, and availability of data, devices, and communications within an IoT system.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://ontoit.github.io/IIoT/Support/Distributed_system/AWS_IoT</IRI>
+        <Literal>AWS IoT Core is a cloud service provided by Amazon Web Services (AWS) that enables IoT devices to securely connect, communicate, and exchange data with other devices and applications in the cloud.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://ontoit.github.io/IIoT/Support/Distributed_system/Azure_Iot</IRI>
+        <Literal>Azure IoT Hub is a cloud service provided by Microsoft Azure that enables the connection, monitoring, and management of IoT devices at scale.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://ontoit.github.io/IIoT/Support/Distributed_system/Data_Format</IRI>
+        <Literal>data format</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://ontoit.github.io/IIoT/Support/Distributed_system/Passive_things</IRI>
+        <Literal>Passive things do not require external power, they just react to inputs from their environment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://ontoit.github.io/IIoT/Support/Distributed_system/Smartphone</IRI>
+        <Literal>Smartphones are gateway devices that enable data connectivity through their set of sensors: GPS, biometrics, Bluetooth, heart rate monitor, ECG, barcode readers, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://ontoit.github.io/IIoT/Support/Software/JWT</IRI>
+        <Literal>JSON Web Token (JWT) is an Internet standard for creating data with optional signature and encryption. It has 3 parts: a header, a payload, and a signature that are encoded and concatenated to produce the JWT.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://ontoit.github.io/IIoT/Support/Software/Programming_Language</IRI>
+        <Literal>IoT devices use certain programming languages to process and control data transfer (e.g. Raspberry Pi, Programmable Logic Controller, C, Java, Python).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>https://saref.etsi.org/core/Currency</IRI>
         <Literal xml:lang="en">The class of units of measure for price</Literal>
     </AnnotationAssertion>
@@ -2419,16 +3208,6 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://tudorliv.github.io/IIoT/capabilities/Operating_system</IRI>
-        <Literal>A distributed operating system manages communication shared in a network of independent computers that possess their own memory unit and CPU. Ex: YARN, LOCUS, Mesos, etc.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://tudorliv.github.io/IIoT/capabilities/Operating_system</IRI>
-        <Literal>Operating_system</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Big_data</IRI>
         <Literal>Big data can be stored using NoSQL and relational databases, data warehouses, etc.</Literal>
     </AnnotationAssertion>
@@ -2440,7 +3219,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>UnitOfMeasure</IRI>
-        <Literal xml:lang="en">The unit of measure is a standard for measurement of a quantity, such as a Property. For example,  Power is a property and Watt is a unit of power that represents a definite predetermined power: when we say 10 Watt, we actually mean 10 times the definite predetermined power called &quot;watt&quot;. Our definition is based on the definition of unit of measure in the Ontology of units of Measure (OM). We propose here a list of some units of measure that are relevant for the purpose of SAREF, but this list can be extended, also using some other ontologies rather than the Ontology of units of Measure (OM).</Literal>
+        <Literal xml:lang="en">&quot;UnitOfMeasure&quot; class is imported from SAREF ontology: &quot;The unit of measure is a standard for measurement of a quantity, such as a Property. For example,  Power is a property and Watt is a unit of power that represents a definite predetermined power: when we say 10 Watt, we actually mean 10 times the definite predetermined power called &quot;watt&quot;. Our definition is based on the definition of unit of measure in the Ontology of units of Measure (OM). We propose here a list of some units of measure that are relevant for the purpose of SAREF, but this list can be extended, also using some other ontologies rather than the Ontology of units of Measure (OM).&quot;</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2454,8 +3233,13 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Actuator</IRI>
+        <Literal>A transducer converts a signal from one physical structure to another and converts one type of energy into another type. There are two types of transducers: sensors and actuators. Sensors are used for sensing things and devices etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Adapter</IRI>
-        <Literal>Adapters are gateways to external hardware platforms like Arduino and Raspberry PI.</Literal>
+        <Literal>Adapter (in IoT context) is usually a software or hardware component that translates/intermediates between two incompatible entities: communication protocols (e.g. Zigbee ↔ MQTT), data models, electrical signals, etc. Adapters can be gateways to external hardware platforms like Arduino and Raspberry PI.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2464,7 +3248,7 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Andrew</IRI>
+        <IRI>#Andrew_sensor</IRI>
         <Literal>Sensor Andrew - uniform access to heterogeneous devices; sharing of transducers; security and privacy, etc.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -2489,6 +3273,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Authentication_Token</IRI>
+        <Literal>Authentication_Token is a digital token-based authentication mechanism, used in the security field. It is used especially in distributed and secure IoT.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Autonomous_vehicle</IRI>
         <Literal>Autonomous_vehicle (Individual): an Edge application with Object property assertions (hasTechnology)</Literal>
     </AnnotationAssertion>
@@ -2506,11 +3295,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#BACnet</IRI>
         <Literal>BACnet (Individual): a SCADA common protocol with Object property assertions (Protocols_were_layered, Lack_security_measure)</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#BLE</IRI>
-        <Literal>BLE tags (Bluetooth Low Energy beacons) - protocols for small data exchanges are small Bluetooth hardware components that are used to locate people or objects.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2534,11 +3318,6 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Cloud</IRI>
-        <Literal>Cloud systems perform cloud computing. Instead of selling, cloud providers rent servers, storage space, databases, networks, software, analytics and business intelligence.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Cloud_Photon1</IRI>
         <Literal>Cloud_Photon1 (Individual): a Particle_cloud with Object property assertions (request)</Literal>
     </AnnotationAssertion>
@@ -2551,11 +3330,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Cloud_gaming</IRI>
         <Literal>Cloud_gaming (Individual): an Edge application with Object property assertions (hasTechnology)</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Cloud_service</IRI>
-        <Literal>Cloud services perform communications between devices, data gathering and processing.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2581,11 +3355,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Computational_cost</IRI>
         <Literal>Computational_cost (Individual): of type Edge security with Object property assertions: has_SecuritySolution, best_Practices</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Computer_architecture</IRI>
-        <Literal>The Network class is defined as an aggregation of the three components: data transmission, control engineering, and computer architecture.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2615,7 +3384,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Cryptographic_system</IRI>
-        <Literal>A set of algorithms that convert plaintext to the ciphertext to encode or decode messages securely.</Literal>
+        <Literal>A cryptographic system is a set of algorithms and protocols, sometimes including hardware components, used to secure communications or data, and part of applications such as IoT secure communication, blockchain, etc. A cryptographic system may include algorithms that convert plaintext into ciphertext to encode or decode messages.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2636,6 +3405,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#DC4</IRI>
         <Literal>DC4 (Individual): a Data center with Object property assertions (useAlgorithm)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Data_Flow</IRI>
+        <Literal>Flow in this ontology refers to the flow of data between IoT devices or applications. For example, Flow can describe the Flow-Service-Quality semantics for a Particle Photon application that includes a Thingspeak subscriber, a WebHook, and a firmware program.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2665,12 +3439,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Data_transmission</IRI>
-        <Literal>Data transmisiion is managed by network protocols (communication protocols) in a computer or telecommunications network. Network protocols form the protocol layer according to OSI levels.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Dealing_with_sensitive_data</IRI>
-        <Literal>Dealing_with_sensitive_data (Object property): SCADA solutions are proper practices for systems dealing with sensitive data</Literal>
+        <Literal>Data transmission is managed by network protocols (communication protocols) in a computer or telecommunications network. Network protocols form the protocol layer according to OSI levels.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2684,18 +3453,13 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#DevelopEdgeSecurity</IRI>
-        <Literal>DevelopEdgeSecurity (Object property): develops solutions for edge applications using Blockchain capabilities</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Device</IRI>
         <Literal>&quot;Device&quot; represents a layer of the IoT architecture. The device layer includes hardware platforms, connected products, technologies, tools, and functionalities.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Digital_logic</IRI>
-        <Literal>Digital includes terms and tools about hardware platforms, logic, purpose-built devices, and smart products.</Literal>
+        <Literal>Digital_logic represents the fundamental concepts, elements, and structures of digital circuits: logic gates, sequential circuits, digital signals, bit operations, etc. It is a fundamental hardware/logic level of digital design, focused on electronic circuits and digital components.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2705,7 +3469,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Distributed_system</IRI>
-        <Literal>The support layer is represented by distributed systems known as “cloud systems” that perform communications between devices, data gathering and processing. A distributed system has components located on different  computers from the network that communicate by passing messages.</Literal>
+        <Literal>The support layer is represented by distributed systems known as “cloud systems” that perform communications between devices, data gathering and processing. A distributed system has components located on different  computers from the network that communicate by passing messages. Distributed technology refers to technologies that enable the decentralized processing, storage, and coordination of data and computation across multiple nodes or devices in a network.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2720,17 +3484,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Eddystone</IRI>
-        <Literal>iBeacon from Apple and Eddystone from Google are portable electronic devices that use network protocols such as NFC, RFID, optical tags, or BLE as hardware transmitters.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Edge_technology</IRI>
-        <Literal>The term edge refers to any computational or network resource available between the initial data source and the cloud services. Data processing near the edge has been approached in OLE for process control servers and micro data centers.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Electrical_Grids</IRI>
-        <Literal>The administration of electrical grids once controlled by manual input and electrical relays have been replaced by industrial control systems (ICS).</Literal>
+        <Literal>Eddystone is a communication protocol that defines packet formats to be transmitted by BLE beacons. It runs on a hardware beacon. iBeacon from Apple and Eddystone from Google are portable electronic devices that use network protocols such as NFC, RFID, optical tags, or BLE as hardware transmitters.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2750,7 +3504,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Factory_Equipment</IRI>
-        <Literal>The administration of factory equipment is performed by the industrial control systems (ICS).</Literal>
+        <Literal>Factory_Equipment represents a set of physical devices used in industrial processes that may contain sensors, actuators, digital logic, embedded units; they are often industrial IoT devices (IIoT). The administration of factory equipment is performed by the industrial control systems (ICS).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2760,12 +3514,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Firmware</IRI>
-        <Literal>In a Particle Photon application, a firmware program reads the value D0 of a pin, call the function Particle.publish() with one of the value “0” or “1” that is sent to the Particle cloud.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Flow</IRI>
-        <Literal>Flow describes the Flow-Service-Quality semantics for a Particle Photon application that includes a Thingspeak subscriber, a WebHook, and a firmware program.</Literal>
+        <Literal>Firmware is a type of specialized software that runs directly on embedded hardware (e.g. sensors, controllers, gateways). In a Particle Photon application, a firmware program reads the value D0 of a pin, call the function Particle.publish() with one of the value “0” or “1” that is sent to the Particle cloud.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2775,7 +3524,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#HAT</IRI>
-        <Literal>Modules that connect processing boards to computers and other objects</Literal>
+        <Literal>HAT (Hardware Attached on Top) is an extension board that mounts on a device like Raspberry Pi, providing additional functionality (sensors, controllers, communication interfaces, etc.). HAT modules connect processing boards to computers and other objects</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2799,11 +3548,6 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Home_automation</IRI>
-        <Literal>MQTT is a network protocol used for home automation systems (network layer ontology).</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Hortonworks</IRI>
         <Literal>Hortonworks Data Platform (HDP) is a secure framework for distributed storage, processing of large, multi-source data sets, and data analysis.</Literal>
     </AnnotationAssertion>
@@ -2814,18 +3558,13 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#ICS</IRI>
-        <Literal>ICS (industrial control systems)</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#IP</IRI>
         <Literal>IP (Internet Protocol) is a protocol for transmitting data over the Internet. The data is retrieved and divided into datagrams (IP packets) by the transport layer, transmitted over the Internet, and then reassembled by the network layer.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#ISO_stack</IRI>
-        <Literal>ISO stack - protocols stack developed by the International Organization of Standardization (ISO). Each layer of the ISO model has certain protocols and functions. The ISO protocols stack works from the hardware physical layer to the software application layer.</Literal>
+        <Literal>ISO_stack is a conceptual model that refers to protocols stack developed by the International Organization of Standardization (ISO). Each layer of the ISO model has certain protocols and functions. The ISO protocols stack works from the hardware physical layer to the software application layer.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2846,11 +3585,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Integrity_assurance</IRI>
         <Literal>Integrity_assurance (Individual): a Blockchain solution</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#JSON_Web_Token</IRI>
-        <Literal>JSON Web Token (JWT) is an Internet standard for creating data with optional signature and encryption. It has 3 parts: a header, a payload, and a signature that are encoded and concatenated to produce the JWT.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2925,7 +3659,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Mesos</IRI>
-        <Literal>Mesos is a distributed operating system that runs on every machine. The Mesos kernel provides applications like Hadoop, Spark, Kafka and ensures resource management and scheduling in cloud environment.</Literal>
+        <Literal>Mesos acts like a kernel for a distributed system, not a full operating system. It is based on the underlying OS (like Linux) to manage individual nodes. The Mesos kernel provides applications like Hadoop, Spark, Kafka and ensures resource management and scheduling in cloud environment.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2960,7 +3694,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#NFC_tag</IRI>
-        <Literal>NFC tags (Near Field Communication limited to high-frequency) are protocols that identify passive things. NFC tags are passive, meaning they don&apos;t have any power source. They take power from the device that reads them, through magnetic induction.</Literal>
+        <Literal>NFC tags (Near Field Communication limited to high-frequency) identify passive things. NFC tags are passive, meaning they don&apos;t have any power source. They take power from the device that reads them, through magnetic induction.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2974,23 +3708,18 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#NoSQL_Data</IRI>
+        <IRI>#NoSQL_Database</IRI>
         <Literal>NoSQL database is a non-relational database. Types of NoSQL databases: document databases, key-value databases, wide-column stores, and graph databases. Ex. Azure Cosmos DB, Oracle NoSQL, MongoDB, Azure Cosmos DB, HBase databases, applications that use Hadoop, etc.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Node</IRI>
+        <IRI>#NodeJS</IRI>
         <Literal>Software platforms (e.g., Python, Django, Node) and Web technologies are integrated with hardware components of the IoT systems. Node or NodeJS is a back-end Javascript runtime environment. Features: fast and real-time execution and good integration with IoT protocols.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#OPC_servers</IRI>
         <Literal>OPC_servers (Individual): an edge technology with Object property assertions: hasTool</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Oil_Pipeline_Control</IRI>
-        <Literal>Sensors are embedded into purpose-built devices such as oil pipeline control systems.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3040,7 +3769,8 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Particle_Photon</IRI>
-        <Literal>Edge-to-cloud platform; Connecting Photon to CMU Wi-Fi; Mini breadboard, USB cable, header</Literal>
+        <Literal>Particle_Photon is a hardware device. 
+Connecting Photon to CMU Wi-Fi; USB cable</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3056,11 +3786,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Particle_publish2</IRI>
         <Literal>Particle_publish2 (Individual): a Firmware with Object property assertions (send), Data property assertions (hasTimeLimit)</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Passive_things</IRI>
-        <Literal>“Passive things” have sensors that do not require external power, they just react to inputs from their environment.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3084,6 +3809,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Physical_Infrastructure</IRI>
+        <Literal>Physical_Infrastructure represents the physical components and hardware required for a network to function.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Power_supply</IRI>
         <Literal>Power_supply (Data property): Setting up Raspberry Pi 4 Model B requires a power supply that provides at least 3.0 amps</Literal>
     </AnnotationAssertion>
@@ -3096,11 +3826,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Processing_Board</IRI>
         <Literal>The processing board is an IoT board with a processor, memory (MicroSD, RAM), low-level IO, multimedia, inputs, connectivity, and power (usually USB connectors, headers, etc).</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Programming_Language</IRI>
-        <Literal>IoT devices use certain programming languages to process and control data transfer (e.g. Raspberry Pi, Programmable Logic Controller, C, Java, Python).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3154,7 +3879,7 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Raspberyy_Pi_4B</IRI>
+        <IRI>#Raspberry_Pi_4B</IRI>
         <Literal>Raspberry Pi uses operating systems like Linux, Raspbian (a Debian GNU/Linux), Raspberry Pi OS Lite, etc. Features: GPIO (general-purpose input/output) pins, PWM - Pulse-Width Modulation, programming languages and tools: GPIO with Scratch, Python, C/C++, Processing, Wyliodrin Studio, etc.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -3176,11 +3901,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#SCADA_application</IRI>
         <Literal>SCADA_application (Individual): of type SCADA with Object property assertions (threats_to_data_security)</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#SCADA_hasCapability</IRI>
-        <Literal>SCADA_hasCapability (Object property): SCADA systems provide  capabilities for industrial systems</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3234,11 +3954,6 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Smartphone</IRI>
-        <Literal>Smartphones are gateway devices that enable data connectivity through their set of sensors: GPS, biometrics, Bluetooth, heart rate monitor, ECG, barcode readers, etc.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Spark</IRI>
         <Literal>Apache Spark is part of the Hadoop system. Spark allows big data processing and building machine learning models such as regression, classification, clustering, and recommendation systems in a distributed processing environment.</Literal>
     </AnnotationAssertion>
@@ -3256,11 +3971,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Support</IRI>
         <Literal>&quot;Support&quot; represents a layer of the IoT architecture. The support layer is represented by distributed systems (cloud systems).</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Support_communication</IRI>
-        <Literal>Support_communication (Object property): SCADA systems perform communication with industrial systems in distributed architectures</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3314,11 +4024,6 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Transducer</IRI>
-        <Literal>A transducer converts a signal from one physical structure to another and converts one type of energy into another type. There are two types of transducers: sensors and actuators. Sensors are used for sensing things and devices etc.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Transmission_speed</IRI>
         <Literal>Transmission_speed (Individual): of type Edge security with Object property assertions (has_SecuritySolution, best_Practices)</Literal>
     </AnnotationAssertion>
@@ -3329,14 +4034,13 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Use_Case1</IRI>
-        <Literal>Use case 1 contains terms about publishing messages in a Particle Photon device.
-Particle photon is a complete hardware kit with a powerful microcontroller, a Wi-Fi chip, and a free cloud service for building smart connected products.</Literal>
+        <IRI>#UseCase_IndustrialOven</IRI>
+        <Literal>UseCase_IndustrialOven contains terms about the regulation of the sensors’ temperature within an industrial oven for a production line. The industrial oven is heated to a very precise temperature range and the Resistance Temperature Detector (RTD) sensors should be accurate within the required temperature range.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Use_Case2</IRI>
-        <Literal>Use_case2 contains terms about the regulation of the sensors’ temperature within an industrial oven for a production line. The industrial oven is heated to a very precise temperature range and the Resistance Temperature Detector (RTD) sensors should be accurate within the required temperature range.</Literal>
+        <IRI>#UseCase_ParticlePhoton</IRI>
+        <Literal>UseCase_ParticlePhoton contains terms about publishing messages in a Particle Photon device. Particle photon is a complete hardware kit with a powerful microcontroller, a Wi-Fi chip, and a free cloud service for building smart connected products.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3347,12 +4051,6 @@ Particle photon is a complete hardware kit with a powerful microcontroller, a Wi
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Watson_IoT</IRI>
         <Literal>IBM Watson IoT Platform manages connected devices and offers access to live and historical data for IoT applications.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Wireless_sensor_network</IRI>
-        <Literal>Wireless Sensor Networks - Sensor nodes are used with an onboard processor that manages and monitors the environment in a certain area. They are connected to the base station through the Internet to share data.
-A mobile node identifies nearby network nodes and logins using the SAMPL protocol, gateway, and Publish-Subscribe service.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3367,32 +4065,12 @@ A mobile node identifies nearby network nodes and logins using the SAMPL protoco
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#YARN</IRI>
-        <Literal>Yarn (Yet Another Resource Negotiator) is a distributed operating system. YARN allows the resource management and scheduling jobs in Hadoop.</Literal>
+        <Literal>Yarn (Yet Another Resource Negotiator) is a distributed resource manager. YARN allows the resource management and scheduling jobs in Hadoop.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Zookeeper</IRI>
         <Literal>Zookeeper (Individual): a Data_center with Object property assertions: isApplied, hasService</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#authentication</IRI>
-        <Literal>authentication (Object property): the MQTT and HTTP bridges use authentication with asymmetric public keys and JSON Web tokens</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#best_Practices</IRI>
-        <Literal>best_Practices (Object property): defines the best practices for the edge security problems using Blockchain solutions</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#challenge</IRI>
-        <Literal>challenge (Object property): Blockchain technology comes some challenges (problems) to implementation</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#countermeasure</IRI>
-        <Literal>countermeasure (Object property): SCADA solutions represent countermeasure against threats generated by SCADA security problems</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3406,58 +4084,13 @@ A mobile node identifies nearby network nodes and logins using the SAMPL protoco
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#flow_services</IRI>
-        <Literal>flow_services: Object property that ensures the flows and services from Particle Photon to the subscriber (Thingspeak)</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#hasAccuracy</IRI>
         <Literal>hasAccuracy (Data property): the accuracy provided by RTD sensors is between 0.1 and 1 °C</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#hasAlgorithm</IRI>
-        <Literal>hasAlgorithm (Object property): Gateway devices provide real-time analytics or machine learning algorithms, in edge computing</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#hasCapability</IRI>
-        <Literal>hasCapability (Object property): tool that provides capabilities for big data processing in distributed systems</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#hasElement</IRI>
         <Literal>hasElement (Object property): Sensor Andrew - sharing of transducers. There are two types of transducers: sensors and actuators.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#hasFunctionality</IRI>
-        <Literal>hasFunctionality (Object property): a data center offers cloud services (as functionality)</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#hasProblem</IRI>
-        <Literal>hasProblem (Object property): Blockchain technology has some problems</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#hasSecurity_problem</IRI>
-        <Literal>hasSecurity_problem (Object property): solutions for security problems in Blockchain technology</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#hasService</IRI>
-        <Literal>hasService (Object property): specifies cloud services provided by data centers</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#hasSolution</IRI>
-        <Literal>hasSolution (Object property): solutions for Blockchain problems</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#hasTechnology</IRI>
-        <Literal>hasTechnology (Object property): the technology used in edge computing applications</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3471,23 +4104,8 @@ A mobile node identifies nearby network nodes and logins using the SAMPL protoco
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#hasTool</IRI>
-        <Literal>hasTool (Object property): a tool used for the implementation of a technology</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#hasValueConnection</IRI>
         <Literal>hasValueConnection (Data property): if the wire of a Particle Photon is connected, the Photon sends the value “1”</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#has_SecuritySolution</IRI>
-        <Literal>has_SecuritySolution (Object property): defines the best practices based on Blockchain solutions for edge security problems</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#health-monitoring_system</IRI>
-        <Literal>Remote patient monitoring devices: glucometer, pulse oximeter, thermometer, ECG, digital stethoscope, wearables, scales, etc.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3497,17 +4115,7 @@ A mobile node identifies nearby network nodes and logins using the SAMPL protoco
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#iBeacon</IRI>
-        <Literal>iBeacon from Apple and Eddystone from Google are portable electronic devices that use network protocols such as NFC, RFID, optical tags, or BLE as hardware transmitters.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#isApplied</IRI>
-        <Literal>isApplied (Object property): a tool used for computer clusters</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#isConnectedBy</IRI>
-        <Literal>isConnectedBy (Object property): modules with sensors or actuators connect processing boards with smart products</Literal>
+        <Literal>iBeacon is a physical beacon device that emits BLE (Bluetooth Low Energy) packets to provide proximity information. iBeacon from Apple and Eddystone from Google are portable electronic devices that use network protocols such as NFC, RFID, optical tags, or BLE as hardware transmitters.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3516,43 +4124,13 @@ A mobile node identifies nearby network nodes and logins using the SAMPL protoco
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#isManagedBy</IRI>
-        <Literal>isManagedBy (Object property): Smart products are managed using Web technologies and software platforms.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#isPartOf</IRI>
-        <Literal>isPartOf (Object property):  PLC/SCADA is part of ICS (Industrial Control Systems)</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#isProcessed</IRI>
-        <Literal>isProcessed (Object property): the big data relies on distributed processing and storing, data analytics, and machine learning</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#isRepresentationOf</IRI>
         <Literal>isRepresentationOf (Object property): A digital twin from the cloud is a software representation of a smart product</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#isToolFor</IRI>
-        <Literal>isToolFor (Object property): tool for distributed computing technologies</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#isUsedBy</IRI>
-        <Literal>isUsedBy (Object property): a tool used by a particular technology</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#languages_tools</IRI>
         <Literal>languages_tools (Data property): tools and programming languages used by hardware platforms like PLC and Raspberry Pi</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#login</IRI>
-        <Literal>login (Object property): In a wireless sensor network, a mobile node logins with a password using a gateway and Publish-Subscribe service.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3571,43 +4149,13 @@ A mobile node identifies nearby network nodes and logins using the SAMPL protoco
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#regulationTemperature</IRI>
-        <Literal>regulationTemperature (Object property): regulation of the RTD sensors’ temperature for an industrial oven</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#request</IRI>
         <Literal>request (Object property): Particle cloud service will forward messages with values “1” and “0” to Thingspeak as a subscriber. A Webhook (a new HTTP request to Thingspeak) will result after passing values to the Particle cloud.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#requires</IRI>
-        <Literal>requires (Object property): Applications with Big Data require Big data capabilities - distributed processing and storing, etc.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#send</IRI>
         <Literal>send (Object property): A firmware program that reads the D0 value every 30 seconds, calls the function Particle.publish() with one of the values “0” or “1” that is sent to the Particle cloud.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#supporting_tool</IRI>
-        <Literal>supporting_tool (Object property): tools for edge computing applications</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#threats_to_data_security</IRI>
-        <Literal>threats_to_data_security (Object property): SCADA protocols require adequately defending against data security threats.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#useAlgorithm</IRI>
-        <Literal>useAlgorithm (Object property): algorithms used in data centers</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#useProgramming</IRI>
-        <Literal>useProgramming (Object property): defines the programming model used by tools for computer clusters</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
