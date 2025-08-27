@@ -12,6 +12,7 @@
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="schema" IRI="http://schema.org/"/>
     <Annotation>
         <AnnotationProperty IRI="http://creativecommons.org/ns#license"/>
         <IRI>http://creativecommons.org/licenses/by/2.0/</IRI>
@@ -50,7 +51,7 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
-        <Literal xml:lang="en">2025-08-12</Literal>
+        <Literal xml:lang="en">2025-08-25</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
@@ -1000,6 +1001,12 @@
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="schema:domainIncludes"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="schema:rangeIncludes"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="preferredNamespacePrefix"/>
@@ -2395,164 +2402,16 @@
         <ObjectProperty IRI="#wire"/>
     </InverseObjectProperties>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/communicatesWith"/>
-        <Class IRI="#Device"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/hasDigitalTwin"/>
-        <Class IRI="#Smart_Product"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/hasSubscriber"/>
-        <Class IRI="#Particle_Photon"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/identifies"/>
-        <Class IRI="#NFC_tag"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/isElementOf"/>
-        <Class IRI="#Actuator"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/isMeasuredBy"/>
-        <Class IRI="#Industrial_oven"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/isReadBy"/>
-        <Class IRI="#Firmware"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/isRequestedBy"/>
-        <Class IRI="#Subscriber"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/isSentBy"/>
-        <Class IRI="#Particle_cloud"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/isWiredTo"/>
-        <Class IRI="#Data_Flow"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/subscribesTo"/>
         <Class IRI="#Subscriber"/>
     </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#data_transfer"/>
-        <Class IRI="#MQTT"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasElement"/>
-        <Class IRI="#Andrew_sensor"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#heat"/>
-        <Class IRI="#RTD_sensor"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#isIdentified"/>
-        <Class IRI="https://ontoit.github.io/IIoT/Device/Asset"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#isRepresentationOf"/>
-        <Class IRI="#Digital_twin"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#read"/>
-        <Class IRI="#Data_Flow"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#request"/>
-        <Class IRI="#Particle_cloud"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#send"/>
-        <Class IRI="#Firmware"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#wire"/>
-        <Class IRI="#Particle_Photon"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/communicatesWith"/>
-        <Class IRI="#MQTT"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/hasDigitalTwin"/>
-        <Class IRI="#Digital_twin"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/hasSubscriber"/>
-        <Class IRI="#Subscriber"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/identifies"/>
-        <Class IRI="https://ontoit.github.io/IIoT/Device/Asset"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/isElementOf"/>
-        <Class IRI="#Andrew_sensor"/>
-    </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/isMeasuredBy"/>
         <Class IRI="#RTD_sensor"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/isReadBy"/>
-        <Class IRI="#Data_Flow"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/isRequestedBy"/>
-        <Class IRI="#Particle_cloud"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/isSentBy"/>
-        <Class IRI="#Firmware"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/isWiredTo"/>
-        <Class IRI="#Particle_Photon"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/subscribesTo"/>
         <Class IRI="#Particle_Photon"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#data_transfer"/>
-        <Class IRI="#Device"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasElement"/>
-        <Class IRI="#Actuator"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#heat"/>
-        <Class IRI="#Industrial_oven"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#isIdentified"/>
-        <Class IRI="https://ontoit.github.io/IIoT/Network/Tag_Device"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#isRepresentationOf"/>
-        <Class IRI="#Smart_Product"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#read"/>
-        <Class IRI="#Firmware"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#request"/>
-        <Class IRI="#Subscriber"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#send"/>
-        <Class IRI="#Particle_cloud"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#wire"/>
-        <Class IRI="#Data_Flow"/>
     </ObjectPropertyRange>
     <SubDataPropertyOf>
         <DataProperty IRI="#MicroSD_card"/>
@@ -2627,10 +2486,6 @@
                 </FacetRestriction>
             </DatatypeRestriction>
         </DataSomeValuesFrom>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#hasAccuracy"/>
-        <Class IRI="#RTD_sensor"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hasAccuracy"/>
@@ -2945,6 +2800,171 @@ A transducer can be viewed as a hybrid device that can include sensors and actua
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>https://ontoit.github.io/IIoT/Device/Wearable</IRI>
         <Literal>Wearables are smart devices designed to be worn on or integrated into the body, capable of sensing, processing, or communicating data related to the wearer or their environment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="schema:domainIncludes"/>
+        <IRI>https://ontoit.github.io/IIoT/Device/communicatesWith</IRI>
+        <IRI>#Device</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="schema:rangeIncludes"/>
+        <IRI>https://ontoit.github.io/IIoT/Device/communicatesWith</IRI>
+        <IRI>#MQTT</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>https://ontoit.github.io/IIoT/Device/communicatesWith</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="schema:domainIncludes"/>
+        <IRI>https://ontoit.github.io/IIoT/Device/hasDigitalTwin</IRI>
+        <IRI>https://ontoit.github.io/IIoT/Device/Smart_Product</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="schema:rangeIncludes"/>
+        <IRI>https://ontoit.github.io/IIoT/Device/hasDigitalTwin</IRI>
+        <IRI>#Digital_twin</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>https://ontoit.github.io/IIoT/Device/hasDigitalTwin</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="schema:domainIncludes"/>
+        <IRI>https://ontoit.github.io/IIoT/Device/hasSubscriber</IRI>
+        <IRI>#Particle_Photon</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="schema:rangeIncludes"/>
+        <IRI>https://ontoit.github.io/IIoT/Device/hasSubscriber</IRI>
+        <IRI>#Subscriber</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>https://ontoit.github.io/IIoT/Device/hasSubscriber</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="schema:domainIncludes"/>
+        <IRI>https://ontoit.github.io/IIoT/Device/identifies</IRI>
+        <IRI>#NFC_tag</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="schema:rangeIncludes"/>
+        <IRI>https://ontoit.github.io/IIoT/Device/identifies</IRI>
+        <IRI>https://ontoit.github.io/IIoT/Device/Asset</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>https://ontoit.github.io/IIoT/Device/identifies</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="schema:domainIncludes"/>
+        <IRI>https://ontoit.github.io/IIoT/Device/isElementOf</IRI>
+        <IRI>#Actuator</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="schema:rangeIncludes"/>
+        <IRI>https://ontoit.github.io/IIoT/Device/isElementOf</IRI>
+        <IRI>#Andrew_sensor</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>https://ontoit.github.io/IIoT/Device/isElementOf</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="schema:domainIncludes"/>
+        <IRI>https://ontoit.github.io/IIoT/Device/isMeasuredBy</IRI>
+        <IRI>#Industrial_oven</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="schema:rangeIncludes"/>
+        <IRI>https://ontoit.github.io/IIoT/Device/isMeasuredBy</IRI>
+        <IRI>#RTD_sensor</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>https://ontoit.github.io/IIoT/Device/isMeasuredBy</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="schema:domainIncludes"/>
+        <IRI>https://ontoit.github.io/IIoT/Device/isReadBy</IRI>
+        <IRI>#Firmware</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="schema:rangeIncludes"/>
+        <IRI>https://ontoit.github.io/IIoT/Device/isReadBy</IRI>
+        <IRI>#Data_Flow</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>https://ontoit.github.io/IIoT/Device/isReadBy</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="schema:domainIncludes"/>
+        <IRI>https://ontoit.github.io/IIoT/Device/isRequestedBy</IRI>
+        <IRI>#Subscriber</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="schema:rangeIncludes"/>
+        <IRI>https://ontoit.github.io/IIoT/Device/isRequestedBy</IRI>
+        <IRI>#Particle_cloud</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>https://ontoit.github.io/IIoT/Device/isRequestedBy</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="schema:domainIncludes"/>
+        <IRI>https://ontoit.github.io/IIoT/Device/isSentBy</IRI>
+        <IRI>#Particle_cloud</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="schema:rangeIncludes"/>
+        <IRI>https://ontoit.github.io/IIoT/Device/isSentBy</IRI>
+        <IRI>#Firmware</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>https://ontoit.github.io/IIoT/Device/isSentBy</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="schema:domainIncludes"/>
+        <IRI>https://ontoit.github.io/IIoT/Device/isWiredTo</IRI>
+        <IRI>#Data_Flow</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="schema:rangeIncludes"/>
+        <IRI>https://ontoit.github.io/IIoT/Device/isWiredTo</IRI>
+        <IRI>#Particle_Photon</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>https://ontoit.github.io/IIoT/Device/isWiredTo</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="schema:domainIncludes"/>
+        <IRI>https://ontoit.github.io/IIoT/Device/subscribesTo</IRI>
+        <IRI>#Subscriber</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="schema:rangeIncludes"/>
+        <IRI>https://ontoit.github.io/IIoT/Device/subscribesTo</IRI>
+        <IRI>#Particle_Photon</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>https://ontoit.github.io/IIoT/Device/subscribesTo</IRI>
+        <IRI></IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3512,6 +3532,11 @@ A transducer can be viewed as a hybrid device that can include sensors and actua
         <Literal>FireFly_nodes (Data property): in a FireFly wireless sensor network, each gateway is set to manage between 20 and 32 network nodes</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#FireFly_nodes</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Firmware</IRI>
         <Literal>Firmware is a type of specialized software that runs directly on embedded hardware (e.g. sensors, controllers, gateways). In a Particle Photon application, a firmware program reads the value D0 of a pin, call the function Particle.publish() with one of the value “0” or “1” that is sent to the Particle cloud.</Literal>
@@ -3667,6 +3692,11 @@ A transducer can be viewed as a hybrid device that can include sensors and actua
         <Literal>MicroSD_card (Data property): setting up Raspberry Pi 4 Model B requires a microSD card with a capacity of at least 8GB</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#MicroSD_card</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Micro_data_center</IRI>
         <Literal>Micro_data_center (Individual): an edge technology with Object property assertions: hasTool</Literal>
@@ -3793,6 +3823,11 @@ Connecting Photon to CMU Wi-Fi; USB cable</Literal>
         <Literal>Password_mobile_node (Data property): in a FireFly wireless sensor network, a mobile node logins with a password of at most 100 bytes</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Password_mobile_node</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Paxos</IRI>
         <Literal>Paxos (Individual): a Data center with Object property assertions: isApplied</Literal>
@@ -3816,6 +3851,11 @@ Connecting Photon to CMU Wi-Fi; USB cable</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Power_supply</IRI>
         <Literal>Power_supply (Data property): Setting up Raspberry Pi 4 Model B requires a power supply that provides at least 3.0 amps</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Power_supply</IRI>
+        <IRI></IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -4073,9 +4113,24 @@ Connecting Photon to CMU Wi-Fi; USB cable</Literal>
         <Literal>Zookeeper (Individual): a Data_center with Object property assertions: isApplied, hasService</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="schema:domainIncludes"/>
+        <IRI>#data_transfer</IRI>
+        <IRI>#MQTT</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="schema:rangeIncludes"/>
+        <IRI>#data_transfer</IRI>
+        <IRI>#Device</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#data_transfer</IRI>
         <Literal>data_transfer (Object property): an MQTT protocol transfers data provided by sensors</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#data_transfer</IRI>
+        <IRI></IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -4083,9 +4138,34 @@ Connecting Photon to CMU Wi-Fi; USB cable</Literal>
         <Literal>disconnect_timeout (Data property): in a FireFly wireless sensor network, the SAMPL messages require a disconnect timeout for replying to messages on the mobile device</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#disconnect_timeout</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="schema:domainIncludes"/>
+        <IRI>#hasAccuracy</IRI>
+        <IRI>#RTD_sensor</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#hasAccuracy</IRI>
         <Literal>hasAccuracy (Data property): the accuracy provided by RTD sensors is between 0.1 and 1 °C</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#hasAccuracy</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="schema:domainIncludes"/>
+        <IRI>#hasElement</IRI>
+        <IRI>#Andrew_sensor</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="schema:rangeIncludes"/>
+        <IRI>#hasElement</IRI>
+        <IRI>#Actuator</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -4093,9 +4173,19 @@ Connecting Photon to CMU Wi-Fi; USB cable</Literal>
         <Literal>hasElement (Object property): Sensor Andrew - sharing of transducers. There are two types of transducers: sensors and actuators.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#hasElement</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#hasTemperatureRange</IRI>
         <Literal>hasTemperatureRange (Data property): an industrial oven for a production line that is heated to a very precise temperature range, between 500F and 510F</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#hasTemperatureRange</IRI>
+        <IRI></IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -4103,9 +4193,29 @@ Connecting Photon to CMU Wi-Fi; USB cable</Literal>
         <Literal>hasTimeLimit (Data property): A firmware program reads the D0 value of the 3V3 pin every 30 seconds, for an application with a  Particle Photon with a single resistor that publishes messages using a Webhook.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#hasTimeLimit</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#hasValueConnection</IRI>
         <Literal>hasValueConnection (Data property): if the wire of a Particle Photon is connected, the Photon sends the value “1”</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#hasValueConnection</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="schema:domainIncludes"/>
+        <IRI>#heat</IRI>
+        <IRI>#RTD_sensor</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="schema:rangeIncludes"/>
+        <IRI>#heat</IRI>
+        <IRI>#Industrial_oven</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -4113,9 +4223,24 @@ Connecting Photon to CMU Wi-Fi; USB cable</Literal>
         <Literal>heat (Object property): RTD sensors provide heat for the oven</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#heat</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#iBeacon</IRI>
         <Literal>iBeacon is a physical beacon device that emits BLE (Bluetooth Low Energy) packets to provide proximity information. iBeacon from Apple and Eddystone from Google are portable electronic devices that use network protocols such as NFC, RFID, optical tags, or BLE as hardware transmitters.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="schema:domainIncludes"/>
+        <IRI>#isIdentified</IRI>
+        <IRI>https://ontoit.github.io/IIoT/Device/Asset</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="schema:rangeIncludes"/>
+        <IRI>#isIdentified</IRI>
+        <IRI>https://ontoit.github.io/IIoT/Network/Tag_Device</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -4123,9 +4248,29 @@ Connecting Photon to CMU Wi-Fi; USB cable</Literal>
         <Literal>isIdentified (Object property): passive things are identified by protocols such as NFC tags, optical tags, BLE, RFID tag, etc.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#isIdentified</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="schema:domainIncludes"/>
+        <IRI>#isRepresentationOf</IRI>
+        <IRI>#Digital_twin</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="schema:rangeIncludes"/>
+        <IRI>#isRepresentationOf</IRI>
+        <IRI>https://ontoit.github.io/IIoT/Device/Smart_Product</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#isRepresentationOf</IRI>
         <Literal>isRepresentationOf (Object property): A digital twin from the cloud is a software representation of a smart product</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#isRepresentationOf</IRI>
+        <IRI></IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -4133,9 +4278,19 @@ Connecting Photon to CMU Wi-Fi; USB cable</Literal>
         <Literal>languages_tools (Data property): tools and programming languages used by hardware platforms like PLC and Raspberry Pi</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#languages_tools</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#operating_system</IRI>
         <Literal>operating_system (Data property): operating systems used by Raspberry Pi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#operating_system</IRI>
+        <IRI></IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -4143,9 +4298,39 @@ Connecting Photon to CMU Wi-Fi; USB cable</Literal>
         <Literal>provideHeat (Data property): the RTD sensors provide heat between  -200 and 600 °C</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#provideHeat</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="schema:domainIncludes"/>
+        <IRI>#read</IRI>
+        <IRI>#Data_Flow</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="schema:rangeIncludes"/>
+        <IRI>#read</IRI>
+        <IRI>#Firmware</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#read</IRI>
         <Literal>read (Object property): A firmware program reads the D0 value of the 3V3 pin, in an application with a  Particle Photon that publishes messages using a Webhook.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#read</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="schema:domainIncludes"/>
+        <IRI>#request</IRI>
+        <IRI>#Particle_cloud</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="schema:rangeIncludes"/>
+        <IRI>#request</IRI>
+        <IRI>#Subscriber</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -4153,14 +4338,49 @@ Connecting Photon to CMU Wi-Fi; USB cable</Literal>
         <Literal>request (Object property): Particle cloud service will forward messages with values “1” and “0” to Thingspeak as a subscriber. A Webhook (a new HTTP request to Thingspeak) will result after passing values to the Particle cloud.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#request</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="schema:domainIncludes"/>
+        <IRI>#send</IRI>
+        <IRI>#Firmware</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="schema:rangeIncludes"/>
+        <IRI>#send</IRI>
+        <IRI>#Particle_cloud</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#send</IRI>
         <Literal>send (Object property): A firmware program that reads the D0 value every 30 seconds, calls the function Particle.publish() with one of the values “0” or “1” that is sent to the Particle cloud.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#send</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="schema:domainIncludes"/>
+        <IRI>#wire</IRI>
+        <IRI>#Particle_Photon</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="schema:rangeIncludes"/>
+        <IRI>#wire</IRI>
+        <IRI>#Data_Flow</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#wire</IRI>
         <Literal>wire (Object property): When the wire of a Particle Photon is connected, the Photon will send the value “1”, but if the wire is disconnected, the Photon will send the value “0”.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#wire</IRI>
+        <IRI></IRI>
     </AnnotationAssertion>
 </Ontology>
 

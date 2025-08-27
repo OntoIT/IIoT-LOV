@@ -4,6 +4,7 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
 @base <https://w3id.org/IIoT/> .
 
 <https://w3id.org/IIoT/> rdf:type owl:Ontology ;
@@ -16,7 +17,7 @@
                                                              <https://orcid.org/0000-0003-3562-0528> ;
                           <http://purl.org/dc/terms/description> "The Internet of Things taxonomy is extended with semantic ontologies for IoT layers: Application, Device, Network, Support, and Vocabulary."@en ;
                           <http://purl.org/dc/terms/issued> "2024-09-27"@en ;
-                          <http://purl.org/dc/terms/modified> "2025-08-12"@en ;
+                          <http://purl.org/dc/terms/modified> "2025-08-25"@en ;
                           <http://purl.org/dc/terms/title> "Ontology for Industrial Internet of Things systems"@en ;
                           owl:versionInfo "Version 1.1"@en ;
                           :preferredNamespacePrefix "IIoT"@en ;
@@ -54,6 +55,14 @@
 <http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
 
 
+###  http://schema.org/domainIncludes
+schema:domainIncludes rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/rangeIncludes
+schema:rangeIncludes rdf:type owl:AnnotationProperty .
+
+
 ###  https://w3id.org/IIoT/preferredNamespacePrefix
 :preferredNamespacePrefix rdf:type owl:AnnotationProperty .
 
@@ -69,140 +78,163 @@
 ###  https://ontoit.github.io/IIoT/Device/communicatesWith
 <https://ontoit.github.io/IIoT/Device/communicatesWith> rdf:type owl:ObjectProperty ;
                                                         owl:inverseOf <https://w3id.org/IIoT/#data_transfer> ;
-                                                        rdfs:domain <https://w3id.org/IIoT/#Device> ;
-                                                        rdfs:range <https://w3id.org/IIoT/#MQTT> .
+                                                        schema:domainIncludes <https://w3id.org/IIoT/#Device> ;
+                                                        schema:rangeIncludes <https://w3id.org/IIoT/#MQTT> ;
+                                                        rdfs:isDefinedBy <https://w3id.org/IIoT/> .
 
 
 ###  https://ontoit.github.io/IIoT/Device/hasDigitalTwin
 <https://ontoit.github.io/IIoT/Device/hasDigitalTwin> rdf:type owl:ObjectProperty ;
                                                       owl:inverseOf <https://w3id.org/IIoT/#isRepresentationOf> ;
-                                                      rdfs:domain <https://w3id.org/IIoT/#Smart_Product> ;
-                                                      rdfs:range <https://w3id.org/IIoT/#Digital_twin> .
+                                                      schema:domainIncludes <https://ontoit.github.io/IIoT/Device/Smart_Product> ;
+                                                      schema:rangeIncludes <https://w3id.org/IIoT/#Digital_twin> ;
+                                                      rdfs:isDefinedBy <https://w3id.org/IIoT/> .
 
 
 ###  https://ontoit.github.io/IIoT/Device/hasSubscriber
 <https://ontoit.github.io/IIoT/Device/hasSubscriber> rdf:type owl:ObjectProperty ;
                                                      owl:inverseOf <https://ontoit.github.io/IIoT/Device/subscribesTo> ;
-                                                     rdfs:domain <https://w3id.org/IIoT/#Particle_Photon> ;
-                                                     rdfs:range <https://w3id.org/IIoT/#Subscriber> .
+                                                     schema:domainIncludes <https://w3id.org/IIoT/#Particle_Photon> ;
+                                                     schema:rangeIncludes <https://w3id.org/IIoT/#Subscriber> ;
+                                                     rdfs:isDefinedBy <https://w3id.org/IIoT/> .
 
 
 ###  https://ontoit.github.io/IIoT/Device/identifies
 <https://ontoit.github.io/IIoT/Device/identifies> rdf:type owl:ObjectProperty ;
                                                   owl:inverseOf <https://w3id.org/IIoT/#isIdentified> ;
-                                                  rdfs:domain <https://w3id.org/IIoT/#NFC_tag> ;
-                                                  rdfs:range <https://ontoit.github.io/IIoT/Device/Asset> .
+                                                  schema:domainIncludes <https://w3id.org/IIoT/#NFC_tag> ;
+                                                  schema:rangeIncludes <https://ontoit.github.io/IIoT/Device/Asset> ;
+                                                  rdfs:isDefinedBy <https://w3id.org/IIoT/> .
 
 
 ###  https://ontoit.github.io/IIoT/Device/isElementOf
 <https://ontoit.github.io/IIoT/Device/isElementOf> rdf:type owl:ObjectProperty ;
                                                    owl:inverseOf <https://w3id.org/IIoT/#hasElement> ;
-                                                   rdfs:domain <https://w3id.org/IIoT/#Actuator> ;
-                                                   rdfs:range <https://w3id.org/IIoT/#Andrew_sensor> .
+                                                   schema:domainIncludes <https://w3id.org/IIoT/#Actuator> ;
+                                                   schema:rangeIncludes <https://w3id.org/IIoT/#Andrew_sensor> ;
+                                                   rdfs:isDefinedBy <https://w3id.org/IIoT/> .
 
 
 ###  https://ontoit.github.io/IIoT/Device/isMeasuredBy
 <https://ontoit.github.io/IIoT/Device/isMeasuredBy> rdf:type owl:ObjectProperty ;
                                                     owl:inverseOf <https://w3id.org/IIoT/#heat> ;
-                                                    rdfs:domain <https://w3id.org/IIoT/#Industrial_oven> ;
-                                                    rdfs:range <https://w3id.org/IIoT/#RTD_sensor> .
+                                                    rdfs:range <https://w3id.org/IIoT/#RTD_sensor> ;
+                                                    schema:domainIncludes <https://w3id.org/IIoT/#Industrial_oven> ;
+                                                    schema:rangeIncludes <https://w3id.org/IIoT/#RTD_sensor> ;
+                                                    rdfs:isDefinedBy <https://w3id.org/IIoT/> .
 
 
 ###  https://ontoit.github.io/IIoT/Device/isReadBy
 <https://ontoit.github.io/IIoT/Device/isReadBy> rdf:type owl:ObjectProperty ;
                                                 owl:inverseOf <https://w3id.org/IIoT/#read> ;
-                                                rdfs:domain <https://w3id.org/IIoT/#Firmware> ;
-                                                rdfs:range <https://w3id.org/IIoT/#Data_Flow> .
+                                                schema:domainIncludes <https://w3id.org/IIoT/#Firmware> ;
+                                                schema:rangeIncludes <https://w3id.org/IIoT/#Data_Flow> ;
+                                                rdfs:isDefinedBy <https://w3id.org/IIoT/> .
 
 
 ###  https://ontoit.github.io/IIoT/Device/isRequestedBy
 <https://ontoit.github.io/IIoT/Device/isRequestedBy> rdf:type owl:ObjectProperty ;
                                                      owl:inverseOf <https://w3id.org/IIoT/#request> ;
-                                                     rdfs:domain <https://w3id.org/IIoT/#Subscriber> ;
-                                                     rdfs:range <https://w3id.org/IIoT/#Particle_cloud> .
+                                                     schema:domainIncludes <https://w3id.org/IIoT/#Subscriber> ;
+                                                     schema:rangeIncludes <https://w3id.org/IIoT/#Particle_cloud> ;
+                                                     rdfs:isDefinedBy <https://w3id.org/IIoT/> .
 
 
 ###  https://ontoit.github.io/IIoT/Device/isSentBy
 <https://ontoit.github.io/IIoT/Device/isSentBy> rdf:type owl:ObjectProperty ;
                                                 owl:inverseOf <https://w3id.org/IIoT/#send> ;
-                                                rdfs:domain <https://w3id.org/IIoT/#Particle_cloud> ;
-                                                rdfs:range <https://w3id.org/IIoT/#Firmware> .
+                                                schema:domainIncludes <https://w3id.org/IIoT/#Particle_cloud> ;
+                                                schema:rangeIncludes <https://w3id.org/IIoT/#Firmware> ;
+                                                rdfs:isDefinedBy <https://w3id.org/IIoT/> .
 
 
 ###  https://ontoit.github.io/IIoT/Device/isWiredTo
 <https://ontoit.github.io/IIoT/Device/isWiredTo> rdf:type owl:ObjectProperty ;
                                                  owl:inverseOf <https://w3id.org/IIoT/#wire> ;
-                                                 rdfs:domain <https://w3id.org/IIoT/#Data_Flow> ;
-                                                 rdfs:range <https://w3id.org/IIoT/#Particle_Photon> .
+                                                 schema:domainIncludes <https://w3id.org/IIoT/#Data_Flow> ;
+                                                 schema:rangeIncludes <https://w3id.org/IIoT/#Particle_Photon> ;
+                                                 rdfs:isDefinedBy <https://w3id.org/IIoT/> .
 
 
 ###  https://ontoit.github.io/IIoT/Device/subscribesTo
 <https://ontoit.github.io/IIoT/Device/subscribesTo> rdf:type owl:ObjectProperty ;
                                                     rdfs:domain <https://w3id.org/IIoT/#Subscriber> ;
-                                                    rdfs:range <https://w3id.org/IIoT/#Particle_Photon> .
+                                                    rdfs:range <https://w3id.org/IIoT/#Particle_Photon> ;
+                                                    schema:domainIncludes <https://w3id.org/IIoT/#Subscriber> ;
+                                                    schema:rangeIncludes <https://w3id.org/IIoT/#Particle_Photon> ;
+                                                    rdfs:isDefinedBy <https://w3id.org/IIoT/> .
 
 
 ###  https://w3id.org/IIoT/#data_transfer
 <https://w3id.org/IIoT/#data_transfer> rdf:type owl:ObjectProperty ;
-                                       rdfs:domain <https://w3id.org/IIoT/#MQTT> ;
-                                       rdfs:range <https://w3id.org/IIoT/#Device> ;
-                                       rdfs:comment "data_transfer (Object property): an MQTT protocol transfers data provided by sensors" .
+                                       schema:domainIncludes <https://w3id.org/IIoT/#MQTT> ;
+                                       schema:rangeIncludes <https://w3id.org/IIoT/#Device> ;
+                                       rdfs:comment "data_transfer (Object property): an MQTT protocol transfers data provided by sensors" ;
+                                       rdfs:isDefinedBy <https://w3id.org/IIoT/> .
 
 
 ###  https://w3id.org/IIoT/#hasElement
 <https://w3id.org/IIoT/#hasElement> rdf:type owl:ObjectProperty ;
-                                    rdfs:domain <https://w3id.org/IIoT/#Andrew_sensor> ;
-                                    rdfs:range <https://w3id.org/IIoT/#Actuator> ;
-                                    rdfs:comment "hasElement (Object property): Sensor Andrew - sharing of transducers. There are two types of transducers: sensors and actuators." .
+                                    schema:domainIncludes <https://w3id.org/IIoT/#Andrew_sensor> ;
+                                    schema:rangeIncludes <https://w3id.org/IIoT/#Actuator> ;
+                                    rdfs:comment "hasElement (Object property): Sensor Andrew - sharing of transducers. There are two types of transducers: sensors and actuators." ;
+                                    rdfs:isDefinedBy <https://w3id.org/IIoT/> .
 
 
 ###  https://w3id.org/IIoT/#heat
 <https://w3id.org/IIoT/#heat> rdf:type owl:ObjectProperty ;
-                              rdfs:domain <https://w3id.org/IIoT/#RTD_sensor> ;
-                              rdfs:range <https://w3id.org/IIoT/#Industrial_oven> ;
-                              rdfs:comment "heat (Object property): RTD sensors provide heat for the oven" .
+                              schema:domainIncludes <https://w3id.org/IIoT/#RTD_sensor> ;
+                              schema:rangeIncludes <https://w3id.org/IIoT/#Industrial_oven> ;
+                              rdfs:comment "heat (Object property): RTD sensors provide heat for the oven" ;
+                              rdfs:isDefinedBy <https://w3id.org/IIoT/> .
 
 
 ###  https://w3id.org/IIoT/#isIdentified
 <https://w3id.org/IIoT/#isIdentified> rdf:type owl:ObjectProperty ;
-                                      rdfs:domain <https://ontoit.github.io/IIoT/Device/Asset> ;
-                                      rdfs:range <https://ontoit.github.io/IIoT/Network/Tag_Device> ;
-                                      rdfs:comment "isIdentified (Object property): passive things are identified by protocols such as NFC tags, optical tags, BLE, RFID tag, etc." .
+                                      schema:domainIncludes <https://ontoit.github.io/IIoT/Device/Asset> ;
+                                      schema:rangeIncludes <https://ontoit.github.io/IIoT/Network/Tag_Device> ;
+                                      rdfs:comment "isIdentified (Object property): passive things are identified by protocols such as NFC tags, optical tags, BLE, RFID tag, etc." ;
+                                      rdfs:isDefinedBy <https://w3id.org/IIoT/> .
 
 
 ###  https://w3id.org/IIoT/#isRepresentationOf
 <https://w3id.org/IIoT/#isRepresentationOf> rdf:type owl:ObjectProperty ;
-                                            rdfs:domain <https://w3id.org/IIoT/#Digital_twin> ;
-                                            rdfs:range <https://w3id.org/IIoT/#Smart_Product> ;
-                                            rdfs:comment "isRepresentationOf (Object property): A digital twin from the cloud is a software representation of a smart product" .
+                                            schema:domainIncludes <https://w3id.org/IIoT/#Digital_twin> ;
+                                            schema:rangeIncludes <https://ontoit.github.io/IIoT/Device/Smart_Product> ;
+                                            rdfs:comment "isRepresentationOf (Object property): A digital twin from the cloud is a software representation of a smart product" ;
+                                            rdfs:isDefinedBy <https://w3id.org/IIoT/> .
 
 
 ###  https://w3id.org/IIoT/#read
 <https://w3id.org/IIoT/#read> rdf:type owl:ObjectProperty ;
-                              rdfs:domain <https://w3id.org/IIoT/#Data_Flow> ;
-                              rdfs:range <https://w3id.org/IIoT/#Firmware> ;
-                              rdfs:comment "read (Object property): A firmware program reads the D0 value of the 3V3 pin, in an application with a  Particle Photon that publishes messages using a Webhook." .
+                              schema:domainIncludes <https://w3id.org/IIoT/#Data_Flow> ;
+                              schema:rangeIncludes <https://w3id.org/IIoT/#Firmware> ;
+                              rdfs:comment "read (Object property): A firmware program reads the D0 value of the 3V3 pin, in an application with a  Particle Photon that publishes messages using a Webhook." ;
+                              rdfs:isDefinedBy <https://w3id.org/IIoT/> .
 
 
 ###  https://w3id.org/IIoT/#request
 <https://w3id.org/IIoT/#request> rdf:type owl:ObjectProperty ;
-                                 rdfs:domain <https://w3id.org/IIoT/#Particle_cloud> ;
-                                 rdfs:range <https://w3id.org/IIoT/#Subscriber> ;
-                                 rdfs:comment "request (Object property): Particle cloud service will forward messages with values “1” and “0” to Thingspeak as a subscriber. A Webhook (a new HTTP request to Thingspeak) will result after passing values to the Particle cloud." .
+                                 schema:domainIncludes <https://w3id.org/IIoT/#Particle_cloud> ;
+                                 schema:rangeIncludes <https://w3id.org/IIoT/#Subscriber> ;
+                                 rdfs:comment "request (Object property): Particle cloud service will forward messages with values “1” and “0” to Thingspeak as a subscriber. A Webhook (a new HTTP request to Thingspeak) will result after passing values to the Particle cloud." ;
+                                 rdfs:isDefinedBy <https://w3id.org/IIoT/> .
 
 
 ###  https://w3id.org/IIoT/#send
 <https://w3id.org/IIoT/#send> rdf:type owl:ObjectProperty ;
-                              rdfs:domain <https://w3id.org/IIoT/#Firmware> ;
-                              rdfs:range <https://w3id.org/IIoT/#Particle_cloud> ;
-                              rdfs:comment "send (Object property): A firmware program that reads the D0 value every 30 seconds, calls the function Particle.publish() with one of the values “0” or “1” that is sent to the Particle cloud." .
+                              schema:domainIncludes <https://w3id.org/IIoT/#Firmware> ;
+                              schema:rangeIncludes <https://w3id.org/IIoT/#Particle_cloud> ;
+                              rdfs:comment "send (Object property): A firmware program that reads the D0 value every 30 seconds, calls the function Particle.publish() with one of the values “0” or “1” that is sent to the Particle cloud." ;
+                              rdfs:isDefinedBy <https://w3id.org/IIoT/> .
 
 
 ###  https://w3id.org/IIoT/#wire
 <https://w3id.org/IIoT/#wire> rdf:type owl:ObjectProperty ;
-                              rdfs:domain <https://w3id.org/IIoT/#Particle_Photon> ;
-                              rdfs:range <https://w3id.org/IIoT/#Data_Flow> ;
-                              rdfs:comment "wire (Object property): When the wire of a Particle Photon is connected, the Photon will send the value “1”, but if the wire is disconnected, the Photon will send the value “0”." .
+                              schema:domainIncludes <https://w3id.org/IIoT/#Particle_Photon> ;
+                              schema:rangeIncludes <https://w3id.org/IIoT/#Data_Flow> ;
+                              rdfs:comment "wire (Object property): When the wire of a Particle Photon is connected, the Photon will send the value “1”, but if the wire is disconnected, the Photon will send the value “0”." ;
+                              rdfs:isDefinedBy <https://w3id.org/IIoT/> .
 
 
 #################################################################
@@ -223,7 +255,8 @@
                                                                         ]
                                                    ] ;
                                        rdfs:range xsd:integer ;
-                                       rdfs:comment "FireFly_nodes (Data property): in a FireFly wireless sensor network, each gateway is set to manage between 20 and 32 network nodes" .
+                                       rdfs:comment "FireFly_nodes (Data property): in a FireFly wireless sensor network, each gateway is set to manage between 20 and 32 network nodes" ;
+                                       rdfs:isDefinedBy <https://w3id.org/IIoT/> .
 
 
 ###  https://w3id.org/IIoT/#MicroSD_card
@@ -240,7 +273,8 @@
                                                                        ]
                                                   ] ;
                                       rdfs:range xsd:double ;
-                                      rdfs:comment "MicroSD_card (Data property): setting up Raspberry Pi 4 Model B requires a microSD card with a capacity of at least 8GB" .
+                                      rdfs:comment "MicroSD_card (Data property): setting up Raspberry Pi 4 Model B requires a microSD card with a capacity of at least 8GB" ;
+                                      rdfs:isDefinedBy <https://w3id.org/IIoT/> .
 
 
 ###  https://w3id.org/IIoT/#Password_mobile_node
@@ -250,7 +284,8 @@
                                                             owl:hasValue "password"
                                                           ] ;
                                               rdfs:range xsd:string ;
-                                              rdfs:comment "Password_mobile_node (Data property): in a FireFly wireless sensor network, a mobile node logins with a password of at most 100 bytes" .
+                                              rdfs:comment "Password_mobile_node (Data property): in a FireFly wireless sensor network, a mobile node logins with a password of at most 100 bytes" ;
+                                              rdfs:isDefinedBy <https://w3id.org/IIoT/> .
 
 
 ###  https://w3id.org/IIoT/#Power_supply
@@ -267,7 +302,8 @@
                                                                        ]
                                                   ] ;
                                       rdfs:range xsd:float ;
-                                      rdfs:comment "Power_supply (Data property): Setting up Raspberry Pi 4 Model B requires a power supply that provides at least 3.0 amps" .
+                                      rdfs:comment "Power_supply (Data property): Setting up Raspberry Pi 4 Model B requires a power supply that provides at least 3.0 amps" ;
+                                      rdfs:isDefinedBy <https://w3id.org/IIoT/> .
 
 
 ###  https://w3id.org/IIoT/#disconnect_timeout
@@ -282,13 +318,13 @@
                                                                              ]
                                                         ] ;
                                             rdfs:range xsd:integer ;
-                                            rdfs:comment "disconnect_timeout (Data property): in a FireFly wireless sensor network, the SAMPL messages require a disconnect timeout for replying to messages on the mobile device" .
+                                            rdfs:comment "disconnect_timeout (Data property): in a FireFly wireless sensor network, the SAMPL messages require a disconnect timeout for replying to messages on the mobile device" ;
+                                            rdfs:isDefinedBy <https://w3id.org/IIoT/> .
 
 
 ###  https://w3id.org/IIoT/#hasAccuracy
 <https://w3id.org/IIoT/#hasAccuracy> rdf:type owl:DatatypeProperty ;
-                                     rdfs:domain <https://w3id.org/IIoT/#RTD_sensor> ,
-                                                 [ rdf:type owl:Restriction ;
+                                     rdfs:domain [ rdf:type owl:Restriction ;
                                                    owl:onProperty <https://w3id.org/IIoT/#hasAccuracy> ;
                                                    owl:someValuesFrom [ rdf:type rdfs:Datatype ;
                                                                         owl:onDatatype xsd:float ;
@@ -300,7 +336,9 @@
                                                                       ]
                                                  ] ;
                                      rdfs:range xsd:float ;
-                                     rdfs:comment "hasAccuracy (Data property): the accuracy provided by RTD sensors is between 0.1 and 1 °C" .
+                                     schema:domainIncludes <https://w3id.org/IIoT/#RTD_sensor> ;
+                                     rdfs:comment "hasAccuracy (Data property): the accuracy provided by RTD sensors is between 0.1 and 1 °C" ;
+                                     rdfs:isDefinedBy <https://w3id.org/IIoT/> .
 
 
 ###  https://w3id.org/IIoT/#hasTemperatureRange
@@ -318,7 +356,8 @@
                                                                               ]
                                                          ] ;
                                              rdfs:range xsd:double ;
-                                             rdfs:comment "hasTemperatureRange (Data property): an industrial oven for a production line that is heated to a very precise temperature range, between 500F and 510F" .
+                                             rdfs:comment "hasTemperatureRange (Data property): an industrial oven for a production line that is heated to a very precise temperature range, between 500F and 510F" ;
+                                             rdfs:isDefinedBy <https://w3id.org/IIoT/> .
 
 
 ###  https://w3id.org/IIoT/#hasTimeLimit
@@ -336,7 +375,8 @@
                                                                        ]
                                                   ] ;
                                       rdfs:range xsd:integer ;
-                                      rdfs:comment "hasTimeLimit (Data property): A firmware program reads the D0 value of the 3V3 pin every 30 seconds, for an application with a  Particle Photon with a single resistor that publishes messages using a Webhook." .
+                                      rdfs:comment "hasTimeLimit (Data property): A firmware program reads the D0 value of the 3V3 pin every 30 seconds, for an application with a  Particle Photon with a single resistor that publishes messages using a Webhook." ;
+                                      rdfs:isDefinedBy <https://w3id.org/IIoT/> .
 
 
 ###  https://w3id.org/IIoT/#hasValueConnection
@@ -354,7 +394,8 @@
                                                                              ]
                                                         ] ;
                                             rdfs:range xsd:integer ;
-                                            rdfs:comment "hasValueConnection (Data property): if the wire of a Particle Photon is connected, the Photon sends the value “1”" .
+                                            rdfs:comment "hasValueConnection (Data property): if the wire of a Particle Photon is connected, the Photon sends the value “1”" ;
+                                            rdfs:isDefinedBy <https://w3id.org/IIoT/> .
 
 
 ###  https://w3id.org/IIoT/#languages_tools
@@ -393,7 +434,8 @@
                                                                    )
                                                      ] ;
                                          rdfs:range xsd:string ;
-                                         rdfs:comment "languages_tools (Data property): tools and programming languages used by hardware platforms like PLC and Raspberry Pi" .
+                                         rdfs:comment "languages_tools (Data property): tools and programming languages used by hardware platforms like PLC and Raspberry Pi" ;
+                                         rdfs:isDefinedBy <https://w3id.org/IIoT/> .
 
 
 ###  https://w3id.org/IIoT/#operating_system
@@ -427,7 +469,8 @@
                                                                     )
                                                       ] ;
                                           rdfs:range xsd:string ;
-                                          rdfs:comment "operating_system (Data property): operating systems used by Raspberry Pi" .
+                                          rdfs:comment "operating_system (Data property): operating systems used by Raspberry Pi" ;
+                                          rdfs:isDefinedBy <https://w3id.org/IIoT/> .
 
 
 ###  https://w3id.org/IIoT/#provideHeat
@@ -445,7 +488,8 @@
                                                                       ]
                                                  ] ;
                                      rdfs:range xsd:double ;
-                                     rdfs:comment "provideHeat (Data property): the RTD sensors provide heat between  -200 and 600 °C" .
+                                     rdfs:comment "provideHeat (Data property): the RTD sensors provide heat between  -200 and 600 °C" ;
+                                     rdfs:isDefinedBy <https://w3id.org/IIoT/> .
 
 
 #################################################################
