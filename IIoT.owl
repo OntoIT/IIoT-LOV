@@ -51,7 +51,7 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
-        <Literal xml:lang="en">2025-08-25</Literal>
+        <Literal xml:lang="en">2025-08-29</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
@@ -1342,16 +1342,16 @@
     <SubClassOf>
         <Class IRI="#Data_Flow"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/isWiredTo"/>
-            <Class IRI="#Particle_Photon"/>
+            <ObjectProperty IRI="#read"/>
+            <Class IRI="#Firmware"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Data_Flow"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#read"/>
-            <Class IRI="#Firmware"/>
-        </ObjectSomeValuesFrom>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/isWiredTo"/>
+            <Class IRI="#Particle_Photon"/>
+        </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Data_analysis"/>
@@ -1468,10 +1468,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Industrial_oven"/>
-        <ObjectSomeValuesFrom>
+        <ObjectMinCardinality cardinality="1">
             <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/isMeasuredBy"/>
             <Class IRI="#RTD_sensor"/>
-        </ObjectSomeValuesFrom>
+        </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Java"/>

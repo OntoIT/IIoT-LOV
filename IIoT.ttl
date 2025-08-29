@@ -17,7 +17,7 @@
                                                              <https://orcid.org/0000-0003-3562-0528> ;
                           <http://purl.org/dc/terms/description> "The Internet of Things taxonomy is extended with semantic ontologies for IoT layers: Application, Device, Network, Support, and Vocabulary."@en ;
                           <http://purl.org/dc/terms/issued> "2024-09-27"@en ;
-                          <http://purl.org/dc/terms/modified> "2025-08-25"@en ;
+                          <http://purl.org/dc/terms/modified> "2025-08-29"@en ;
                           <http://purl.org/dc/terms/title> "Ontology for Industrial Internet of Things systems"@en ;
                           owl:versionInfo "Version 1.1"@en ;
                           :preferredNamespacePrefix "IIoT"@en ;
@@ -976,12 +976,13 @@ A transducer can be viewed as a hybrid device that can include sensors and actua
 <https://w3id.org/IIoT/#Data_Flow> rdf:type owl:Class ;
                                    rdfs:subClassOf <https://w3id.org/IIoT/#Data_transmission> ,
                                                    [ rdf:type owl:Restriction ;
-                                                     owl:onProperty <https://ontoit.github.io/IIoT/Device/isWiredTo> ;
-                                                     owl:someValuesFrom <https://w3id.org/IIoT/#Particle_Photon>
-                                                   ] ,
-                                                   [ rdf:type owl:Restriction ;
                                                      owl:onProperty <https://w3id.org/IIoT/#read> ;
                                                      owl:someValuesFrom <https://w3id.org/IIoT/#Firmware>
+                                                   ] ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://ontoit.github.io/IIoT/Device/isWiredTo> ;
+                                                     owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                     owl:onClass <https://w3id.org/IIoT/#Particle_Photon>
                                                    ] ;
                                    rdfs:comment "Flow in this ontology refers to the flow of data between IoT devices or applications. For example, Flow can describe the Flow-Service-Quality semantics for a Particle Photon application that includes a Thingspeak subscriber, a WebHook, and a firmware program." .
 
@@ -1140,7 +1141,8 @@ A transducer can be viewed as a hybrid device that can include sensors and actua
                                          rdfs:subClassOf <https://ontoit.github.io/IIoT/Device/Embedded_Device> ,
                                                          [ rdf:type owl:Restriction ;
                                                            owl:onProperty <https://ontoit.github.io/IIoT/Device/isMeasuredBy> ;
-                                                           owl:someValuesFrom <https://w3id.org/IIoT/#RTD_sensor>
+                                                           owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                           owl:onClass <https://w3id.org/IIoT/#RTD_sensor>
                                                          ] ;
                                          rdfs:comment "Industrial ovens for a production line incorporate temperature sensors." .
 
