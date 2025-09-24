@@ -17,7 +17,7 @@
                                                              <https://orcid.org/0000-0003-3562-0528> ;
                           <http://purl.org/dc/terms/description> "The Internet of Things taxonomy is extended with semantic ontologies for IoT layers: Application, Device, Network, Support, and Vocabulary."@en ;
                           <http://purl.org/dc/terms/issued> "2024-09-27"@en ;
-                          <http://purl.org/dc/terms/modified> "2025-08-29"@en ;
+                          <http://purl.org/dc/terms/modified> "2025-09-24"@en ;
                           <http://purl.org/dc/terms/title> "Ontology for Industrial Internet of Things systems"@en ;
                           owl:versionInfo "Version 1.1"@en ;
                           :preferredNamespacePrefix "IIoT"@en ;
@@ -241,6 +241,35 @@ schema:rangeIncludes rdf:type owl:AnnotationProperty .
 #    Data properties
 #################################################################
 
+###  https://ontoit.github.io/IIoT/Application/isCriticalUseCase
+<https://ontoit.github.io/IIoT/Application/isCriticalUseCase> rdf:type owl:DatatypeProperty ;
+                                                              rdfs:domain <https://w3id.org/IIoT/#UseCase_IndustrialOven> ;
+                                                              rdfs:range xsd:boolean .
+
+
+###  https://ontoit.github.io/IIoT/Device/TemperatureRange
+<https://ontoit.github.io/IIoT/Device/TemperatureRange> rdf:type owl:DatatypeProperty ;
+                                                        rdfs:domain <https://w3id.org/IIoT/#Industrial_oven> ,
+                                                                    [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty <https://ontoit.github.io/IIoT/Device/TemperatureRange> ;
+                                                                      owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                           owl:onDatatype xsd:double ;
+                                                                                           owl:withRestrictions ( [ xsd:minInclusive "500.0"^^xsd:double
+                                                                                                                  ]
+                                                                                                                  [ xsd:maxInclusive "510.0"^^xsd:double
+                                                                                                                  ]
+                                                                                                                )
+                                                                                         ]
+                                                                    ] ;
+                                                        rdfs:range xsd:double .
+
+
+###  https://ontoit.github.io/IIoT/Device/isCritical
+<https://ontoit.github.io/IIoT/Device/isCritical> rdf:type owl:DatatypeProperty ;
+                                                  rdfs:domain <https://w3id.org/IIoT/#Industrial_oven> ;
+                                                  rdfs:range xsd:boolean .
+
+
 ###  https://w3id.org/IIoT/#FireFly_nodes
 <https://w3id.org/IIoT/#FireFly_nodes> rdf:type owl:DatatypeProperty ;
                                        rdfs:domain [ rdf:type owl:Restriction ;
@@ -343,18 +372,7 @@ schema:rangeIncludes rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/IIoT/#hasTemperatureRange
 <https://w3id.org/IIoT/#hasTemperatureRange> rdf:type owl:DatatypeProperty ;
-                                             rdfs:domain <https://w3id.org/IIoT/#Industrial_oven> ,
-                                                         [ rdf:type owl:Restriction ;
-                                                           owl:onProperty <https://w3id.org/IIoT/#hasTemperatureRange> ;
-                                                           owl:someValuesFrom [ rdf:type rdfs:Datatype ;
-                                                                                owl:onDatatype xsd:double ;
-                                                                                owl:withRestrictions ( [ xsd:minInclusive "500.0"^^xsd:double
-                                                                                                       ]
-                                                                                                       [ xsd:maxInclusive "510.0"^^xsd:double
-                                                                                                       ]
-                                                                                                     )
-                                                                              ]
-                                                         ] ;
+                                             rdfs:domain <https://w3id.org/IIoT/#Industrial_oven> ;
                                              rdfs:range xsd:double ;
                                              rdfs:comment "hasTemperatureRange (Data property): an industrial oven for a production line that is heated to a very precise temperature range, between 500F and 510F" ;
                                              rdfs:isDefinedBy <https://w3id.org/IIoT/> .
@@ -1534,7 +1552,8 @@ Connecting Photon to CMU Wi-Fi; USB cable""" .
 ###  https://ontoit.github.io/IIoT/Application/IndOven
 <https://ontoit.github.io/IIoT/Application/IndOven> rdf:type owl:NamedIndividual ,
                                                              <https://w3id.org/IIoT/#Industrial_oven> ,
-                                                             <https://w3id.org/IIoT/#UseCase_IndustrialOven> .
+                                                             <https://w3id.org/IIoT/#UseCase_IndustrialOven> ;
+                                                    <https://ontoit.github.io/IIoT/Application/isCriticalUseCase> "false"^^xsd:boolean .
 
 
 ###  https://ontoit.github.io/IIoT/Application/IndustrialOven
@@ -1562,7 +1581,8 @@ Connecting Photon to CMU Wi-Fi; USB cable""" .
 ###  https://ontoit.github.io/IIoT/Application/RTDsensor
 <https://ontoit.github.io/IIoT/Application/RTDsensor> rdf:type owl:NamedIndividual ,
                                                                <https://w3id.org/IIoT/#RTD_sensor> ,
-                                                               <https://w3id.org/IIoT/#UseCase_IndustrialOven> .
+                                                               <https://w3id.org/IIoT/#UseCase_IndustrialOven> ;
+                                                      <https://ontoit.github.io/IIoT/Application/isCriticalUseCase> "false"^^xsd:boolean .
 
 
 ###  https://ontoit.github.io/IIoT/Application/TheSubscriber
@@ -1630,6 +1650,21 @@ Connecting Photon to CMU Wi-Fi; USB cable""" .
 <https://ontoit.github.io/IIoT/Device/NFC2> rdf:type owl:NamedIndividual ,
                                                      <https://w3id.org/IIoT/#NFC_tag> ;
                                             <https://ontoit.github.io/IIoT/Device/identifies> <https://ontoit.github.io/IIoT/Device/Thing2> .
+
+
+###  https://ontoit.github.io/IIoT/Device/Oven6
+<https://ontoit.github.io/IIoT/Device/Oven6> rdf:type owl:NamedIndividual ,
+                                                      <https://w3id.org/IIoT/#Industrial_oven> ;
+                                             <https://ontoit.github.io/IIoT/Device/isMeasuredBy> <https://ontoit.github.io/IIoT/Device/RTD6> ;
+                                             <https://w3id.org/IIoT/#hasTemperatureRange> "510.2"^^xsd:double .
+
+
+###  https://ontoit.github.io/IIoT/Device/RTD6
+<https://ontoit.github.io/IIoT/Device/RTD6> rdf:type owl:NamedIndividual ,
+                                                     <https://w3id.org/IIoT/#RTD_sensor> ;
+                                            <https://w3id.org/IIoT/#heat> <https://ontoit.github.io/IIoT/Device/Oven6> ;
+                                            <https://w3id.org/IIoT/#hasAccuracy> "0.55"^^xsd:float ;
+                                            <https://w3id.org/IIoT/#provideHeat> "516.0"^^xsd:double .
 
 
 ###  https://ontoit.github.io/IIoT/Device/Sensor2
@@ -1968,6 +2003,7 @@ Connecting Photon to CMU Wi-Fi; USB cable""" .
 <https://w3id.org/IIoT/#Oven1> rdf:type owl:NamedIndividual ,
                                         <https://w3id.org/IIoT/#Industrial_oven> ;
                                <https://ontoit.github.io/IIoT/Device/isMeasuredBy> <https://w3id.org/IIoT/#RTDsensor1> ;
+                               <https://ontoit.github.io/IIoT/Device/isCritical> "true"^^xsd:boolean ;
                                <https://w3id.org/IIoT/#hasTemperatureRange> "508.0"^^xsd:double ;
                                rdfs:comment "Oven1 (Individual): an Industrial_oven with Data property assertions (hasTemperatureRange)" .
 
@@ -1976,6 +2012,7 @@ Connecting Photon to CMU Wi-Fi; USB cable""" .
 <https://w3id.org/IIoT/#Oven2> rdf:type owl:NamedIndividual ,
                                         <https://w3id.org/IIoT/#Industrial_oven> ;
                                <https://ontoit.github.io/IIoT/Device/isMeasuredBy> <https://w3id.org/IIoT/#RTDsensor2> ;
+                               <https://ontoit.github.io/IIoT/Device/isCritical> "true"^^xsd:boolean ;
                                <https://w3id.org/IIoT/#hasTemperatureRange> "502.0"^^xsd:double ;
                                rdfs:comment "Oven2 (Individual): an Industrial_oven with Data property assertions (hasTemperatureRange)" .
 

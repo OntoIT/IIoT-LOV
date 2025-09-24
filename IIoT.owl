@@ -51,7 +51,7 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
-        <Literal xml:lang="en">2025-08-29</Literal>
+        <Literal xml:lang="en">2025-09-24</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
@@ -592,6 +592,15 @@
         <ObjectProperty IRI="#wire"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="https://ontoit.github.io/IIoT/Application/isCriticalUseCase"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://ontoit.github.io/IIoT/Device/TemperatureRange"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://ontoit.github.io/IIoT/Device/isCritical"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#FireFly_nodes"/>
     </Declaration>
     <Declaration>
@@ -695,6 +704,12 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/NFC2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/Oven6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/RTD6"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/Sensor2"/>
@@ -1860,6 +1875,14 @@
         <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/NFC2"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Industrial_oven"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/Oven6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RTD_sensor"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/RTD6"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Actuator"/>
         <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/Sensor2"/>
     </ClassAssertion>
@@ -2077,6 +2100,16 @@
         <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/Thing2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/isMeasuredBy"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/Oven6"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/RTD6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#heat"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/RTD6"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/Oven6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="https://ontoit.github.io/IIoT/Device/isElementOf"/>
         <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/Sensor2"/>
         <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/gasSensor_A2"/>
@@ -2282,6 +2315,31 @@
         <NamedIndividual IRI="#Photon2"/>
     </ObjectPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="https://ontoit.github.io/IIoT/Application/isCriticalUseCase"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Application/IndOven"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://ontoit.github.io/IIoT/Application/isCriticalUseCase"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Application/RTDsensor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTemperatureRange"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/Oven6"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">510.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAccuracy"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/RTD6"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.55</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#provideHeat"/>
+        <NamedIndividual IRI="https://ontoit.github.io/IIoT/Device/RTD6"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">516.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#hasValueConnection"/>
         <NamedIndividual IRI="#Connection1"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
@@ -2292,9 +2350,19 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="https://ontoit.github.io/IIoT/Device/isCritical"/>
+        <NamedIndividual IRI="#Oven1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#hasTemperatureRange"/>
         <NamedIndividual IRI="#Oven1"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">508.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://ontoit.github.io/IIoT/Device/isCritical"/>
+        <NamedIndividual IRI="#Oven2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasTemperatureRange"/>
@@ -2422,6 +2490,33 @@
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <DataPropertyDomain>
+        <DataProperty IRI="https://ontoit.github.io/IIoT/Application/isCriticalUseCase"/>
+        <Class IRI="#UseCase_IndustrialOven"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="https://ontoit.github.io/IIoT/Device/TemperatureRange"/>
+        <Class IRI="#Industrial_oven"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="https://ontoit.github.io/IIoT/Device/TemperatureRange"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="https://ontoit.github.io/IIoT/Device/TemperatureRange"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:double"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">500.0</Literal>
+                </FacetRestriction>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">510.0</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="https://ontoit.github.io/IIoT/Device/isCritical"/>
+        <Class IRI="#Industrial_oven"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#FireFly_nodes"/>
         <DataSomeValuesFrom>
             <DataProperty IRI="#FireFly_nodes"/>
@@ -2505,21 +2600,6 @@
     <DataPropertyDomain>
         <DataProperty IRI="#hasTemperatureRange"/>
         <Class IRI="#Industrial_oven"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#hasTemperatureRange"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#hasTemperatureRange"/>
-            <DatatypeRestriction>
-                <Datatype abbreviatedIRI="xsd:double"/>
-                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
-                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">500.0</Literal>
-                </FacetRestriction>
-                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
-                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">510.0</Literal>
-                </FacetRestriction>
-            </DatatypeRestriction>
-        </DataSomeValuesFrom>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hasTimeLimit"/>
@@ -2652,6 +2732,18 @@
             </DatatypeRestriction>
         </DataSomeValuesFrom>
     </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="https://ontoit.github.io/IIoT/Application/isCriticalUseCase"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="https://ontoit.github.io/IIoT/Device/TemperatureRange"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="https://ontoit.github.io/IIoT/Device/isCritical"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#FireFly_nodes"/>
         <Datatype abbreviatedIRI="xsd:integer"/>
